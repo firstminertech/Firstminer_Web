@@ -34,7 +34,9 @@ const Header = () => {
       <PrimaryHeader />
       <header id="header" className={isFixed ? "fixed" : ""}>
         <div className="container d-flex justify-content-between">
-          <div id="logo" className="pull-left">
+          <div id="logo" className="pull-left d-flex gap-2">
+          <img src="assets/img/logo-final.png" width={50}/>
+
             <h1>
               <a href="#body" className="scrollto">
                 First<span>miner</span>
