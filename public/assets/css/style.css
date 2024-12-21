@@ -1252,8 +1252,3 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
  
-  /* When the header becomes fixed, adjust the padding */
-  #header.fixed .container {
-    padding-top: 20px; /* Adjust padding for the fixed header */
-  }
-  
