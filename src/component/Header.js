@@ -39,7 +39,7 @@ const Header = () => {
           <img src="assets/img/logo-final.png" width={50}/>
 
             <h1>
-              <Link href="#body" className="scrollto">
+              <Link to={"/" }className="scrollto">
                 First<span>miner</span>
               </Link>
             </h1>
@@ -48,34 +48,34 @@ const Header = () => {
           <nav id="nav-menu-container" className={isMenuOpen ? "open" : ""}>
             <ul className="nav-menu">
               <li className="menu-active">
-                <Link href="/">Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link href="/careers">Careers</Link>
+                <Link to={"/careers"}>Careers</Link>
               </li>
               <li>
-                <Link href="#about">About Us</Link>
+                <Link to="#about">About Us</Link>
               </li>
               <li>
-                <Link href="#services">Services</Link>
+                <Link to="#services">Services</Link>
               </li>
               <li>
-                <Link href="#portfolio">Portfolio</Link>
+                <Link to="#portfolio">Portfolio</Link>
               </li>
               <li>
-                <Link href="#team">Team</Link>
+                <Link to="#team">Team</Link>
               </li>
               <li className="menu-has-children">
-                <Link href="#">Drop Down</Link>
+                <Link to="#">Drop Down</Link>
                 <ul>
-                  <li><Link href="#">Drop Down 1</Link></li>
-                  <li><Link href="#">Drop Down 2</Link></li>
-                  <li><Link href="#">Drop Down 3</Link></li>
-                  <li><Link href="#">Drop Down 4</Link></li>
+                  <li><Link to="#">Drop Down 1</Link></li>
+                  <li><Link to="#">Drop Down 2</Link></li>
+                  <li><Link to="#">Drop Down 3</Link></li>
+                  <li><Link to="#">Drop Down 4</Link></li>
                 </ul>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>
           </nav>
