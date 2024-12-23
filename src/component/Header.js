@@ -54,10 +54,10 @@ const Header = () => {
                 <Link to={"/careers"}>Careers</Link>
               </li>
               <li>
-                <Link to="#about">About Us</Link>
+                <Link to={"/about"}>About Us</Link>
               </li>
               <li>
-                <Link to="#services">Services</Link>
+                <Link to={"/service"}>Services</Link>
               </li>
               <li>
                 <Link to="#portfolio">Portfolio</Link>

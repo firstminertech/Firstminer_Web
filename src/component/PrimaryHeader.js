@@ -12,7 +12,7 @@ const PrimaryHeader = () => {
                 {/* Updated to Font Awesome 6 icons */}
                 <i className="fas fa-envelope" />
                 <a href="mailto:contact@example.com">contact@example.com</a>
-                <i className="fas fa-phone-alt" /> +1 5589 55488 55
+                <i className="fas fa-phone-alt" /> +91 7000262816
               </div>
             </div>
 
