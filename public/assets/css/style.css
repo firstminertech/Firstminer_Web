@@ -806,6 +806,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     #testimonials .testimonial-item {
         margin: 30px 10px;
     }
+    .nav-menu {
+        flex-direction: column !important;
+        display: flex
+    ;
+    }
 }
 
 #testimonials .testimonial-item .testimonial-img {
@@ -891,6 +896,8 @@ body.mobile-nav-active #mobile-nav-toggle {
         align-items: center;
         justify-content: flex-end;
     }
+    
+    
 }
 
 #call-to-action .cta-btn {
@@ -931,6 +938,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic img {
     max-width: 100%;
+    max-height: 250px;
 }
 
 #team .member .details {
@@ -1178,6 +1186,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row;
   }
   
   .nav-menu li {

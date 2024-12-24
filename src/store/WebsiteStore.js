@@ -52,11 +52,7 @@ class WebsiteStore {
   async addTeam(param, navigationCallBack) {
     this.toggleLoading(true);
     try {
-      const response = await axiosInstance.post("/create-team-details", param,{
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
+      const response = await axiosInstance.post("/create-team-details", param)
       if (response) {
         navigationCallBack()
       } else {

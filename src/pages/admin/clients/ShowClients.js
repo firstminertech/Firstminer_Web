@@ -6,6 +6,7 @@ import { toJS } from 'mobx';
 import { observer } from 'mobx-react';
 import AdminHeader from '../../../component/admin-component/AdminHeader';
 import AdminSidebar from '../../../component/admin-component/Admin-Sidebar';
+import { BASE_API_URL, BASE_FILE_URL } from '../../../api/config';
 
 const ShoowClients = observer(() => {
   const navigate = useNavigate();
@@ -32,9 +33,16 @@ const ShoowClients = observer(() => {
     },
     {
       name: 'Image',
-      selector: row => row.image,
       sortable: true,
+      cell: (record) => {
+        return (
+          <div>
+            <img src={`${BASE_FILE_URL + record.image}`} width={50} alt="Record Image" />
+          </div>
+        );
+      }
     },
+    
     
     {
       name: 'Action',

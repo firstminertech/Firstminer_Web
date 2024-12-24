@@ -3,6 +3,7 @@ import websiteStore from "../store/WebsiteStore";
 import { toJS } from "mobx";
 import { observer } from "mobx-react";
 import Header from "../component/Header";
+import { BASE_FILE_URL } from "../api/config";
 
 const OurTeams = observer(() => {
     const [teamDetails, setTeamDetails] = useState([]);
@@ -38,7 +39,7 @@ const OurTeams = observer(() => {
                                 <div className="pic">
                                     <img   src={
                                                 team?.image && isValidImageUrl(team?.image)
-                                                    ? team?.image
+                                                    ? BASE_FILE_URL+team?.image
                                                     : "/path/to/default-image.jpg"
                                             } />
                                 </div>
