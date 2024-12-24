@@ -63,6 +63,7 @@ const HomePage = observer(() => {
                     <div className="container">
                         <div className="section-header">
                             <h2>Services</h2>
+
                             <p>
                                 Sed tamen tempor magna labore dolore dolor sint tempor duis magna
                                 elit veniam aliqua esse amet veniam enim export quid quid veniam
@@ -77,26 +78,30 @@ const HomePage = observer(() => {
                                         <i className="fa fa-bar-chart" />
                                     </div>
                                     <h4 className="title">
-                                        <a href="">Lorem Ipsum</a>
+                                        <a href="">Content Marketing strategy</a>
                                     </h4>
                                     <p className="description">
-                                        Voluptatum deleniti atque corrupti quos dolores et quas
-                                        molestias excepturi sint occaecati cupiditate non provident
-                                        etiro rabeta lingo.
+                                        Content Marketing is an effective way to encourage conversions and
+                                        its main objective is to build a content
+                                        strategy to meets the needs of your target audience.
                                     </p>
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="box wow fadeInRight">
                                     <div className="icon">
-                                        <i className="fa fa-picture-o" />
+                                        {/* <i className="fa fa-picture-o" /> */}
                                     </div>
+                                    <img src="assets/img/appdevelopment.webp"></img>
                                     <h4 className="title">
-                                        <a href="">Dolor Sitema</a>
+                                        <a href="">App Development</a>
                                     </h4>
+                                   
                                     <p className="description">
-                                        Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat tarad limino ata nodera clas.
+
+                                        your unique ideas transforming into incredible apps for your business requirements.
+                                        our app developers can build mobile app your requirement,
+                                        in your budget, and as per your timeline.
                                     </p>
                                 </div>
                             </div>
@@ -106,27 +111,76 @@ const HomePage = observer(() => {
                                         <i className="fa fa-shopping-bag" />
                                     </div>
                                     <h4 className="title">
-                                        <a href="">Sed ut perspiciatis</a>
+                                        <a href="">Web Development</a>
+                                    </h4>
+                                   
+                                    <p className="description">
+                                        A website should not just draw attention.
+                                        The role of a website is to attract and engage the user,
+                                        as well as communicate your brand and raise awareness about a product or service.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="box wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div className="icon">
+                                        {/* <i className="fa fa-shopping-bag" /> */}
+                                    </div>
+                                    <img src="assets/img/project.webp"></img>
+                                    <h4 className="title">
+                                        <a href="">Project Explainatin & Video Creation</a>
+                                    </h4>
+                                    
+                                    <p className="description">
+                                        High-quality video ads can easily generate traffic of customers.
+                                        Do not stick with traditional marketing,
+                                        use digital tools to gather more and more customers at your point.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="box wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div className="icon">
+                                        {/* <i className="fa fa-shopping-bag" /> */}
+                                    </div>
+                                    <img src="assets/img/govt.webp"></img>
+                                    <h4 className="title">
+                                        <a href="">Govt. Tender and (Material Supply)</a>
                                     </h4>
                                     <p className="description">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur trinige zareta lobur
-                                        trade.
+                                        we supply the material for structured procedure and
+                                        different potential suppliers or contractors,
+                                        business activity in works, supply, or service contracts.F
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="box wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div className="icon">
+                                        <i className="fa fa-shopping-bag" />
+                                    </div>
+                                    <h4 className="title">
+                                        <a href="">Comercial Video Creation</a>
+                                    </h4>
+                                    <p className="description">
+                                        Understand how your video are performing,
+                                        and the kind of target audience viewing and engaging with them.
                                     </p>
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="box wow fadeInRight" data-wow-delay="0.2s">
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <i className="fa fa-map" />
-                                    </div>
+                                    </div> */}
                                     <h4 className="title">
-                                        <a href="">Magni Dolores</a>
+                                        <a href="">Blockchain Consultant</a>
                                     </h4>
+                                    <img src="assets/img/blockchain.webp"></img>
                                     <p className="description">
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                        qui officia deserunt mollit anim id est laborum rideta zanox
-                                        satirente madera
+                                        Blockchain Lab we believe that Distributed Ledger Technologies carry
+                                        the potential to introduce a new level of transparency, automation,
+                                        and efficiency in businesses and nonprofits.
                                     </p>
                                 </div>
                             </div>

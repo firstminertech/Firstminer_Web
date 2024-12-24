@@ -63,7 +63,7 @@ const Header = () => {
                 <Link to="#portfolio">Portfolio</Link>
               </li>
               <li>
-                <Link to="#team">Team</Link>
+                <Link to={"/our-teams"}>OurTeams</Link>
               </li>
               <li className="menu-has-children">
                 <Link to="#">Drop Down</Link>
