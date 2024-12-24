@@ -60,15 +60,15 @@ const Header = () => {
                 <Link to={"/service"}>Services</Link>
               </li>
               <li>
-                <Link to="#portfolio">Portfolio</Link>
+                <Link to={"/our-teams"}>Portfolio</Link>
               </li>
               <li>
-                <Link to="#team">Team</Link>
+                <Link to={"/our-teams"}>Team</Link>
               </li>
               <li className="menu-has-children">
                 <Link to="#">Drop Down</Link>
                 <ul>
-                  <li><Link to="#">Drop Down 1</Link></li>
+                  <li><Link to="/clients">Client</Link></li>
                   <li><Link to="#">Drop Down 2</Link></li>
                   <li><Link to="#">Drop Down 3</Link></li>
                   <li><Link to="#">Drop Down 4</Link></li>

@@ -6,6 +6,7 @@ class WebsiteStore {
   data = {
     teams: [],
     contact: [],
+    clients: [],
     popModal:true
   }
   errors = {}
@@ -48,7 +49,6 @@ class WebsiteStore {
       this.toggleLoading(false);
     }
   }
-
   async addTeam(param, navigationCallBack) {
     this.toggleLoading(true);
     try {
@@ -73,7 +73,6 @@ class WebsiteStore {
       this.toggleLoading(false);
     }
   }
-
   async updateTeam(id, data, navigationCallBack) {
     this.toggleLoading(true);
     try {
@@ -104,7 +103,6 @@ class WebsiteStore {
       this.toggleLoading(false);
     }
   }
-  
   async deleteTeam(id, navigationCallBack) {
     this.toggleLoading(true);
     try {
@@ -125,7 +123,6 @@ class WebsiteStore {
       this.toggleLoading(false);
     }
   }
-
   async getTeamMemberById(id, navigationCallBack) {
     this.toggleLoading(true); // Show loading indicator if needed
     try {
@@ -153,7 +150,6 @@ class WebsiteStore {
     }
   }
 
-
   //===================contact========================== 
 
   async addContact(param, navigationCallBack) {
@@ -180,7 +176,6 @@ class WebsiteStore {
       this.toggleLoading(false);
     }
   }
-
   async getContacts() {
     this.toggleLoading(true);
     try {
@@ -203,7 +198,6 @@ class WebsiteStore {
       this.toggleLoading(false);
     }
   }
-
   async deleteContact(id, navigationCallBack) {
     this.toggleLoading(true);
     try {
@@ -225,57 +219,70 @@ class WebsiteStore {
     }
   }
 
+//====================Clients============================
 
-
-
-
-
-  // async addComplaint(param, navigationCallBack) {
-  //   this.toggleLoading(true);
-  //   try {
-  //     const response = await axiosInstance.post("/website/add-complaint", param)
-  //     if (response) {
-  //       navigationCallBack()
-  //     } else {
-  //       // toast.error("Something went to wrong!");
-  //     }
-  //   }
-  //   catch (err) {
-  //     if (err?.request?.status === 401) {
-  //       // window.location.reload()
-  //     }
-  //     console.log(err)
-  //   }
-  //   finally {
-  //     this.toggleLoading(false);
-  //   }
-  // }
-
-  // async getSliderById(id) {
-  //   this.toggleLoading(true);
-  //   try {
-  //     const response = await axiosInstance.post("/website/slider-by-id", { "id": id })
-  //     if (response) {
-  //       runInAction(() => {
-  //         this.data.departmentSliders = response?.data?.slider;
-  //       })
-  //     } else {
-  //       // toast.error("Something went to wrong!");
-  //     }
-  //   }
-  //   catch (err) {
-  //     if (err?.request?.status === 401) {
-  //       // window.location.reload()
-  //     }
-  //     console.log(err)
-  //   }
-  //   finally {
-  //     this.toggleLoading(false);
-  //   }
-  // }
- 
-
-  
+async addClient(param, navigationCallBack) {
+  this.toggleLoading(true);
+  try {
+    const response = await axiosInstance.post("/create-client", param)
+    if (response) {
+      navigationCallBack()
+    } else {
+      // toast.error("Something went to wrong!");
+    }
+  }
+  catch (err) {
+    if (err?.request?.status === 401) {
+      // window.location.reload()
+    }
+    console.log(err)
+  }
+  finally {
+    this.toggleLoading(false);
+  }
+}
+async getClients() {
+  this.toggleLoading(true);
+  try {
+    const response = await axiosInstance.get("/get-clients")
+    if (response) {
+      runInAction(() => {
+        this.data.clients = response?.data;
+      })
+    } else {
+      // toast.error("Something went to wrong!");
+    }
+  }
+  catch (err) {
+    if (err?.request?.status === 401) {
+      // window.location.reload()
+    }
+    console.log(err)
+  }
+  finally {
+    this.toggleLoading(false);
+  }
+}
+async deleteClient(id, navigationCallBack) {
+  this.toggleLoading(true);
+  try {
+    const response = await axiosInstance.delete(`/delete-client/${id}`)
+    if (response) {
+      navigationCallBack()
+    } else {
+      // toast.error("Something went to wrong!");
+    }
+  }
+  catch (err) {
+    if (err?.request?.status === 401) {
+      // window.location.reload()
+    }
+    console.log(err)
+  }
+  finally {
+    this.toggleLoading(false);
+  }
+}
 
 }
 const websiteStore = new WebsiteStore();

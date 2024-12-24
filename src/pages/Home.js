@@ -5,11 +5,22 @@ import Footer from "../component/Footer";
 import Portfolio from "../elements/Portfolio";
 import ClientPage from "../elements/ClientPage";
 import websiteStore from "../store/WebsiteStore";
+import Slider from "react-slick";
 
 const HomePage = observer(() => {
     useEffect(() => {
         websiteStore?.getTeams();
     }, [])
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
     return (
         <div>
             <Header />
@@ -140,139 +151,148 @@ const HomePage = observer(() => {
 
                 <Portfolio />
 
-
                 <section id="testimonials" className="wow fadeInUp">
                     <div className="container">
-                        <div className="section-header">
+                        <div className="section-header text-center mb-5">
                             <h2>Testimonials</h2>
                             <p>
-                                Sed tamen tempor magna labore dolore dolor sint tempor duis magna
-                                elit veniam aliqua esse amet veniam enim export quid quid veniam
-                                aliqua eram noster malis nulla duis fugiat culpa esse aute nulla
-                                ipsum velit export irure minim illum fore
+                                Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
                             </p>
                         </div>
-                        <div className="owl-carousel testimonials-carousel">
-                            <div className="testimonial-item">
-                                <p>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="testimonial-item text-center mb-4">
+                                    <p>
+                                        <img
+                                            src="assets/img/quote-sign-left.png"
+                                            className="quote-sign-left"
+                                            alt=""
+                                        />
+                                        Proin iaculis purus consequat sem cure dignissim donec porttitor
+                                        entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam
+                                        eget nibh et. Maecen aliquam, risus at semper.
+                                        <img
+                                            src="assets/img/quote-sign-right.png"
+                                            className="quote-sign-right"
+                                            alt=""
+                                        />
+                                    </p>
                                     <img
-                                        src="assets/img/quote-sign-left.png"
-                                        className="quote-sign-left"
+                                        src="assets/img/testimonial-1.jpg"
+                                        className="testimonial-img rounded-circle mb-3"
                                         alt=""
                                     />
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                                    entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-                                    aliquam eget nibh et. Maecen aliquam, risus at semper.
-                                    <img
-                                        src="assets/img/quote-sign-right.png"
-                                        className="quote-sign-right"
-                                        alt=""
-                                    />
-                                </p>
-                                <img
-                                    src="assets/img/testimonial-1.jpg"
-                                    className="testimonial-img"
-                                    alt=""
-                                />
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
+                                    <h3>Saul Goodman</h3>
+                                    <h4>CEO & Founder</h4>
+                                </div>
                             </div>
-                            <div className="testimonial-item">
-                                <p>
+
+                            <div className="col-md-4">
+                                <div className="testimonial-item text-center mb-4">
+                                    <p>
+                                        <img
+                                            src="assets/img/quote-sign-left.png"
+                                            className="quote-sign-left"
+                                            alt=""
+                                        />
+                                        Export tempor illum tamen malis malis eram quae irure esse labore
+                                        quem cillum quid cillum eram malis quorum velit fore eram velit sunt
+                                        aliqua noster fugiat irure amet legam anim culpa.
+                                        <img
+                                            src="assets/img/quote-sign-right.png"
+                                            className="quote-sign-right"
+                                            alt=""
+                                        />
+                                    </p>
                                     <img
-                                        src="assets/img/quote-sign-left.png"
-                                        className="quote-sign-left"
+                                        src="assets/img/testimonial-2.jpg"
+                                        className="testimonial-img rounded-circle mb-3"
                                         alt=""
                                     />
-                                    Export tempor illum tamen malis malis eram quae irure esse labore
-                                    quem cillum quid cillum eram malis quorum velit fore eram velit
-                                    sunt aliqua noster fugiat irure amet legam anim culpa.
-                                    <img
-                                        src="assets/img/quote-sign-right.png"
-                                        className="quote-sign-right"
-                                        alt=""
-                                    />
-                                </p>
-                                <img
-                                    src="assets/img/testimonial-2.jpg"
-                                    className="testimonial-img"
-                                    alt=""
-                                />
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                </div>
                             </div>
-                            <div className="testimonial-item">
-                                <p>
+
+                            <div className="col-md-4">
+                                <div className="testimonial-item text-center mb-4">
+                                    <p>
+                                        <img
+                                            src="assets/img/quote-sign-left.png"
+                                            className="quote-sign-left"
+                                            alt=""
+                                        />
+                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum
+                                        nulla quem veniam duis minim tempor labore quem eram duis noster aute
+                                        amet eram fore quis sint minim.
+                                        <img
+                                            src="assets/img/quote-sign-right.png"
+                                            className="quote-sign-right"
+                                            alt=""
+                                        />
+                                    </p>
                                     <img
-                                        src="assets/img/quote-sign-left.png"
-                                        className="quote-sign-left"
+                                        src="assets/img/testimonial-3.jpg"
+                                        className="testimonial-img rounded-circle mb-3"
                                         alt=""
                                     />
-                                    Enim nisi quem export duis labore cillum quae magna enim sint
-                                    quorum nulla quem veniam duis minim tempor labore quem eram duis
-                                    noster aute amet eram fore quis sint minim.
-                                    <img
-                                        src="assets/img/quote-sign-right.png"
-                                        className="quote-sign-right"
-                                        alt=""
-                                    />
-                                </p>
-                                <img
-                                    src="assets/img/testimonial-3.jpg"
-                                    className="testimonial-img"
-                                    alt=""
-                                />
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                                    <h3>Jena Karlis</h3>
+                                    <h4>Store Owner</h4>
+                                </div>
                             </div>
-                            <div className="testimonial-item">
-                                <p>
+
+                            <div className="col-md-4">
+                                <div className="testimonial-item text-center mb-4">
+                                    <p>
+                                        <img
+                                            src="assets/img/quote-sign-left.png"
+                                            className="quote-sign-left"
+                                            alt=""
+                                        />
+                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                                        export minim fugiat minim velit minim dolor enim duis veniam ipsum
+                                        anim magna sunt elit fore quem dolore labore illum veniam.
+                                        <img
+                                            src="assets/img/quote-sign-right.png"
+                                            className="quote-sign-right"
+                                            alt=""
+                                        />
+                                    </p>
                                     <img
-                                        src="assets/img/quote-sign-left.png"
-                                        className="quote-sign-left"
+                                        src="assets/img/testimonial-4.jpg"
+                                        className="testimonial-img rounded-circle mb-3"
                                         alt=""
                                     />
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
-                                    export minim fugiat minim velit minim dolor enim duis veniam ipsum
-                                    anim magna sunt elit fore quem dolore labore illum veniam.
-                                    <img
-                                        src="assets/img/quote-sign-right.png"
-                                        className="quote-sign-right"
-                                        alt=""
-                                    />
-                                </p>
-                                <img
-                                    src="assets/img/testimonial-4.jpg"
-                                    className="testimonial-img"
-                                    alt=""
-                                />
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
+                                    <h3>Matt Brandon</h3>
+                                    <h4>Freelancer</h4>
+                                </div>
                             </div>
-                            <div className="testimonial-item">
-                                <p>
+
+                            <div className="col-md-4">
+                                <div className="testimonial-item text-center mb-4">
+                                    <p>
+                                        <img
+                                            src="assets/img/quote-sign-left.png"
+                                            className="quote-sign-left"
+                                            alt=""
+                                        />
+                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
+                                        tempor noster veniam enim culpa labore duis sunt culpa nulla illum
+                                        cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                        <img
+                                            src="assets/img/quote-sign-right.png"
+                                            className="quote-sign-right"
+                                            alt=""
+                                        />
+                                    </p>
                                     <img
-                                        src="assets/img/quote-sign-left.png"
-                                        className="quote-sign-left"
+                                        src="assets/img/testimonial-5.jpg"
+                                        className="testimonial-img rounded-circle mb-3"
                                         alt=""
                                     />
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
-                                    veniam tempor noster veniam enim culpa labore duis sunt culpa
-                                    nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                                    quid.
-                                    <img
-                                        src="assets/img/quote-sign-right.png"
-                                        className="quote-sign-right"
-                                        alt=""
-                                    />
-                                </p>
-                                <img
-                                    src="assets/img/testimonial-5.jpg"
-                                    className="testimonial-img"
-                                    alt=""
-                                />
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                    <h3>John Larson</h3>
+                                    <h4>Entrepreneur</h4>
+                                </div>
                             </div>
                         </div>
                     </div>

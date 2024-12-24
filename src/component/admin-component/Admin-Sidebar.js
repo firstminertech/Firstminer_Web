@@ -23,6 +23,9 @@ const AdminSidebar = () => {
           <li className="nav-item">
             <Link to="/admin/contacts" className="nav-link text-dark">User Contacts</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/admin/clients" className="nav-link text-dark">Clients</Link>
+          </li>
         </ul>
       </div>
     </div>

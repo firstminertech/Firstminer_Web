@@ -1336,4 +1336,78 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 1.1rem;
   }
   
+  /* ClientPage.css */
+
+/* Styling for the Clients Section */
+#clients {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .section-header p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Carousel and Client Cards */
+  .clients-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .client-card {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .client-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .client-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .owl-carousel .owl-nav, .owl-carousel .owl-dots {
+    display: none; /* Hide navigation and dots for carousel */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .clients-carousel {
+      justify-content: space-evenly;
+    }
+  
+    .client-card {
+      width: 120px;
+      height: 120px;
+    }
+  }
   

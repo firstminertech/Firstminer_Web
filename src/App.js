@@ -10,6 +10,9 @@ import AdminDashboard from './pages/admin/dashboard/AdminDashboard';
 import ShowContact from './pages/admin/contacts/ShowContacts';
 import AboutUs from './pages/AboutUs';
 import Service from './pages/Service';
+import ShoowClients from './pages/admin/clients/ShowClients';
+import AddClient from './pages/admin/clients/AddClient';
+import ClientPage from './elements/ClientPage';
 
 
 function App() {
@@ -22,12 +25,15 @@ function App() {
     <Route exact path="/our-teams" element={<OurTeams/>}/>
     <Route exact path="/about" element={<AboutUs/>}/>
     <Route exact path="/service" element={<Service/>}/>
+    <Route exact path="/clients" element={<ClientPage/>}/>
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
     <Route exact path="/admin/add-team" element={<CreateTeam/>}/>
     <Route exact path="/admin/get-teams-details/:id" element={<CreateTeam/>}/>
     <Route exact path="/admin/get-teams-details" element={<GetTeamTable/>}/>
     <Route exact path="/admin/contacts" element={<ShowContact/>}/>
+    <Route exact path="/admin/clients" element={<ShoowClients/>}/>
+    <Route exact path="/admin/add-client" element={<AddClient/>}/>
    </Routes>
    </Router>
   );
