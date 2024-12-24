@@ -16,13 +16,81 @@ function AboutUs() {
                         <p className=" mt-3 fw-bold">
                             "We pursue relationships based on transparency, persistence,
                             mutual trust, and integrity with our employees, customers and other business partners."</p>
-                        <img
-                            src="assets/img/EdigitalbabaLOGO.webp"
-                            alt="Team Member"
-                            className="edigibabaimg"
-                            style={{ borderColor: "#28c3b4" }}
-                        />
 
+
+                        <section className="about aos-init aos-animate" data-aos="fade-up">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-12">
+                                        <h3
+                                            style={{
+                                                fontFamily: 'Georgia',
+                                                fontSize: '20px',
+                                                textAlign: 'center',
+                                            }}
+                                        >
+                                            <b>
+                                                "We pursue relationships based on transparency, persistence, mutual trust,
+                                                and integrity with our employees, customers and other business partners."
+                                            </b>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <br />
+
+                                <div className="row">
+                                    <div className="col-lg-6">
+                                        <img
+                                            src="assets/img/EdigitalbabaLOGO.webp"
+                                            alt="Team Member"
+                                            className="edigibabaimg"
+                                            style={{ borderColor: "#28c3b4" }}
+                                        />
+                                        <br />
+                                        <h4 style={{ fontFamily: 'Georgia' }}>
+                                            <b>Power By:-<br /> Firstminer Technology Solutions Pvt. Ltd.</b>
+                                        </h4>
+                                    </div>
+                                    <div className="col-lg-6 pt-4 pt-lg-0">
+                                        <p
+                                            className="fst-italic"
+                                            style={{
+                                                fontFamily: 'Georgia',
+                                                fontSize: '18px',
+                                               
+                                            }}
+                                        >
+                                            Our team of specialists consistently delivers outstanding results combining creative ideas with our vast
+                                            experience. We can help you build a sustainable, meaningful relationship with your clients by engaging
+                                            them with your brand using social media. We work in areas as diverse as search engine optimization,
+                                            social media marketing, email marketing, and digital marketing.
+                                        </p>
+                                        <ul>
+                                            <li
+                                                style={{
+                                                    fontFamily: 'Georgia',
+                                                    fontSize: '18px',
+                                                   
+                                                }}
+                                            >
+                                                <i className="bi bi-check2-circle"></i> Our team develops effective content strategies for forward-thinking companies. We have a proven track record in increasing search engine rankings.
+                                            </li>
+                                            <li
+                                                style={{
+                                                    fontFamily: 'Georgia',
+                                                    fontSize: '18px'
+                                                }}
+                                            >
+                                                <i className="bi bi-check2-circle"></i> Our digital marketing, Mobile Application Development, Website Development work speaks for itself. We deliver an outstanding service custom-tailored to each and every one of our clients.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        {/* 
                         <p className="about01-text">
                             Our team of specialists consistently delivers outstanding results combining creative ideas with our vast experience.
                             We can help you build a sustainable, meaningful relationship with your clients by engaging them with your brand using social media.
@@ -31,7 +99,7 @@ function AboutUs() {
                             Our team develops effective content strategies for forward thinking companies.
                             We have a proven track record in increasing search engine rankings.
                             Our digital marketing, Mobile Application Development, Website Development work speaks for itself.
-                            We deliver an outstanding service custom-tailored to each and every one of our clients.</p>
+                            We deliver an outstanding service custom-tailored to each and every one of our clients.</p> */}
                     </div>
                 </div>
             </section>
@@ -86,6 +154,7 @@ function AboutUs() {
                     </div>
                 </div>
             </section>
+            
 
             {/* Contact Section */}
             {/* <section id="contact" className="py-5">
@@ -101,7 +170,7 @@ function AboutUs() {
                 <div className="container">
                     <h2 className="text-center">Our Skils</h2>
                     <div className="row mt-4">
-   
+
                     </div>
                 </div>
             </section>

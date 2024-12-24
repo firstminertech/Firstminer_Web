@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import websiteStore from "../store/WebsiteStore";
 import { toJS } from "mobx";
 import { observer } from "mobx-react";
+import Header from "../component/Header";
 
 const OurTeams = observer(() => {
     const [teamDetails, setTeamDetails] = useState([]);
@@ -24,6 +25,7 @@ const OurTeams = observer(() => {
 
     return (
         <div>
+        <Header/>
         <section id="team" className="wow fadeInUp">
             <div className="container">
                 <div className="section-header">
