@@ -3,11 +3,12 @@ import websiteStore from "../store/WebsiteStore";
 import { observer } from "mobx-react";
 import { toJS } from "mobx";
 import { BASE_FILE_URL } from "../api/config";
+import Header from "../component/Header";
 
 const ClientCard = ({ image, altText }) => {
   return (
     <div className="client-card">
-      <img src={BASE_FILE_URL+image} alt={altText} className="client-image" />
+      <img src={BASE_FILE_URL + image} alt={altText} className="client-image" />
     </div>
   );
 };
@@ -22,28 +23,46 @@ const ClientPage = observer(() => {
   useEffect(() => {
     // Update clients state when websiteStore data changes
     const clientData = toJS(websiteStore?.data?.clients) || [];
-    setClients(clientData.map(client => ({
-      src: `${client.image}`, // Assuming imageName is returned by the server
-      alt: client.name, // Assuming name is available in client data
-    })));
+    setClients(
+      clientData.map((client) => ({
+        src: `${client.image}`, // Assuming imageName is returned by the server
+        alt: client.name, // Assuming name is available in client data
+      }))
+    );
   }, [websiteStore?.data?.clients]);
 
   return (
     <div>
+      <Header />
       <section id="clients" className="wow fadeInUp">
         <div className="container">
           <div className="section-header">
             <h2>Clients</h2>
             <p>
-              Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam
-              aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis
-              nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
+              Sed tamen tempor magna labore dolore dolor sint tempor duis magna
+              elit veniam aliqua esse amet veniam enim export quid quid veniam
+              aliqua eram noster malis nulla duis fugiat culpa esse aute nulla
+              ipsum velit export irure minim illum fore
             </p>
           </div>
-          <div className="clients-carousel owl-carousel">
+          {/* <div className="clients-carousel owl-carousel">
             {clients.map((client, index) => (
               <ClientCard key={index} image={client.src} altText={client.alt} />
             ))}
+          </div> */}
+          <div className="d-flex justify-content-start flex-wrap">
+          {clients?.map((client, index) => (
+            <div className="col-md-4 container my-4 " key={index}>
+              <div className="text-center">
+                <h6 className="fs-4 text-start username10">{client?.alt}</h6>
+                <img
+                  src={BASE_FILE_URL + client?.src}
+                  alt={client?.alt}
+                  className="img-fluid fixed-img1"
+                />
+              </div>
+            </div>
+          ))}
           </div>
         </div>
       </section>
