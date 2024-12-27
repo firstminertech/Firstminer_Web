@@ -20,13 +20,13 @@ function AboutUs() {
             <section id="about" className="py-5 bg-light">
                 <div className="Edigibaba">
                     <div className="container text-center">
-                        <h2 className="about fw-bold mb-4 fs-1">About Us</h2>
+                        {/* <h2 className="about fw-bold mb-4 fs-1">About Us</h2> */}
                         
 
 
                         <section className="about aos-init aos-animate" data-aos="fade-up">
                             <div className="container">
-                                <div className="row">
+                                {/* <div className="row">
                                     <div className="col-lg-12 para2">
                                         <h3
                                             style={{
@@ -41,8 +41,8 @@ function AboutUs() {
                                             </b>
                                         </h3>
                                     </div>
-                                </div>
-                                <br />
+                                </div> */}
+                             
                                 
 
                                 <div className="row">

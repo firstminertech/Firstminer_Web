@@ -225,9 +225,10 @@ const HomePage = observer(() => {
                 </section>
 
                 {/* #services */}
-
+                <h2 className="client-title">Clients</h2>
+                <p className="client-para">Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
                 <ClientPage />
-
+                <h2 className="client-title">Testimonials</h2>
                 <Testimonials />
 
 
