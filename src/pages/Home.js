@@ -8,6 +8,8 @@ import websiteStore from "../store/WebsiteStore";
 import Slider from "react-slick";
 import Testimonials from "../elements/Testimonials";
 import { useSpring, animated, useTransition } from '@react-spring/web';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const HomePage = observer(() => {
     useEffect(() => {
@@ -72,10 +74,10 @@ const HomePage = observer(() => {
                                     item ? (
                                         <>
                                             <animated.h2 style={style}>
-                                            Firstminer Technology Solutions Pvt. Ltd .
+                                                Firstminer Technology Solutions Pvt. Ltd .
                                             </animated.h2>
                                             <animated.h3 style={style}>
-                                            Our team of specialists consistently delivers outstanding results combining creative ideas with our vast experience. We can help you build a sustainable, meaningful relationship with your clients by engaging them with your brand using social media.
+                                                Our team of specialists consistently delivers outstanding results combining creative ideas with our vast experience. We can help you build a sustainable, meaningful relationship with your clients by engaging them with your brand using social media.
                                             </animated.h3>
                                             <ul>
                                                 <li>
@@ -84,7 +86,7 @@ const HomePage = observer(() => {
                                                 <li>
                                                     <i className="ion-android-checkmark-circle" />Our digital marketing, Mobile Application Development, Website Development work speaks for itself. We deliver an outstanding service custom-tailored to each and every one of our clients.
                                                 </li>
-                                                
+
                                             </ul>
                                         </>
                                     ) : null
@@ -260,107 +262,288 @@ const HomePage = observer(() => {
                         <div className="section-header">
                             <h2>Our Team</h2>
                         </div>
-                        <div className="row">
-                            <div className="col-lg-3 col-md-6">
-                                <div className="member">
-                                    <div className="pic">
-                                        <img src="assets/img/team-1.jpg" alt="" />
-                                    </div>
-                                    <div className="details">
-                                        <h4>Walter White</h4>
-                                        <span>Chief Executive Officer</span>
-                                        <div className="social">
-                                            <a href="">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-facebook" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-google-plus" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-linkedin" />
-                                            </a>
-                                        </div>
-                                    </div>
+                        <div className="d-flex justify-content-between align-items-center gap-5">
+                            <div className="col-lg-6 team-home">
+                                <div className="title-z">ALL<br/>TEAMS</div>
+                                <div class="button-z">
+                                    <a href="#">Browse All</a>
+                                </div>
+                                <div class="navigation">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="member">
-                                    <div className="pic">
-                                        <img src="assets/img/team-2.jpg" alt="" />
-                                    </div>
-                                    <div className="details">
-                                        <h4>Sarah Jhinson</h4>
-                                        <span>Product Manager</span>
-                                        <div className="social">
-                                            <a href="">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-facebook" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-google-plus" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-linkedin" />
-                                            </a>
+
+                            <Swiper
+                                modules={[Pagination, Autoplay]}
+                                spaceBetween={10}
+                                loop={true}
+                                autoplay={{
+                                    delay: 3000,
+                                    disableOnInteraction: false,
+                                }}
+                                pagination={{ clickable: true }}
+                                slidesPerView={1}
+                                speed={800}
+                                style={{ paddingBottom: "40px" }}
+                               >
+
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Deepak Soni</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="member">
-                                    <div className="pic">
-                                        <img src="assets/img/team-3.jpg" alt="" />
-                                    </div>
-                                    <div className="details">
-                                        <h4>William Anderson</h4>
-                                        <span>CTO</span>
-                                        <div className="social">
-                                            <a href="">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-facebook" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-google-plus" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-linkedin" />
-                                            </a>
+                                </SwiperSlide>
+                                <SwiperSlide>
+
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Anik Ranjan</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="member">
-                                    <div className="pic">
-                                        <img src="assets/img/team-4.jpg" alt="" />
-                                    </div>
-                                    <div className="details">
-                                        <h4>Amanda Jepson</h4>
-                                        <span>Accountant</span>
-                                        <div className="social">
-                                            <a href="">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-facebook" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-google-plus" />
-                                            </a>
-                                            <a href="">
-                                                <i className="fa fa-linkedin" />
-                                            </a>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Sudhanshu Kanwar</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Dharmesh Darshan</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Sakshi Rathor</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Shivam Gupta</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Pallavi Rathor </h4>
+                                            <span>Designer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Sandeep </h4>
+                                            <span>Designer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="team-member">
+                                        <div className="member-image">
+                                            <img
+                                                src="/path/to/default-image.jpg"
+                                                alt="Team Member"
+                                            />
+                                        </div>
+                                        <div className="member-details">
+                                            <h4>Hritwik</h4>
+                                            <span>Software Developer</span>
+                                            <p>A developer</p>
+                                            <div className="social-links">
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-instagram"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-facebook"></i>
+                                                </a>
+                                                <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-whatsapp"></i>
+                                                </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                    <i className="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+
+                            </Swiper>
                         </div>
                     </div>
                 </section>

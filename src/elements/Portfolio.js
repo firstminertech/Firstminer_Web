@@ -53,6 +53,87 @@ const Portfolio = () => {
             <p>Veda Learning App: Intuitive design for a learning management system.</p>
           </div>
         </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Major Kalshi Classes app interface"
+            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Social media app interface"
+            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Major Kalshi Classes app interface"
+            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Social media app interface"
+            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Veda learning app interface"
+            src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Veda Learning App: Intuitive design for a learning management system.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Major Kalshi Classes app interface"
+            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Social media app interface"
+            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
+          </div>
+        </div>
+
+        <div className="portfolio-item">
+          <img
+            alt="Veda learning app interface"
+            src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Veda Learning App: Intuitive design for a learning management system.</p>
+          </div>
+        </div>
+
       </div>
 
       <div className="online-button">Online</div>
