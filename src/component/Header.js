@@ -69,7 +69,7 @@ const Header = () => {
                 <Link to="#">Drop Down</Link>
                 <ul>
                   <li><Link to="/clients">Client</Link></li>
-                  <li><Link to="#">Drop Down 2</Link></li>
+                  <li><Link to="/testimonial">Testimonial</Link></li>
                   <li><Link to="#">Drop Down 3</Link></li>
                   <li><Link to="#">Drop Down 4</Link></li>
                 </ul>

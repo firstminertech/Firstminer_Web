@@ -1,76 +1,64 @@
-import React, { useEffect, useRef } from 'react';
-import Swipe from 'swipejs'; // Import Swipe.js
+import React from 'react';
 import Header from '../component/Header';
 
 const Portfolio = () => {
-  // Create a reference for the swipe container
-  const swipeRef = useRef(null);
-
-  useEffect(() => {
-    // Initialize Swipe.js after the component mounts
-    const swipe = new Swipe(swipeRef.current, {
-      startSlide: 0, // Start on the first slide
-      speed: 400, // Slide transition speed
-      auto: 3000, // Autoplay every 3 seconds
-      continuous: true, // Infinite loop
-      disableScroll: true, // Allow scroll
-      stopPropagation: true, // Prevent swipe propagation
-    });
-
-    // Cleanup on component unmount
-    return () => {
-      swipe.kill(); // Cleanup Swipe.js when component unmounts
-    };
-  }, []);
-
   return (
     <div>
-      <Header />
-      <div className="custom-container">
-        <div className="portfolio-wrapper custom-bg-screen">
-          <div className="icon-wrapper custom-padding">
-            <img src="assets/img/logo-final.png" className="custom-icon-circle" width={80} alt="Logo" />
+      <Header/>
+      <section id="home" className="intro-section">
+        <div className="container">
+          <h1 className="heading">Welcome to Our Portfolio</h1>
+          <p className="subheading">
+            We offer a wide range of professional services tailored to your
+            needs. Explore what we can do for you!
+          </p>
+        </div>
+      </section>
+      <div className="portfolio-container">
+      <div className="buttons">
+        <button className="portfolio-btn">Show All</button>
+        <button className="portfolio-btn">UI/UX Design</button>
+        <button className="portfolio-btn">Web App</button>
+        <button className="portfolio-btn">Mobile App</button>
+        <button className="portfolio-btn">Govt. Projects</button>
+      </div>
+
+      <div className="portfolio">
+        <div className="portfolio-item">
+          <img
+            alt="Major Kalshi Classes app interface"
+            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
           </div>
+        </div>
 
-          <div className="custom-text-center">
-            <h1 className="custom-title">Firstminer Portfolio</h1>
-            <p className="custom-subtitle">Web Development | Design | Photography</p>
+        <div className="portfolio-item">
+          <img
+            alt="Social media app interface"
+            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
           </div>
+        </div>
 
-          {/* Swipe.js carousel container */}
-          <div className="custom-carousel" ref={swipeRef}>
-            <div className="swipe-wrap">
-              {/* Project 1 */}
-              <div className="custom-card">
-                <img src="https://graphicdesigneye.com/images/banner-design-52.jpg" className="custom-card-img" alt="Project 1" />
-                <div className="custom-card-body">
-                  <h3 className="custom-card-title">Project 1</h3>
-                  <p className="custom-card-text">Description of Project 1. This project focuses on web development using React and Node.js.</p>
-                </div>
-              </div>
-
-              {/* Project 2 */}
-              <div className="custom-card">
-                <img src="https://graphicdesigneye.com/images/banner-design-52.jpg" className="custom-card-img" alt="Project 2" />
-                <div className="custom-card-body">
-                  <h3 className="custom-card-title">Project 2</h3>
-                  <p className="custom-card-text">Description of Project 2. This design-focused project includes UI/UX principles.</p>
-                </div>
-              </div>
-
-              {/* Project 3 */}
-              <div className="custom-card">
-                <img src="https://graphicdesigneye.com/images/banner-design-52.jpg" className="custom-card-img" alt="Project 2" />
-                <div className="custom-card-body">
-                  <h3 className="custom-card-title">Project 2</h3>
-                  <p className="custom-card-text">Description of Project 2. This design-focused project includes UI/UX principles.</p>
-                </div>
-              </div>
-            </div>
+        <div className="portfolio-item">
+          <img
+            alt="Veda learning app interface"
+            src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
+          />
+          <div className="portfolio-description">
+            <p>Veda Learning App: Intuitive design for a learning management system.</p>
           </div>
         </div>
       </div>
+
+      <div className="online-button">Online</div>
     </div>
+    </div>
+
   );
 };
 

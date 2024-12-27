@@ -14,6 +14,7 @@ import ShoowClients from './pages/admin/clients/ShowClients';
 import AddClient from './pages/admin/clients/AddClient';
 import ClientPage from './elements/ClientPage';
 import Portfolio from './elements/Portfolio';
+import TestimonialPage from './pages/Testimonials_Page';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <Route exact path="/service" element={<Service/>}/>
     <Route exact path="/clients" element={<ClientPage/>}/>
     <Route exact path="/portfolio" element={<Portfolio/>}/>
+    <Route exact path="/testimonial" element={<TestimonialPage/>}/>
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
     <Route exact path="/admin/add-team" element={<CreateTeam/>}/>
