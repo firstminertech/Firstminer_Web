@@ -7,21 +7,27 @@ function AboutUs() {
         <div>
             {/* Header Section */}
             <Header />
-
+            {/* Introduction Section */}
+      <section id="home" className="intro-section">
+        <div className="container">
+          <h1 className="heading">Welcome to About</h1>
+          <p className="subheading">
+          We pursue relationships based on transparency, persistence, mutual trust, and integrity with our employees, customers and other business partners.
+          </p>
+        </div>
+      </section>
             {/* About Section */}
             <section id="about" className="py-5 bg-light">
                 <div className="Edigibaba">
                     <div className="container text-center">
-                        <h2 className="about fw-bold">About Us</h2>
-                        <p className=" mt-3 fw-bold">
-                            "We pursue relationships based on transparency, persistence,
-                            mutual trust, and integrity with our employees, customers and other business partners."</p>
+                        <h2 className="about fw-bold mb-4 fs-1">About Us</h2>
+                        
 
 
                         <section className="about aos-init aos-animate" data-aos="fade-up">
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-lg-12">
+                                    <div className="col-lg-12 para2">
                                         <h3
                                             style={{
                                                 fontFamily: 'Georgia',
@@ -37,11 +43,10 @@ function AboutUs() {
                                     </div>
                                 </div>
                                 <br />
-                                <br />
-                                <br />
+                                
 
                                 <div className="row">
-                                    <div className="col-lg-6">
+                                    <div className="mb-5">
                                         <img
                                             src="assets/img/EdigitalbabaLOGO.webp"
                                             alt="Team Member"
@@ -49,11 +54,11 @@ function AboutUs() {
                                             style={{ borderColor: "#28c3b4" }}
                                         />
                                         <br />
-                                        <h4 style={{ fontFamily: 'Georgia' }}>
+                                        <h4 className="technology" style={{ fontFamily: 'Georgia' }}>
                                             <b>Power By:-<br /> Firstminer Technology Solutions Pvt. Ltd.</b>
                                         </h4>
                                     </div>
-                                    <div className="col-lg-6 pt-4 pt-lg-0">
+                                    <div className="paragraph1">
                                         <p
                                             className="fst-italic"
                                             style={{
@@ -126,27 +131,27 @@ function AboutUs() {
                     <div className="row mt-4">
                         <div className="col-md-4 text-center">
                             <img
-                                src="https://via.placeholder.com/150"
+                                src="./assets/img/testy3-1.png"
                                 alt="Team Member"
-                                className="rounded-circle mb-3"
+                                className="rounded-circle mb-3 testmonial22"
                             />
                             <h5>John Doe</h5>
                             <p>CEO</p>
                         </div>
                         <div className="col-md-4 text-center">
                             <img
-                                src="https://via.placeholder.com/150"
+                                src="./assets/img/testimonial-1.jpg"
                                 alt="Team Member"
-                                className="rounded-circle mb-3"
+                                className="rounded-circle mb-3 testmonial22"
                             />
                             <h5>Jane Smith</h5>
                             <p>CTO</p>
                         </div>
                         <div className="col-md-4 text-center">
                             <img
-                                src="https://via.placeholder.com/150"
+                                src="./assets/img/testimonial-2.jpg"
                                 alt="Team Member"
-                                className="rounded-circle mb-3"
+                                className="rounded-circle mb-3 testmonial22"
                             />
                             <h5>Michael Brown</h5>
                             <p>COO</p>
@@ -168,7 +173,7 @@ function AboutUs() {
             </section> */}
             <section id="team" className=" Ourskils py-5 bg-light">
                 <div className="container">
-                    <h2 className="text-center">Our Skils</h2>
+                    <h2 className="text-center">Our Skills</h2>
                     <div className="row mt-4">
 
                     </div>
