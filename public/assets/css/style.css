@@ -699,14 +699,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #clients img {
     max-width: 100%;
-    opacity: 0.5;
-    transition: 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     padding: 15px 0;
 }
 
 #clients img:hover {
+    transform: scale(1.05); /* Slightly zoom in */
     opacity: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
+
 
 #clients .owl-nav,
 #clients .owl-dots {
@@ -2119,3 +2121,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
   /* Footer */
+
+
+  .fixed-img1
+  {
+    width: 400px;
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  .username10
+  {
+    font-family: 'auto';
+  }
