@@ -4,15 +4,16 @@ const PrimaryHeader = () => {
   return (
     <div>
       <section id="topbar" className="d-none d-lg-block">
-        <div className="container clearfix">
+        <div className="container">
           <div className="row">
             {/* Contact Info */}
             <div className="col-md-6">
-              <div className="contact-info gap-3 d-flex">
+              <div className="contact-info d-flex gap-3">
                 {/* Updated to Font Awesome 6 icons */}
                 <i className="fas fa-envelope" />
-                <a href="mailto:contact@example.com">contact@example.com</a>
+                <a href="mailto:firstminertech@gmail.com">firstminertech@gmail.com</a>
                 <i className="fas fa-phone-alt" /> +91 7000262816
+                
               </div>
             </div>
 

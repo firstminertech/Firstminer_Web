@@ -1518,16 +1518,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(45deg, rgba(6, 69, 173, 0.8), rgba(0, 167, 164, 0.8)), url('https://via.placeholder.com/1600x900');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 120px 0;
-    position: relative;
-    animation: fadeInUp 1s ease-out;
+  background: linear-gradient(45deg, rgba(6, 69, 173, 0.8), rgba(4, 132, 130, 0.8)), url('../img/bg-sub.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+  animation: fadeInUp 1s ease-out;
 }
-
 .hero-title {
     font-size: 3.8rem;
     font-weight: 700;
@@ -2073,7 +2070,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Social media icons styling */
 .social-links {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .social-links a {
@@ -2125,10 +2122,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   
   /* Header & Intro Section */
   .intro-section {
-    background-color: #379dbf; /* Light Blue */
+    background: linear-gradient(45deg, rgba(6, 69, 173, 0.8), rgba(4, 132, 130, 0.8)), url('../img/bg-sub.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 50px 20px;
+    height: 250px;
   }
   
   .intro-section .heading {

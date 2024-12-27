@@ -12,7 +12,7 @@ const ContactPage = () => {
     // Function to handle form submission
     const handleSubmit = async (values, { resetForm }) => {
         setLoading(true);
-        console.log(values,"values");
+        console.log(values, "values");
         setIsSuccess(false); // Reset success state before submitting
         try {
             // Call the addContact function from the website store and pass form values
@@ -43,21 +43,24 @@ const ContactPage = () => {
                             <div className="contact-address">
                                 <i className="ion-ios-location-outline display-4 mb-2" />
                                 <h3>Address</h3>
-                                <address>A108 Adam Street, NY 535022, USA</address>
+                                <address>Firstminer Technology Solutions Pvt. Ltd,
+                                    3rd floor RK Complex,, Jagdamba colony,Seepat Road
+                                    Bilaspur 495001 (CG)</address>
                             </div>
                         </div>
                         <div className="col-md-4 mb-3">
                             <div className="contact-phone">
                                 <i className="ion-ios-telephone-outline display-4 mb-2" />
                                 <h3>Phone Number</h3>
-                                <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                                <p><a href="tel:+155895548855">+918085583055 <br/>
+                                    +917752358727</a></p>
                             </div>
                         </div>
                         <div className="col-md-4 mb-3">
                             <div className="contact-email">
                                 <i className="ion-ios-email-outline display-4 mb-2" />
                                 <h3>Email</h3>
-                                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                <p><a href="mailto:info@example.com">firstminertech@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
