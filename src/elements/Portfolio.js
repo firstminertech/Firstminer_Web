@@ -14,7 +14,7 @@ const Portfolio = () => {
           </p>
         </div>
       </section>
-      <div className="portfolio-container">
+      <div className="portfolio-container mt-3">
       <div className="buttons">
         <button className="portfolio-btn">Show All</button>
         <button className="portfolio-btn">UI/UX Design</button>

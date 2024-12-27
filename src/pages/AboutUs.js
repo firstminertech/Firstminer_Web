@@ -21,8 +21,31 @@ function AboutUs() {
                 <div className="Edigibaba">
                     <div className="container text-center">
                        
+                        {/* <h2 className="about fw-bold mb-4 fs-1">About Us</h2> */}
+                        
+
+
                         <section className="about aos-init aos-animate" data-aos="fade-up">
                             <div className="container">
+                                {/* <div className="row">
+                                    <div className="col-lg-12 para2">
+                                        <h3
+                                            style={{
+                                                fontFamily: 'Georgia',
+                                                fontSize: '20px',
+                                                textAlign: 'center',
+                                            }}
+                                        >
+                                            <b>
+                                                "We pursue relationships based on transparency, persistence, mutual trust,
+                                                and integrity with our employees, customers and other business partners."
+                                            </b>
+                                        </h3>
+                                    </div>
+                                </div> */}
+                             
+                                
+
                                 <div className="row">
                                     <div className="mb-5">
                                         <img

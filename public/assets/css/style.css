@@ -1993,7 +1993,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     margin-bottom: 50px;
     color: #333;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'auto';
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -2231,24 +2231,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   .buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 129px;
     margin-bottom: 30px;
   }
   
   /* Styling for each button */
   .portfolio-btn {
-    background-color: #007BFF;
+    background-color:#379dbf;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .portfolio-btn:hover {
-    background-color: #0056b3;
+    background-color: #127191; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+     /* Border color change */
+    transform: scale(1.07); /* Slightly increase size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
   }
   
   /* Portfolio grid layout */
@@ -2475,4 +2479,24 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: auto;
     object-fit: cover;
     border: 1px solid darkgray;
+  }
+
+  .client-title {
+    font-size: 52px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-family: 'auto';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.client-para {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
   }
