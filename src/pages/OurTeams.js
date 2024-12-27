@@ -21,33 +21,35 @@ const OurTeams = observer(() => {
     }
 
     const isValidImageUrl = (url) => {
-        return url && (url.includes(".jpg") || url.includes(".jpeg") || url.includes(".png") || url.includes(".gif")|| url.includes("https://"));
+        return url && (url.includes(".jpg") || url.includes(".jpeg") || url.includes(".png") || url.includes(".gif") || url.includes("https://"));
     };
 
     return (
         <div>
-        <Header/>
-        <section id="team" className="wow fadeInUp">
-            <div className="container">
-                <div className="section-header">
-                    <h2>Our Team</h2>
-                </div>
-                <div className="row">
-                    {teamDetails.map((team, index) => (
-                        <div className="col-lg-3 col-md-6" key={team?.id || index}>
-                            <div className="member">
-                                <div className="pic">
-                                    <img   src={
-                                                team?.image && isValidImageUrl(team?.image)
-                                                    ? BASE_FILE_URL+team?.image
-                                                    : "/path/to/default-image.jpg"
-                                            } />
+            <Header />
+            <section className="team-section">
+                <div className="container">
+                    <div className="section-header">
+                        <h2>Our Team</h2>
+                    </div>
+                    <div className="team-grid">
+                        {teamDetails.map((team, index) => (
+                            <div className="team-member" key={team?.id || index}>
+                                <div className="member-image">
+                                    <img
+                                        src={
+                                            team?.image && isValidImageUrl(team?.image)
+                                                ? BASE_FILE_URL + team?.image
+                                                : "/path/to/default-image.jpg"
+                                        }
+                                        alt={team?.name || "Team Member"}
+                                    />
                                 </div>
-                                <div className="details">
+                                <div className="member-details">
                                     <h4>{team?.name || "Team Member"}</h4>
                                     <span>{team?.position || "Position"}</span>
                                     <p>{team?.description || "Description not available."}</p>
-                                    <div className="social">
+                                    <div className="social-links">
                                         {team?.instagram && (
                                             <a href={team?.instagram} target="_blank" rel="noopener noreferrer">
                                                 <i className="fa-brands fa-instagram"></i>
@@ -71,12 +73,11 @@ const OurTeams = observer(() => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     );
 });
 
