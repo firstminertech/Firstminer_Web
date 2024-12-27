@@ -51,9 +51,6 @@ const Header = () => {
                 <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={"/careers"}>Careers</Link>
-              </li>
-              <li>
                 <Link to={"/about"}>About Us</Link>
               </li>
               <li>
@@ -66,13 +63,14 @@ const Header = () => {
                 <Link to={"/our-teams"}>Team</Link>
               </li>
               <li className="menu-has-children">
-                <Link to="#">Drop Down</Link>
+                <Link to="#">More</Link>
                 <ul>
                   <li><Link to="/clients">Client</Link></li>
                   <li><Link to="/testimonial">Testimonial</Link></li>
-                  <li><Link to="#">Drop Down 3</Link></li>
-                  <li><Link to="#">Drop Down 4</Link></li>
                 </ul>
+              </li>
+              <li>
+                <Link to={"/careers"}>Careers</Link>
               </li>
               <li>
                 <Link to={"/contact"}>Contact</Link>

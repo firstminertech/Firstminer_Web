@@ -6,23 +6,7 @@ import Header from "../component/Header";
 import { BASE_FILE_URL } from "../api/config";
 
 const OurTeams = observer(() => {
-    const [teamDetails, setTeamDetails] = useState([]);
-
-    useEffect(() => {
-        setTeamDetails(toJS(websiteStore?.data?.teams));
-    }, [websiteStore?.data?.teams]);
-
-    useEffect(() => {
-        websiteStore?.getTeams();
-    }, []);
-
-    if (teamDetails.length === 0) {
-        return <div>Loading...</div>;
-    }
-
-    const isValidImageUrl = (url) => {
-        return url && (url.includes(".jpg") || url.includes(".jpeg") || url.includes(".png") || url.includes(".gif") || url.includes("https://"));
-    };
+    
 
     return (
         <div>
@@ -33,47 +17,248 @@ const OurTeams = observer(() => {
                         <h2>Our Team</h2>
                     </div>
                     <div className="team-grid">
-                        {teamDetails.map((team, index) => (
-                            <div className="team-member" key={team?.id || index}>
+                     
+                         
+
+                            <div className="team-member">
                                 <div className="member-image">
                                     <img
-                                        src={
-                                            team?.image && isValidImageUrl(team?.image)
-                                                ? BASE_FILE_URL + team?.image
-                                                : "/path/to/default-image.jpg"
-                                        }
-                                        alt={team?.name || "Team Member"}
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
                                     />
                                 </div>
                                 <div className="member-details">
-                                    <h4>{team?.name || "Team Member"}</h4>
-                                    <span>{team?.position || "Position"}</span>
-                                    <p>{team?.description || "Description not available."}</p>
+                                    <h4>Deepak Soni</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
                                     <div className="social-links">
-                                        {team?.instagram && (
-                                            <a href={team?.instagram} target="_blank" rel="noopener noreferrer">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
                                                 <i className="fa-brands fa-instagram"></i>
                                             </a>
-                                        )}
-                                        {team?.facebook && (
-                                            <a href={team?.facebook} target="_blank" rel="noopener noreferrer">
+                                        <a href="" target="_blank" rel="noopener noreferrer">
                                                 <i className="fa-brands fa-facebook"></i>
                                             </a>
-                                        )}
-                                        {team?.whatsapp && (
-                                            <a href={team?.whatsapp} target="_blank" rel="noopener noreferrer">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
                                                 <i className="fa-brands fa-whatsapp"></i>
-                                            </a>
-                                        )}
-                                        {team?.linkedin && (
-                                            <a href={team?.linkedin} target="_blank" rel="noopener noreferrer">
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
                                                 <i className="fa-brands fa-linkedin"></i>
                                             </a>
-                                        )}
                                     </div>
                                 </div>
                             </div>
-                        ))}
+
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Anik Ranjan</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Sudhanshu Kanwar</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Dharmesh Darshan</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Sakshi Rathor</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Shivam Gupta</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Pallavi Rathor </h4>
+                                    <span>Designer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Sandeep </h4>
+                                    <span>Designer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="team-member">
+                                <div className="member-image">
+                                    <img
+                                        src="/path/to/default-image.jpg"
+                                        alt="Team Member"
+                                    />
+                                </div>
+                                <div className="member-details">
+                                    <h4>Hritwik</h4>
+                                    <span>Software Developer</span>
+                                    <p>A developer</p>
+                                    <div className="social-links">
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-instagram"></i>
+                                            </a>
+                                        <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-whatsapp"></i>
+                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
+                                                <i className="fa-brands fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
                     </div>
                 </div>
             </section>

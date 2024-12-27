@@ -43,5 +43,4 @@ const PrimaryHeader = () => {
     </div>
   );
 };
-
 export default PrimaryHeader;
