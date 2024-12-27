@@ -2134,3 +2134,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   {
     font-family: 'auto';
   }
+
+  .technology
+  {
+    color: #198754;
+  }
+
+  .paragraph1 
+  {
+    color: #6c757d;
+    text-align: justify;
+  }
+
+  .para2
+  {
+    color:#6c757d
+  }
+  .testmonial22
+  {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid darkgray;
+  }
