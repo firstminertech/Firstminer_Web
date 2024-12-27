@@ -15,6 +15,7 @@ import AddClient from './pages/admin/clients/AddClient';
 import ClientPage from './elements/ClientPage';
 import Portfolio from './elements/Portfolio';
 import TestimonialPage from './pages/Testimonials_Page';
+import OurClient from './pages/OurClient';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
     <Route exact path="/our-teams" element={<OurTeams/>}/>
     <Route exact path="/about" element={<AboutUs/>}/>
     <Route exact path="/service" element={<Service/>}/>
-    <Route exact path="/clients" element={<ClientPage/>}/>
+    <Route exact path="/clients" element={<OurClient/>}/>
     <Route exact path="/portfolio" element={<Portfolio/>}/>
     <Route exact path="/testimonial" element={<TestimonialPage/>}/>
 

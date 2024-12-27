@@ -33,18 +33,8 @@ const ClientPage = observer(() => {
 
   return (
     <div>
-      <Header />
       <section id="clients" className="wow fadeInUp">
         <div className="container">
-          <div className="section-header">
-            <h2>Clients</h2>
-            <p>
-              Sed tamen tempor magna labore dolore dolor sint tempor duis magna
-              elit veniam aliqua esse amet veniam enim export quid quid veniam
-              aliqua eram noster malis nulla duis fugiat culpa esse aute nulla
-              ipsum velit export irure minim illum fore
-            </p>
-          </div>
           {/* <div className="clients-carousel owl-carousel">
             {clients.map((client, index) => (
               <ClientCard key={index} image={client.src} altText={client.alt} />

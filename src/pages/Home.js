@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { observer } from 'mobx-react';
 import Header from "../component/Header";
 import Footer from "../component/Footer";
@@ -7,21 +7,35 @@ import ClientPage from "../elements/ClientPage";
 import websiteStore from "../store/WebsiteStore";
 import Slider from "react-slick";
 import Testimonials from "../elements/Testimonials";
+import { useSpring, animated, useTransition } from '@react-spring/web';
 
 const HomePage = observer(() => {
     useEffect(() => {
         websiteStore?.getTeams();
     }, [])
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-    };
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        setShow(true); // Trigger the animation when the component mounts
+    }, []);
+
+    // Transition for the entire content
+    const transitions = useTransition(show, {
+        from: { opacity: 0, transform: 'translateY(50px)' },
+        enter: { opacity: 1, transform: 'translateY(0)' },
+        leave: { opacity: 0, transform: 'translateY(50px)' },
+        config: { tension: 180, friction: 12 },
+    });
+
+    // Transition for the image with slight delay
+    const imageTransition = useTransition(show, {
+        from: { opacity: 0, transform: 'translateY(50px)' },
+        enter: { opacity: 1, transform: 'translateY(0)' },
+        leave: { opacity: 0, transform: 'translateY(50px)' },
+        config: { tension: 180, friction: 12 },
+        delay: 300, // Slight delay for image
+    });
     return (
         <div>
             <Header />
@@ -39,36 +53,46 @@ const HomePage = observer(() => {
                 <section id="about" className="wow fadeInUp">
                     <div className="container">
                         <div className="row">
+                            {/* Animated Image */}
                             <div className="col-lg-6 about-img">
-                                <img src="assets/img/about-img.jpg" alt="" />
+                                {imageTransition((style, item) =>
+                                    item ? (
+                                        <animated.img
+                                            src="assets/img/about-img.jpg"
+                                            alt=""
+                                            style={style}
+                                        />
+                                    ) : null
+                                )}
                             </div>
+
+                            {/* Animated Content */}
                             <div className="col-lg-6 content">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-                                <h3>
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                    officia deserunt mollit anim id est laborum.
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i className="ion-android-checkmark-circle" /> Ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </li>
-                                    <li>
-                                        <i className="ion-android-checkmark-circle" /> Duis aute irure
-                                        dolor in reprehenderit in voluptate velit.
-                                    </li>
-                                    <li>
-                                        <i className="ion-android-checkmark-circle" /> Ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                        in reprehenderit in voluptate trideta storacalaperda mastiro
-                                        dolore eu fugiat nulla pariatur.
-                                    </li>
-                                </ul>
+                                {transitions((style, item) =>
+                                    item ? (
+                                        <>
+                                            <animated.h2 style={style}>
+                                            Firstminer Technology Solutions Pvt. Ltd .
+                                            </animated.h2>
+                                            <animated.h3 style={style}>
+                                            Our team of specialists consistently delivers outstanding results combining creative ideas with our vast experience. We can help you build a sustainable, meaningful relationship with your clients by engaging them with your brand using social media.
+                                            </animated.h3>
+                                            <ul>
+                                                <li>
+                                                    <i className="ion-android-checkmark-circle" /> Our team develops effective content strategies for forward thinking companies. We have a proven track record in increasing search engine rankings.
+                                                </li>
+                                                <li>
+                                                    <i className="ion-android-checkmark-circle" />Our digital marketing, Mobile Application Development, Website Development work speaks for itself. We deliver an outstanding service custom-tailored to each and every one of our clients.
+                                                </li>
+                                                
+                                            </ul>
+                                        </>
+                                    ) : null
+                                )}
                             </div>
                         </div>
                     </div>
                 </section>
-
                 {/* #about */}
 
                 <section id="services">
@@ -108,7 +132,7 @@ const HomePage = observer(() => {
                                     <h4 className="title">
                                         <a href="">App Development</a>
                                     </h4>
-                                   
+
                                     <p className="description">
 
                                         your unique ideas transforming into incredible apps for your business requirements.
@@ -125,7 +149,7 @@ const HomePage = observer(() => {
                                     <h4 className="title">
                                         <a href="">Web Development</a>
                                     </h4>
-                                   
+
                                     <p className="description">
                                         A website should not just draw attention.
                                         The role of a website is to attract and engage the user,
@@ -142,7 +166,7 @@ const HomePage = observer(() => {
                                     <h4 className="title">
                                         <a href="">Project Explainatin & Video Creation</a>
                                     </h4>
-                                    
+
                                     <p className="description">
                                         High-quality video ads can easily generate traffic of customers.
                                         Do not stick with traditional marketing,
@@ -204,7 +228,7 @@ const HomePage = observer(() => {
 
                 <ClientPage />
 
-                <Testimonials/>
+                <Testimonials />
 
 
                 <section id="call-to-action" className="wow fadeInUp">
