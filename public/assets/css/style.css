@@ -1002,6 +1002,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 10px;
     border: 3px solid #fff;
     color: #fff;
+    text-decoration: none;
 }
 
 #call-to-action .cta-btn:hover {
@@ -1548,7 +1549,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .hero-description {
     font-size: 1.3rem;
     margin-top: 20px;
-    color: #50bb92; /* Light Green */
+    color: #50d8af; /* Light Green */
     animation: fadeIn 1.2s ease-out;
 }
 
@@ -1651,8 +1652,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .btn-apply:hover {
-    background-color: #50bb92; /* Light Green */
+    background-color: #2eb2ac; /* Light Green */
     transform: scale(1.05);
+    color: white;
 }
 
 /* Benefits Section */
@@ -1735,7 +1737,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .apply-description {
     font-size: 1.25rem;
     margin-top: 20px;
-    color: #50bb92; /* Light Green */
+    color: #50d8af; /* Light Green */
 }
 
 .btn-cta {
@@ -1752,8 +1754,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .btn-cta:hover {
-    background-color: #50bb92; /* Light Green */
+    background-color: #2eb2ac; /* Light Green */
     transform: scale(1.05);
+    color: white;
 }
 
 /* Navbar */
