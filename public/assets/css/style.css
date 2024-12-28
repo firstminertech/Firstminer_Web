@@ -378,7 +378,6 @@ h6 {
 }
 
 .nav-menu ul {
-    margin: 4px 0 0 0;
     padding: 10px;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     background: #fff;
@@ -1261,6 +1260,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     .social-links a {
       font-size: 14px;
     }
+
+    .nav-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column !important;
+    }
   }
 
   
@@ -1519,16 +1526,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(45deg, rgba(6, 69, 173, 0.8), rgba(0, 167, 164, 0.8)), url('https://via.placeholder.com/1600x900');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 120px 0;
-    position: relative;
-    animation: fadeInUp 1s ease-out;
+  background: linear-gradient(45deg, rgba(6, 69, 173, 0.8), rgba(4, 132, 130, 0.8)), url('../img/bg-sub.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+  animation: fadeInUp 1s ease-out;
 }
-
 .hero-title {
     font-size: 3.8rem;
     font-weight: 700;
@@ -2015,6 +2019,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     cursor: pointer;
+    width: 343px;
 }
 
 /* Image section of the team member */
@@ -2076,7 +2081,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Social media icons styling */
 .social-links {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .social-links a {
@@ -2128,10 +2133,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   
   /* Header & Intro Section */
   .intro-section {
-    background-color: #379dbf; /* Light Blue */
+    background: linear-gradient(45deg, rgba(6, 69, 173, 0.8), rgba(4, 132, 130, 0.8)), url('../img/bg-sub.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 50px 20px;
+    height: 250px;
   }
   
   .intro-section .heading {
@@ -2498,3 +2504,109 @@ body.mobile-nav-active #mobile-nav-toggle {
     max-width: 800px;
     margin: 0 auto;
   }
+
+
+  /* portfolio for home page */
+
+  .box-left {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-team {
+    font-size: 48px;
+    color: #4CAF50; /* Green color for the icon */
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .title-y {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-link {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .team-link:hover {
+    color: #0056b3;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect on box-left */
+  .box-left:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Hover effect on icon-team */
+  .icon-team:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.1);
+  }
+
+
+.title-z {
+    font-size: 4em;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+.button-z {
+    margin-top: 20px;
+}
+.button-z a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0044cc, #000066);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation i {
+    font-size: 2em;
+    color: #000;
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navigation i:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.team-home{
+  background: linear-gradient(to right, #0044cc, #9f9ffa);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}

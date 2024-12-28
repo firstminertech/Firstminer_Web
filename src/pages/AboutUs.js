@@ -20,6 +20,7 @@ function AboutUs() {
             <section id="about" className="py-5 bg-light">
                 <div className="Edigibaba">
                     <div className="container text-center">
+                       
                         {/* <h2 className="about fw-bold mb-4 fs-1">About Us</h2> */}
                         
 
@@ -129,32 +130,24 @@ function AboutUs() {
                 <div className="container">
                     <h2 className="text-center">Testimonials</h2>
                     <div className="row mt-4">
-                        <div className="col-md-4 text-center">
-                            <img
-                                src="./assets/img/testy3-1.png"
-                                alt="Team Member"
-                                className="rounded-circle mb-3 testmonial22"
-                            />
-                            <h5>John Doe</h5>
-                            <p>CEO</p>
-                        </div>
-                        <div className="col-md-4 text-center">
+                      
+                        <div className="col-md-6 text-center">
                             <img
                                 src="./assets/img/testimonial-1.jpg"
                                 alt="Team Member"
                                 className="rounded-circle mb-3 testmonial22"
                             />
-                            <h5>Jane Smith</h5>
-                            <p>CTO</p>
+                            <h5>Yugal Kishor Gendle</h5>
+                            <p>Founder & CEO</p>
                         </div>
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-6 text-center">
                             <img
                                 src="./assets/img/testimonial-2.jpg"
                                 alt="Team Member"
                                 className="rounded-circle mb-3 testmonial22"
                             />
-                            <h5>Michael Brown</h5>
-                            <p>COO</p>
+                            <h5>Harish Giri</h5>
+                            <p>Founder & CEO</p>
                         </div>
                     </div>
                 </div>
