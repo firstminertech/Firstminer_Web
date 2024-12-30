@@ -9,24 +9,25 @@ const ContactPage = () => {
     const [isSuccess, setIsSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    // Function to handle form submission
-    const handleSubmit = async (values, { resetForm }) => {
+     // Function to handle form submission using mailto
+     const handleSubmit = (values, { resetForm }) => {
         setLoading(true);
-        console.log(values, "values");
         setIsSuccess(false); // Reset success state before submitting
-        try {
-            // Call the addContact function from the website store and pass form values
-            await websiteStore.addContact(values, () => {
-                setIsSuccess(true);  // On success, show success message
-                resetForm();          // Reset form
-            });
-        } catch (error) {
-            console.error("Error submitting contact:", error);
-            // Handle errors if needed
-        } finally {
-            setLoading(false); // Stop the loading indicator
-        }
+
+        // Construct the mailto link with form values
+        const subject = encodeURIComponent(values.subject);
+        const body = encodeURIComponent(`Name: ${values.name}\nEmail: ${values.email}\n\nMessage: ${values.message}`);
+        const mailtoLink = `mailto:firstminertech@gmail.com?subject=${subject}&body=${body}`;
+
+        // Open the default email client with the pre-filled email
+        window.location.href = mailtoLink;
+
+        // Reset the form and success state
+        resetForm();
+        setIsSuccess(true); // Indicate that the form was "successfully submitted" (even though it relies on the user's email client)
+        setLoading(false);
     };
+
 
     return (
         <div>
@@ -60,7 +61,7 @@ const ContactPage = () => {
                             <div className="contact-email">
                                 <i className="ion-ios-email-outline display-4 mb-2" />
                                 <h3>Email</h3>
-                                <p><a href="mailto:info@example.com">firstminertech@gmail.com</a></p>
+                                <p><a href="mailto:firstminertech@gmail.com">firstminertech@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -68,13 +69,13 @@ const ContactPage = () => {
                     <div className="contact-container">
                         <div className="col-md-6">
                             <div className="form-container">
-                                <h2 className="form-title">Contact Us</h2>
+                                <h2 className="form-title">For InQuery</h2>
                                 {isSuccess && (
                                     <Alert variant="success" className="success-alert">
                                         Your message has been sent. Thank you!
                                     </Alert>
                                 )}
-                                <Formik
+                                 <Formik
                                     initialValues={{
                                         name: "",
                                         email: "",

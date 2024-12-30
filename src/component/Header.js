@@ -40,7 +40,7 @@ const Header = () => {
 
             <h1>
               <Link to={"/" }className="scrollto">
-                First<span>miner</span>
+                First<span>Miner</span>
               </Link>
             </h1>
           </div>

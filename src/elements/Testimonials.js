@@ -38,8 +38,8 @@ const Testimonials = () => {
             <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
               <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
                 <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" />
-                Proin iaculis purus consequat sem cure dignissim donec porttitor entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
+
+                Yugal Kishor is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation. His dedication to excellence has driven the company’s growth and success. With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
                 src="assets/img/testimonial-1.jpg"
@@ -59,7 +59,8 @@ const Testimonials = () => {
             <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
               <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
                 <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" />
-                Proin iaculis purus consequat sem cure dignissim donec porttitor entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+
+                Harish Giri is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation. His dedication to excellence has driven the company’s growth and success. With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.                
                 <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
@@ -75,32 +76,12 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
 
-          {/* Third Slide */}
           <SwiperSlide>
             <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
               <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
                 <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" />
-                Proin iaculis purus consequat sem cure dignissim donec porttitor entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
-              </p>
-              <img
-                src="assets/img/testimonial-3.jpg"
-                className="testimonial-img rounded-circle mb-3"
-                alt=""
-                style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
-                onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
-                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
-              />
-              <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Deepak Soni</h3>
-              <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Sineor Developer</h4>
-            </div>
-          </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
-              <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
-                <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" />
-                Proin iaculis purus consequat sem cure dignissim donec porttitor entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                Anik Ranjan is a skilled Software Developer known for his expertise in problem-solving. With a passion for technology and innovation, he continuously strives to create efficient and user-friendly software solutions. Anik's dedication to his craft has made him a valuable contributor to the development industry.               
                 <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
@@ -121,8 +102,7 @@ const Testimonials = () => {
             <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
               <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
                 <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" />
-                Proin iaculis purus consequat sem cure dignissim donec porttitor entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
+                Sudhanshu Kanwar is a talented Developer with a passion for coding and technology. He specializes in creating innovative solutions and optimizing systems for improved functionality. Known for his problem-solving skills , Sudhanshu consistently contributes to the development of  software projects.                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
                 src="assets/img/testimonial-3.jpg"
@@ -140,8 +120,8 @@ const Testimonials = () => {
             <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
               <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
                 <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" />
-                Proin iaculis purus consequat sem cure dignissim donec porttitor entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
+                Dharmesh Darshan is a skilledDeveloper with a strong expertise in building innovative and efficient software solutions. His problem-solving abilities  help create seamless user experiences. Dharmesh is committed to continuous learning  high-quality work, making him a valuable asset to the tech community.
+<img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
                 src="assets/img/testimonial-3.jpg"

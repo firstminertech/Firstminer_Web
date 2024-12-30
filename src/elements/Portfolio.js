@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../component/Header';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   return (
@@ -57,7 +58,7 @@ const Portfolio = () => {
         <div className="portfolio-item">
           <img
             alt="Major Kalshi Classes app interface"
-            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+            src="https://storage.googleapis.com/a1aa/image/pxLCAsfDVBwVJqXtbZ1JpsWPp1UeuyPcAvVdkNtcacgbFBAUA.jpg"
           />
           <div className="portfolio-description">
             <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
@@ -67,27 +68,7 @@ const Portfolio = () => {
         <div className="portfolio-item">
           <img
             alt="Social media app interface"
-            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Major Kalshi Classes app interface"
-            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Social media app interface"
-            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+            src="https://storage.googleapis.com/a1aa/image/YrebfyuSSghzuEKBb3VCx5JT969NjtUufrKIZUmcijbyKCAoA.jpg"
           />
           <div className="portfolio-description">
             <p>Social Media App: A clean, user-friendly interface for social networking.</p>
@@ -97,7 +78,7 @@ const Portfolio = () => {
         <div className="portfolio-item">
           <img
             alt="Veda learning app interface"
-            src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
+            src="https://storage.googleapis.com/a1aa/image/jLBDyT9eTA2Abq5wIT3j0aPvcx7oixMp1fS08oTpopPdFBAUA.jpg"
           />
           <div className="portfolio-description">
             <p>Veda Learning App: Intuitive design for a learning management system.</p>
@@ -107,7 +88,7 @@ const Portfolio = () => {
         <div className="portfolio-item">
           <img
             alt="Major Kalshi Classes app interface"
-            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+            src="https://storage.googleapis.com/a1aa/image/8mZIBvibqGI0DtBOt5kiO9OvIlvlofNDlhBfWSsbyLDAfBAoA.jpg"
           />
           <div className="portfolio-description">
             <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
@@ -117,7 +98,7 @@ const Portfolio = () => {
         <div className="portfolio-item">
           <img
             alt="Social media app interface"
-            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+            src="https://storage.googleapis.com/a1aa/image/3fddt9rA0M3mGyXVvIQcvMM2ExYYJ2DYY1iNyTCPevVDfBAoA.jpg"
           />
           <div className="portfolio-description">
             <p>Social Media App: A clean, user-friendly interface for social networking.</p>
@@ -127,7 +108,7 @@ const Portfolio = () => {
         <div className="portfolio-item">
           <img
             alt="Veda learning app interface"
-            src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
+            src="https://storage.googleapis.com/a1aa/image/L0PAvcucUF6WEdendox7nAw5jvay1Sk4g0NMetPE0BZBfBAoA.jpg"
           />
           <div className="portfolio-description">
             <p>Veda Learning App: Intuitive design for a learning management system.</p>
@@ -136,7 +117,7 @@ const Portfolio = () => {
 
       </div>
 
-      <div className="online-button">Online</div>
+      <Link to='/contact'><div className="online-button">Contact</div></Link>
     </div>
     </div>
 

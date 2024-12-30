@@ -30,7 +30,7 @@ function CareerPage() {
                         <div className="job-card">
                             <div className="job-card-body">
                                 <h5 className="job-card-title">Autosar - Embedded Software Developer</h5>
-                                <p className="job-card-location">Georgia | Posted: 21 Dec 2024</p>
+                                <p className="job-card-location">Bilaspur | Posted: 31 Dec 2024</p>
                                 <p className="job-card-description">
                                     Develop infotainment products for the automotive domain.
                                 </p>
@@ -43,7 +43,7 @@ function CareerPage() {
                         <div className="job-card">
                             <div className="job-card-body">
                                 <h5 className="job-card-title">Full-Stack Web Developer</h5>
-                                <p className="job-card-location">Remote | Posted: 15 Dec 2024</p>
+                                <p className="job-card-location">Bilaspur | Posted: 31 Dec 2024</p>
                                 <p className="job-card-description">
                                     Work on web platforms and deliver seamless user experiences.
                                 </p>
@@ -56,7 +56,7 @@ function CareerPage() {
                         <div className="job-card">
                             <div className="job-card-body">
                                 <h5 className="job-card-title">UI/UX Designer</h5>
-                                <p className="job-card-location">New York | Posted: 10 Dec 2024</p>
+                                <p className="job-card-location">Bilaspur | Posted: 31 Dec 2024</p>
                                 <p className="job-card-description">
                                     Design user-friendly and visually appealing interfaces.
                                 </p>

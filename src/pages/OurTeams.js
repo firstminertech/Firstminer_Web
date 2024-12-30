@@ -17,36 +17,7 @@ const OurTeams = observer(() => {
                         <h2>Our Team</h2>
                     </div>
                     <div className="team-grid">
-                     
-                         
-
-                            <div className="team-member">
-                                <div className="member-image">
-                                    <img
-                                        src="./assets/img/testy3-1.png"
-                                        alt="Team Member"
-                                    />
-                                </div>
-                                <div className="member-details">
-                                    <h4>Deepak Soni</h4>
-                                    <span>Software Developer</span>
-                                    <p>A developer</p>
-                                    <div className="social-links">
-                                            <a href="" target="_blank" rel="noopener noreferrer">
-                                                <i className="fa-brands fa-instagram"></i>
-                                            </a>
-                                        <a href="" target="_blank" rel="noopener noreferrer">
-                                                <i className="fa-brands fa-facebook"></i>
-                                            </a>
-                                            <a href="" target="_blank" rel="noopener noreferrer">
-                                                <i className="fa-brands fa-whatsapp"></i>
-                                            </a> <a href="" target="_blank" rel="noopener noreferrer">
-                                                <i className="fa-brands fa-linkedin"></i>
-                                            </a>
-                                    </div>
-                                </div>
-                            </div>
-
+                    
                             <div className="team-member">
                                 <div className="member-image">
                                     <img
