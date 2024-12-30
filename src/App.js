@@ -17,6 +17,10 @@ import Portfolio from './elements/Portfolio';
 import TestimonialPage from './pages/Testimonials_Page';
 import OurClient from './pages/OurClient';
 import Abvv from './pages/portfolioSubPage/Abvv';
+import Jinni from './pages/portfolioSubPage/Jinni';
+import OutreachApp from './pages/portfolioSubPage/OutreachApp';
+import OutreachWeb from './pages/portfolioSubPage/OutreachWeb ';
+
 
 
 function App() {
@@ -33,6 +37,9 @@ function App() {
     <Route exact path="/portfolio" element={<Portfolio/>}/>
     <Route exact path="/testimonial" element={<TestimonialPage/>}/>
     <Route exact path="/abvv-subpage" element={<Abvv/>}/>
+    <Route exact path="/jinni-subpage" element={<Jinni />}/>
+    <Route exact path="/outreach-app-subpage" element={<OutreachApp />}/>
+    <Route exact path="/outreach-web-subpage" element={<OutreachWeb />}/>
     
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
