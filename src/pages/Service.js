@@ -28,49 +28,44 @@ function Service() {
             <div className="service-card">
               <h5 className="service-title">Web Development</h5>
               <p className="service-description">
-                Build dynamic and responsive websites tailored to your
-                business needs.
+              A website should not just draw attention. The role of a website is to attract and engage the user, as well as communicate your brand and raise awareness about a product or service.
               </p>
             </div>
             {/* Service 2 */}
             <div className="service-card">
-              <h5 className="service-title">Mobile App Development</h5>
+              <h5 className="service-title">App Development</h5>
               <p className="service-description">
-                Create seamless and efficient mobile apps for iOS and
-                Android platforms.
+              your unique ideas transforming into incredible apps for your business requirements. our app developers can build mobile app your requirement, in your budget, and as per your timeline.
               </p>
             </div>
             {/* Service 3 */}
             <div className="service-card">
               <h5 className="service-title">Digital Marketing</h5>
               <p className="service-description">
-                Enhance your online presence with our digital marketing
-                strategies.
+              Digital  Marketing is an effective way to encourage conversions and its main objective is to build a strategy to meets the needs of your target audience.
               </p>
             </div>
           </div>
           <div className="service-cards">
             {/* Service 4 */}
             <div className="service-card">
-              <h5 className="service-title">UI/UX Design</h5>
+              <h5 className="service-title">Govt. Tender(Material Supply)</h5>
               <p className="service-description">
-                Design user-friendly and visually appealing interfaces.
+              we supply the material for structured procedure and different potential suppliers or contractors, business activity in works, supply, or service contracts.
               </p>
             </div>
             {/* Service 5 */}
             <div className="service-card">
-              <h5 className="service-title">Cloud Solutions</h5>
+              <h5 className="service-title">Project Explaination & Vedio Creation</h5>
               <p className="service-description">
-                Leverage cloud technologies to improve scalability and
-                efficiency.
+              High-quality video ads can easily generate traffic of customers. Do not stick with traditional marketing,use digital tools to gather more and more customers at your point.
               </p>
             </div>
             {/* Service 6 */}
             <div className="service-card">
-              <h5 className="service-title">Consulting</h5>
+              <h5 className="service-title">Commercial Video Creation</h5>
               <p className="service-description">
-                Get expert advice to overcome challenges and achieve your
-                goals.
+              Understand how your video are performing, and the kind of target audience viewing and engaging with them.
               </p>
             </div>
           </div>
@@ -83,7 +78,7 @@ function Service() {
           <h2 className="contact-title">Contact Us</h2>
           <p className="contact-info">
             Have questions? Reach out to us at{" "}
-            <strong>services@ourcompany.com</strong>.
+            <strong className="e-mail10">services@ourcompany.com</strong>.
           </p>
         </div>
       </section>

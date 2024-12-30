@@ -1248,7 +1248,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   } */
   
   .social-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff; 
   }
   
   /* Responsive layout adjustments */
@@ -2100,7 +2100,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .team-member:hover {
     transform: translateY(-15px);
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
-    border: 2px solid #007bff;
+    border: 2px solid #50d8af;
 }
 
 /* Card Flip Effect */
@@ -2580,6 +2580,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
+    transition: all 0.3s ease;
+}
+.button-z a:hover {
+  background: linear-gradient(to right, #0066ff, #003399);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .navigation {
     margin-top: 20px;
@@ -2609,4 +2616,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
   flex-direction: column;
   height: 500px;
+}
+
+.team-member a :hover
+{
+  color:#50d8af !important;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.e-mail10
+{
+  color: #379dbf;
 }

@@ -23,7 +23,7 @@ const OurTeams = observer(() => {
                             <div className="team-member">
                                 <div className="member-image">
                                     <img
-                                        src="/path/to/default-image.jpg"
+                                        src="./assets/img/testy3-1.png"
                                         alt="Team Member"
                                     />
                                 </div>
@@ -50,7 +50,7 @@ const OurTeams = observer(() => {
                             <div className="team-member">
                                 <div className="member-image">
                                     <img
-                                        src="/path/to/default-image.jpg"
+                                        src="./assets/img/testy3-1.png"
                                         alt="Team Member"
                                     />
                                 </div>
@@ -77,7 +77,7 @@ const OurTeams = observer(() => {
                             <div className="team-member">
                                 <div className="member-image">
                                     <img
-                                        src="/path/to/default-image.jpg"
+                                        src="./assets/img/testy3-1.png"
                                         alt="Team Member"
                                     />
                                 </div>
@@ -85,7 +85,7 @@ const OurTeams = observer(() => {
                                     <h4>Sudhanshu Kanwar</h4>
                                     <span>Software Developer</span>
                                     <p>A developer</p>
-                                    <div className="social-links">
+                                    <div className="social-links logo1">
                                             <a href="" target="_blank" rel="noopener noreferrer">
                                                 <i className="fa-brands fa-instagram"></i>
                                             </a>
