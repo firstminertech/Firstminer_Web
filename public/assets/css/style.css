@@ -2628,3 +2628,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 {
   color: #379dbf;
 }
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+

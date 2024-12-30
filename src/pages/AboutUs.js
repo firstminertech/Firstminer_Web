@@ -164,15 +164,7 @@ function AboutUs() {
                     </p>
                 </div>
             </section> */}
-            <section id="team" className=" Ourskils py-5 bg-light">
-                <div className="container">
-                    <h2 className="text-center">Our Skills</h2>
-                    <div className="row mt-4">
-
-                    </div>
-                </div>
-            </section>
-
+           
             {/* Footer */}
             <Footer />
         </div>
