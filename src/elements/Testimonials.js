@@ -85,7 +85,7 @@ const Testimonials = () => {
                 <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
-                src="assets/img/testimonial-3.jpg"
+                src="assets/img/logo-final.png"
                 className="testimonial-img rounded-circle mb-3"
                 alt=""
                 style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
@@ -105,7 +105,7 @@ const Testimonials = () => {
                 Sudhanshu Kanwar is a talented Developer with a passion for coding and technology. He specializes in creating innovative solutions and optimizing systems for improved functionality. Known for his problem-solving skills , Sudhanshu consistently contributes to the development of  software projects.                <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
-                src="assets/img/testimonial-3.jpg"
+                src="assets/img/logo-final.png"
                 className="testimonial-img rounded-circle mb-3"
                 alt=""
                 style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
@@ -124,7 +124,7 @@ const Testimonials = () => {
 <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" />
               </p>
               <img
-                src="assets/img/testimonial-3.jpg"
+                src="assets/img/logo-final.png"
                 className="testimonial-img rounded-circle mb-3"
                 alt=""
                 style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}

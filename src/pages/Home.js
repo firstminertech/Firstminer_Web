@@ -299,8 +299,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -327,8 +328,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -355,8 +357,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="assets/img/testy3-1.png"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -383,8 +386,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -411,8 +415,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -439,8 +444,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -467,8 +473,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">
@@ -495,8 +502,9 @@ const HomePage = observer(() => {
                                     <div className="team-member">
                                         <div className="member-image">
                                             <img
-                                                src="/path/to/default-image.jpg"
+                                                src="assets/img/logo-final.png"
                                                 alt="Team Member"
+                                                style={{width:"200px"}}
                                             />
                                         </div>
                                         <div className="member-details">

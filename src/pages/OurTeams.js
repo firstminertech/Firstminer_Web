@@ -24,7 +24,7 @@ const OurTeams = () => {
             name: "Anik Ranjan",
             role: "Software Developer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -36,7 +36,7 @@ const OurTeams = () => {
             name: "Sudhanshu Kanwar",
             role: "Software Developer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -48,7 +48,7 @@ const OurTeams = () => {
             name: "Dharmesh Darshan",
             role: "Software Developer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -60,7 +60,7 @@ const OurTeams = () => {
             name: "Sakshi Rathor",
             role: "Software Developer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -72,7 +72,7 @@ const OurTeams = () => {
             name: "Shivam Gupta",
             role: "Software Developer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -84,7 +84,7 @@ const OurTeams = () => {
             name: "Pallavi Rathor",
             role: "Designer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -96,7 +96,7 @@ const OurTeams = () => {
             name: "Sandeep",
             role: "Designer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -108,7 +108,7 @@ const OurTeams = () => {
             name: "Hritwik",
             role: "Software Developer",
             description: "A developer",
-            image: "./assets/img/testy3-1.png",
+            image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
                 facebook: "#",
