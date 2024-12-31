@@ -2084,6 +2084,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: 15px;
+    max-width: 200px;
 }
 
 /* Details section of the team member */
