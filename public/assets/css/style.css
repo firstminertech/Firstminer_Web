@@ -2019,7 +2019,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     cursor: pointer;
-    width: 343px;
+    width: 400px;
 }
 
 /* Image section of the team member */
@@ -2456,6 +2456,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 250px !important;
     object-fit: cover;
   }
+  .fixed-img2
+  {
+    height: 250px !important;
+  }
 
   .username10
   {
@@ -2638,3 +2642,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.scrollto{
+  font-family: 'Garamond', serif;
+      font-size: 48px;
+      font-weight: normal;
+      text-align: center;
+      text-decoration: none;
+}

@@ -38,7 +38,7 @@ const Header = () => {
           <div id="logo" className="pull-left d-flex gap-2">
           <img src="assets/img/logo-final.png" width={50}/>
 
-            <h1>
+            <h1> 
               <Link to={"/" }className="scrollto">
                 First<span>Miner</span>
               </Link>

@@ -1,11 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../component/Header';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
+
+  const [filter, setFilter] = useState('all');
+
+  const portfolioItems = [
+    {
+      title: 'Atal Bihari Bajpayee University Website',
+      category: 'Web App',
+      description: `A dynamic, user-friendly platform built with the MERN stack, offering an engaging and seamless experience for students, faculty, and visitors.`,
+      image: 'https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg',
+      href:'/abvv-subpage',
+    },
+    {
+      title: 'Railway Management System',
+      category: 'Govt. Projects',
+      description: `A comprehensive, efficient web platform built using the MERN stack, designed to streamline train scheduling, ticket booking, and passenger management.`,
+      image: 'https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg',
+      href:'/railway-subpage',
+    },
+    {
+      title: 'Outreach.money',
+      category: 'Web App',
+      description: `A cutting-edge blockchain-based platform designed to revolutionize financial transactions and decentralized finance (DeFi).`,
+      image: 'https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg',
+      href:'/outreach-web-subpage',
+    },
+    {
+      title: 'Outreach.money App',
+      category: 'Mobile App',
+      description: `A secure and innovative mobile application built on blockchain technology, offering users a seamless experience for managing digital assets.`,
+      image: 'https://storage.googleapis.com/a1aa/image/pxLCAsfDVBwVJqXtbZ1JpsWPp1UeuyPcAvVdkNtcacgbFBAUA.jpg',
+      href:'/outreach-app-subpage',
+    },
+    {
+      title: 'Learn & Earn',
+      category: 'Web App',
+      description: `An interactive learning platform that allows users to earn rewards by engaging with educational content.`,
+      image: 'https://storage.googleapis.com/a1aa/image/YrebfyuSSghzuEKBb3VCx5JT969NjtUufrKIZUmcijbyKCAoA.jpg',
+      href:'learn-earn-subpage',
+    },
+    {
+      title: 'RealStateBaba',
+      category: 'Web App',
+      description: `A modern, user-friendly real estate platform developed using the MERN stack, designed to simplify property buying, selling, and renting.`,
+      image: 'https://storage.googleapis.com/a1aa/image/jLBDyT9eTA2Abq5wIT3j0aPvcx7oixMp1fS08oTpopPdFBAUA.jpg',
+      href:'realstate-baba-subpage',
+    },
+  ];
+
+  const navigate = useNavigate();
+
+  
+
+  const filteredItems = filter === 'all' ? portfolioItems : portfolioItems.filter(item => item.category === filter);
+
   return (
     <div>
-      <Header/>
+      <Header />
       <section id="home" className="intro-section">
         <div className="container">
           <h1 className="heading">Welcome to Our Portfolio</h1>
@@ -16,109 +70,126 @@ const Portfolio = () => {
         </div>
       </section>
       <div className="portfolio-container mt-3">
-      <div className="buttons">
-        <button className="portfolio-btn">Show All</button>
-        <button className="portfolio-btn">UI/UX Design</button>
-        <button className="portfolio-btn">Web App</button>
-        <button className="portfolio-btn">Mobile App</button>
-        <button className="portfolio-btn">Govt. Projects</button>
+        <div className="buttons">
+          <button onClick={() => setFilter('all')} className="portfolio-btn">Show All</button>
+          <button onClick={() => setFilter('UI/UX Design')} className="portfolio-btn">UI/UX Design</button>
+          <button onClick={() => setFilter('Web App')} className="portfolio-btn">Web App</button>
+          <button onClick={() => setFilter('Mobile App')} className="portfolio-btn">Mobile App</button>
+          <button onClick={() => setFilter('Govt. Projects')} className="portfolio-btn">Govt. Projects</button>
+        </div>
+
+        <div className="portfolio">
+          {/* <div className="portfolio-item">
+            <img
+              alt="Major Kalshi Classes app interface"
+              src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
+            />
+            <div className="portfolio-description">
+              <p><b className='fs-6'>Atal Bihari Bajpayee University Website:</b> <br /> A dynamic, user-friendly platform built with the MERN stack, offering an engaging and seamless experience for students, faculty, and visitors. The website features real-time updates, course management, and easy navigation, all designed to enhance the university's digital presence and interaction with its community.</p>
+            </div>
+
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Social media app interface"
+              src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
+            />
+            <div className="portfolio-description">
+              <p><b className='fs-6'>Railway Management System:</b> <br /> A comprehensive, efficient web platform built using the MERN stack, designed to streamline train scheduling, ticket booking, and passenger management. The system offers a user-friendly interface for both passengers and railway staff, providing real-time updates, seamless ticketing, and enhanced operational efficiency.</p>
+            </div>
+
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Veda learning app interface"
+              src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
+            />
+            <div className="portfolio-description">
+              <p><b className='fs-6'>Outreach.money:</b> <br /> A cutting-edge blockchain-based platform designed to revolutionize financial transactions and decentralized finance (DeFi). Built with secure and transparent blockchain technology, Outreach.money provides users with a seamless and efficient way to manage digital assets, investments, and transactions. The platform offers robust features for peer-to-peer transactions, smart contracts, and financial empowerment, ensuring trust and security for every user.</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Major Kalshi Classes app interface"
+              src="https://storage.googleapis.com/a1aa/image/pxLCAsfDVBwVJqXtbZ1JpsWPp1UeuyPcAvVdkNtcacgbFBAUA.jpg"
+            />
+            <div className="portfolio-description">
+              <p><b className='fs-6'>Outreach.money App:</b> <br /> A secure and innovative mobile application built on blockchain technology, offering users a seamless experience for managing digital assets, conducting peer-to-peer transactions, and exploring decentralized finance (DeFi) opportunities. The app ensures transparency, trust, and security, empowering users to make efficient financial decisions with real-time updates, smart contract capabilities, and a user-friendly interface.</p>
+            </div>
+
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Social media app interface"
+              src="https://storage.googleapis.com/a1aa/image/YrebfyuSSghzuEKBb3VCx5JT969NjtUufrKIZUmcijbyKCAoA.jpg"
+            />
+            <div className="portfolio-description">
+              <p><b className='fs-6'>Learn & Earn:</b> <br /> An interactive learning platform that allows users to earn rewards by engaging with educational content. Users watch informative videos, answer related questions, and earn coins for their participation and correct answers. Designed to make learning both fun and rewarding, the platform encourages knowledge retention through incentives, providing a seamless experience for learners to enhance their skills while earning rewards.</p>
+            </div>
+
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Veda learning app interface"
+              src="https://storage.googleapis.com/a1aa/image/jLBDyT9eTA2Abq5wIT3j0aPvcx7oixMp1fS08oTpopPdFBAUA.jpg"
+            />
+            <div className="portfolio-description">
+              <p><b className='fs-6'>RealStateBaba:</b> <br /> A modern, user-friendly real estate platform developed using the MERN stack, designed to simplify property buying, selling, and renting. RealStateBaba offers seamless search, filtering, and transaction features, providing users with real-time property listings, detailed information, and a secure transaction process. The platform connects buyers, sellers, and agents with ease, transforming the real estate experience with a responsive, intuitive interface.</p>
+            </div>
+
+          </div> */}
+
+          {/* <div className="portfolio-item">
+            <img
+              alt="Major Kalshi Classes app interface"
+              src="https://storage.googleapis.com/a1aa/image/8mZIBvibqGI0DtBOt5kiO9OvIlvlofNDlhBfWSsbyLDAfBAoA.jpg"
+            />
+            <div className="portfolio-description">
+              <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Social media app interface"
+              src="https://storage.googleapis.com/a1aa/image/3fddt9rA0M3mGyXVvIQcvMM2ExYYJ2DYY1iNyTCPevVDfBAoA.jpg"
+            />
+            <div className="portfolio-description">
+              <p>Social Media App: A clean, user-friendly interface for social networking.</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              alt="Veda learning app interface"
+              src="https://storage.googleapis.com/a1aa/image/L0PAvcucUF6WEdendox7nAw5jvay1Sk4g0NMetPE0BZBfBAoA.jpg"
+            />
+            <div className="portfolio-description">
+              <p>Veda Learning App: Intuitive design for a learning management system.</p>
+            </div>
+          </div> */}
+
+          {filteredItems.map((item, index) => (
+            <div  key={index} className="portfolio-item" onClick={()=>navigate(item?.href)}>
+              <img
+                alt={item.title}
+                src={item.image}
+              />
+              <div className="portfolio-description">
+                <p><b className='fs-6'>{item?.title}:</b> <br /> {item.description}</p>
+              </div>
+            </div>
+          ))}
+
+        </div>
+
+        <Link to='/contact'><div className="online-button">Contact</div></Link>
       </div>
-
-      <div className="portfolio">
-        <div className="portfolio-item">
-          <img
-            alt="Major Kalshi Classes app interface"
-            src="https://storage.googleapis.com/a1aa/image/feL0e5qySnXheQTyloJV4jPfxFtMkFuKZsOFZbdl8wAesBwfJA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Social media app interface"
-            src="https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Veda learning app interface"
-            src="https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Veda Learning App: Intuitive design for a learning management system.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Major Kalshi Classes app interface"
-            src="https://storage.googleapis.com/a1aa/image/pxLCAsfDVBwVJqXtbZ1JpsWPp1UeuyPcAvVdkNtcacgbFBAUA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Social media app interface"
-            src="https://storage.googleapis.com/a1aa/image/YrebfyuSSghzuEKBb3VCx5JT969NjtUufrKIZUmcijbyKCAoA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Veda learning app interface"
-            src="https://storage.googleapis.com/a1aa/image/jLBDyT9eTA2Abq5wIT3j0aPvcx7oixMp1fS08oTpopPdFBAUA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Veda Learning App: Intuitive design for a learning management system.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Major Kalshi Classes app interface"
-            src="https://storage.googleapis.com/a1aa/image/8mZIBvibqGI0DtBOt5kiO9OvIlvlofNDlhBfWSsbyLDAfBAoA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Major Kalshi Classes App: Interface design for an educational platform.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Social media app interface"
-            src="https://storage.googleapis.com/a1aa/image/3fddt9rA0M3mGyXVvIQcvMM2ExYYJ2DYY1iNyTCPevVDfBAoA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Social Media App: A clean, user-friendly interface for social networking.</p>
-          </div>
-        </div>
-
-        <div className="portfolio-item">
-          <img
-            alt="Veda learning app interface"
-            src="https://storage.googleapis.com/a1aa/image/L0PAvcucUF6WEdendox7nAw5jvay1Sk4g0NMetPE0BZBfBAoA.jpg"
-          />
-          <div className="portfolio-description">
-            <p>Veda Learning App: Intuitive design for a learning management system.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <Link to='/contact'><div className="online-button">Contact</div></Link>
-    </div>
     </div>
 
   );

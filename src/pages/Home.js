@@ -10,6 +10,7 @@ import Testimonials from "../elements/Testimonials";
 import { useSpring, animated, useTransition } from '@react-spring/web';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const HomePage = observer(() => {
     useEffect(() => {
@@ -270,7 +271,7 @@ const HomePage = observer(() => {
                             <div className="col-lg-6 team-home">
                                 <div className="title-z">ALL<br/>TEAMS</div>
                                 <div class="button-z">
-                                    <a href="#">Browse All</a>
+                                    <Link to={"/our-teams"}>Browse All</Link>
                                 </div>
                                 <div class="navigation">
                                     <i class="fas fa-arrow-left"></i>
