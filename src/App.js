@@ -20,6 +20,8 @@ import Abvv from './pages/portfolioSubPage/Abvv';
 import Jinni from './pages/portfolioSubPage/Jinni';
 import OutreachApp from './pages/portfolioSubPage/OutreachApp';
 import OutreachWeb from './pages/portfolioSubPage/OutreachWeb ';
+import LearnEarn from './pages/portfolioSubPage/LearnEarn';
+import RealStateBaba from './pages/portfolioSubPage/RealStateBaba';
 
 
 
@@ -40,6 +42,8 @@ function App() {
     <Route exact path="/jinni-subpage" element={<Jinni />}/>
     <Route exact path="/outreach-app-subpage" element={<OutreachApp />}/>
     <Route exact path="/outreach-web-subpage" element={<OutreachWeb />}/>
+    <Route exact path="/learn&earn-subpage" element={<LearnEarn />}/>
+    <Route exact path="/realstatebaba-subpage" element={<RealStateBaba />}/>
     
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>

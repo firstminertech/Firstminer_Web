@@ -19,14 +19,14 @@ const Portfolio = () => {
       category: 'Govt. Projects',
       description: `A comprehensive, efficient web platform built using the MERN stack, designed to streamline train scheduling, ticket booking, and passenger management.`,
       image: 'https://storage.googleapis.com/a1aa/image/BL4MI2hlMk5RKVYcfvK0uaZkvUYlnXQxz5vECgwWk2TbDgfTA.jpg',
-      href:'/railway-subpage',
+      href:'#',
     },
     {
       title: 'Outreach.money',
       category: 'Web App',
       description: `A cutting-edge blockchain-based platform designed to revolutionize financial transactions and decentralized finance (DeFi).`,
       image: 'https://storage.googleapis.com/a1aa/image/kFzCnlShMWagDtCeRRaiVBy7NdQ5oOLT42J1dJf3dsA4GAfnA.jpg',
-      href:'/outreach-web-subpage',
+      href:'#',
     },
     {
       title: 'Outreach.money App',
@@ -40,14 +40,14 @@ const Portfolio = () => {
       category: 'Web App',
       description: `An interactive learning platform that allows users to earn rewards by engaging with educational content.`,
       image: 'https://storage.googleapis.com/a1aa/image/YrebfyuSSghzuEKBb3VCx5JT969NjtUufrKIZUmcijbyKCAoA.jpg',
-      href:'learn-earn-subpage',
+      href:'#',
     },
     {
       title: 'RealStateBaba',
       category: 'Web App',
       description: `A modern, user-friendly real estate platform developed using the MERN stack, designed to simplify property buying, selling, and renting.`,
       image: 'https://storage.googleapis.com/a1aa/image/jLBDyT9eTA2Abq5wIT3j0aPvcx7oixMp1fS08oTpopPdFBAUA.jpg',
-      href:'realstate-baba-subpage',
+      href:'#',
     },
   ];
 
