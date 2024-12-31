@@ -15,7 +15,7 @@ const ClientPage = observer(() => {
           <div className="d-flex justify-content-start flex-wrap">
             <div className="col-md-4 container my-4 ">
               <div className="text-center">
-                <h6 className="fs-4 text-start username10">Outreach</h6>
+                <h6 className="fs-3 text-center ">Outreach</h6>
                 <img
                   src="https://web.outreach.money/assets/images/outreach.jpg"
                   alt="Outreach Logo"
@@ -25,7 +25,7 @@ const ClientPage = observer(() => {
             </div>
             <div className="col-md-4 container my-4 ">
               <div className="text-center">
-                <h6 className="fs-4 text-start username10">Atal Bihari Bajpayee University</h6>
+                <h6 className="fs-3 text-center ">Atal Bihari Bajpayee University</h6>
                 <img
                   src="https://abvv.ac.in/image/ABVV-NewLogo.png"
                   alt="Abvv Logo"
@@ -35,7 +35,7 @@ const ClientPage = observer(() => {
             </div>
             <div className="col-md-4 container my-4 ">
               <div className="text-center">
-                <h6 className="fs-4 text-start username10">Bilaspur Railway</h6>
+                <h6 className="fs-3 text-center ">Bilaspur Railway</h6>
                 <img
                   src="https://logos-download.com/wp-content/uploads/2019/11/Indian_Railway_Logo_2.png"
                   alt="Outreach Logo"

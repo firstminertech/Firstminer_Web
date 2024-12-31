@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const Testimonials = () => {
   return (
     <section id="testimonials" className="wow fadeInUp" style={{ backgroundColor: "#f9f9f9", padding: "60px 0" }}>
-      <div className="container">
+      <div className="">
         
 
         {/* Swiper Component */}
@@ -27,7 +27,7 @@ const Testimonials = () => {
             768: {
               slidesPerView: 2, 
             },
-            480: {
+            20: {
               slidesPerView: 1,
             },
           }}

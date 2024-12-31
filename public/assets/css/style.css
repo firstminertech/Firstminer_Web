@@ -699,7 +699,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #clients img {
     max-width: 100%;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-    padding: 15px 0;
+    padding: 50px 0;
 }
 
 #clients img:hover {
@@ -923,6 +923,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     #testimonials .section-header h2 {
       font-size: 2.2rem;
     }
+    .job-card{
+      width: 100% !important;
+    }
   
     #testimonials .section-header p {
       font-size: 1rem;
@@ -940,12 +943,49 @@ body.mobile-nav-active #mobile-nav-toggle {
       font-size: 1rem;
     }
   }
+
+  @media (min-width:480px){
+    
+  }
   
   @media (max-width: 480px) {
     .testimonial-item {
       padding: 25px 15px;
     }
+
+    .team-home{
+      display: none !important;
+    }
+
+    .benefit-card{
+      width: 100% !important;
+    }
+
+    .buttons{
+      flex-direction: column;
+      gap: 10px !important;
+    }
+
+    .testimonial-title h1{
+      font-size: larger !important;
+    }
+
+    .testimonial-content{
+      padding: 5px !important;
+    }
+
+    .testimonial-item{
+      padding: 5px !important;
+    }
+
+    .testimonial-page-wrapper{
+      max-width: 100% !important;
+    }
   
+    .job-card{
+      width: 100% !important;
+    }
+    
     .testimonial-item .testimonial-img {
       width: 100px;
       height: 100px;
@@ -2019,7 +2059,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     cursor: pointer;
-    width: 400px;
 }
 
 /* Image section of the team member */
@@ -2228,6 +2267,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   
@@ -2235,7 +2275,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .buttons {
     display: flex;
     justify-content: center;
-    gap: 129px;
+    gap: 30px;
     margin-bottom: 30px;
   }
   
@@ -2490,7 +2530,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .client-title {
-    font-size: 52px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 50px;

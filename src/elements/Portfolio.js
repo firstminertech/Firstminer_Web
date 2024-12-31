@@ -179,6 +179,7 @@ const Portfolio = () => {
               <img
                 alt={item.title}
                 src={item.image}
+                className='img-fluid'
               />
               <div className="portfolio-description">
                 <p><b className='fs-6'>{item?.title}:</b> <br /> {item.description}</p>

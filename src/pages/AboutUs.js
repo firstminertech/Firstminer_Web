@@ -51,7 +51,7 @@ function AboutUs() {
                                         <img
                                             src="assets/img/EdigitalbabaLOGO.webp"
                                             alt="Team Member"
-                                            className="edigibabaimg"
+                                            className="img-fluid"
                                             style={{ borderColor: "#28c3b4" }}
                                         />
                                         <br />
