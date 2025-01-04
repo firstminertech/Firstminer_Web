@@ -27,7 +27,7 @@ const OutreachApp = () => {
           </div>
 
           <div className="col-md-6">
-            <h2>Website Description</h2>
+            <h2> App Description</h2>
             The **Outreach App** is a revolutionary crypto trading platform
             developed by the FirstMiner team, utilizing cutting-edge
             technologies such as **Node.js**, **React Native**, **Firebase**,

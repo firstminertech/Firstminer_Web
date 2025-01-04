@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PrimaryHeader from "./PrimaryHeader";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,10 +36,10 @@ const Header = () => {
       <header id="header" className={isFixed ? "fixed" : ""}>
         <div className="container d-flex justify-content-between">
           <div id="logo" className="pull-left d-flex gap-2">
-          <img src="assets/img/logo-final.png" width={50}/>
+            <img src="assets/img/logo-final.png" width={50} />
 
-            <h1> 
-              <Link to={"/" }className="scrollto">
+            <h1>
+              <Link to={"/"} className="scrollto">
                 First<span>Miner</span>
               </Link>
             </h1>
@@ -47,14 +47,29 @@ const Header = () => {
 
           <nav id="nav-menu-container" className={isMenuOpen ? "open" : ""}>
             <ul className="nav-menu">
-              <li className="menu-active">
-                <Link to={"/"}>Home</Link>
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => (isActive ? "menu-active" : "menu-inactive")}
+                >
+                  home
+                </NavLink>
+              </li>
+              <li >
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "menu-active" : "menu-inactive")}
+                >
+                 about
+                </NavLink>
               </li>
               <li>
-                <Link to={"/about"}>About Us</Link>
-              </li>
-              <li>
-                <Link to={"/service"}>Services</Link>
+              <NavLink
+                  to="/services"
+                  className={({ isActive }) => (isActive ? "menu-active" : "menu-inactive")}
+                >
+                 Services
+                </NavLink>
               </li>
               <li>
                 <Link to={"/portfolio"}>Portfolio</Link>
