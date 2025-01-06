@@ -36,7 +36,7 @@ const ContactPage = () => {
                 <div className="container">
                     <div className="section-header text-center mb-4">
                         <h2>Contact Us</h2>
-                        <p>Reach out to us for inquiries or assistance. We're here to help!</p>
+                        <p className="text-center para100">Reach out to us for inquiries or assistance. We're here to help!</p>
                     </div>
                     <div className="row contact-info mb-5">
                         {/* Contact Info Section */}
@@ -54,7 +54,8 @@ const ContactPage = () => {
                                 <i className="ion-ios-telephone-outline display-4 mb-2" />
                                 <h3>Phone Number</h3>
                                 <p><a href="tel:+155895548855">+918085583055 <br/>
-                                    +917752358727</a></p>
+                                    </a></p>
+                                    <p><a href="tel:+155895548855">+917752358727</a></p>
                             </div>
                         </div>
                         <div className="col-md-4 mb-3">
@@ -166,9 +167,9 @@ const ContactPage = () => {
                                                 </Form.Control.Feedback>
                                             </Form.Group>
                                             <div className="text-center">
-                                                <Button type="submit" variant="primary" disabled={loading} className="submit-button">
+                                                <button type="submit" variant="primary" disabled={loading} className="submit-button submit10">
                                                     {loading ? "Sending..." : "Send Message"}
-                                                </Button>
+                                                </button>
                                             </div>
                                         </Form>
                                     )}

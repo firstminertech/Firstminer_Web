@@ -789,23 +789,23 @@ const [isSuccess, setIsSuccess] = useState(false);
                                                 </Form.Control.Feedback>
                                             </Form.Group>
                                             <div className="text-center">
-                                                <Button type="submit" variant="primary" disabled={loading} className="submit-button">
+                                                <button type="submit" variant="primary" disabled={loading} className="submit-button submit10">
                                                     {loading ? "Sending..." : "Send Message"}
-                                                </Button>
+                                                </button>
                                             </div>
                                         </Form>
                                     )}
                                 </Formik>
                             </div>
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           <Button variant="primary" onClick={() => alert("Action performed!")}>
             Perform Action
           </Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     </div>
   );

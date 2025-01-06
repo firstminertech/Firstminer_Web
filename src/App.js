@@ -22,6 +22,7 @@ import OutreachApp from './pages/portfolioSubPage/OutreachApp';
 import OutreachWeb from './pages/portfolioSubPage/OutreachWeb ';
 import LearnEarn from './pages/portfolioSubPage/LearnEarn';
 import RealStateBaba from './pages/portfolioSubPage/RealStateBaba';
+import Railway from './pages/portfolioSubPage/Railway';
 
 
 
@@ -45,6 +46,8 @@ function App() {
     <Route exact path="/learn&earn-subpage" element={<LearnEarn />}/>
     <Route exact path="/realstatebaba-subpage" element={<RealStateBaba />}/>
     <Route exact path="/learnearn-subpage" element={<LearnEarn />}/>
+    <Route exact path="/outreach-web-subpage" element={<OutreachWeb />}/>
+    <Route exact path="/railway-subpage" element={<Railway />}/>
     
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>

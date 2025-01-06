@@ -171,76 +171,34 @@ const OutreachApp = () => {
             </div>
           </div>
         </div>
-        <div className="row mt-5 mb-5">
-          <div className="col-12">
-            <div
-              id="carouselExampleIndicators"
-              className="carousel slide "
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  className="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    class="d-block w-25"
-                    src="./assets/img/outreachapp2.jpg"
-                    alt="First slide"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="d-block w-25"
-                    src="./assets/img/outreachapp2.jpg"
-                    alt="Second slide"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="d-block w-25"
-                    src="./assets/img/outreachapp2.jpg"
-                    alt="Third slide"
-                  />
-                </div>
-              </div>
-              <a
-                className="carousel-control-prev"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+        <div className="row mt-5 mb-5 border8">
+          <div className="col-12 d-flex justify-content-center">
+          <div id="carouselExampleIndicators" className="carousel slide w-50" data-bs-ride="carousel">
+      <ol className="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div className="carousel-inner slider-center10">
+        <div className="carousel-item active">
+          <img className="d-block w-50" src="./assets/img/outreach3.jpg" alt="First slide" />
+        </div>
+        <div className="carousel-item">
+          <img className="d-block w-50" src="./assets/img/outreachapp2.jpg" alt="Second slide" />
+        </div>
+        <div className="carousel-item">
+          <img className="d-block w-50" src="./assets/img/outreachapp1.jpg" alt="Third slide" />
+        </div>
+      </div>
+      <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </a>
+      <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </a>
+    </div>
           </div>
         </div>
       </div>

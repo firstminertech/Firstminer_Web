@@ -65,7 +65,7 @@ const Header = () => {
               </li>
               <li>
               <NavLink
-                  to="/services"
+                  to="/service"
                   className={({ isActive }) => (isActive ? "menu-active" : "menu-inactive")}
                 >
                  Services
