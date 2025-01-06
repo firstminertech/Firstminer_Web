@@ -44,7 +44,7 @@ const ContactPage = () => {
                             <div className="contact-address">
                                 <i className="ion-ios-location-outline display-4 mb-2" />
                                 <h3>Address</h3>
-                                <address>Firstminer Technology Solutions Pvt. Ltd,
+                                <address className="contact-para10">Firstminer Technology Solutions Pvt. Ltd,
                                     3rd floor RK Complex,, Jagdamba colony,Seepat Road
                                     Bilaspur 495001 (CG)</address>
                             </div>

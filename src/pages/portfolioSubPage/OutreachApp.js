@@ -21,7 +21,7 @@ const OutreachApp = () => {
               <img
                 alt="A placeholder image with dimensions 500x500 pixels"
                 className="card-img-top img-fluid"
-                src="./assets/img/outreachapp1.jpg"
+                src="./assets/img/Dashboard.jpg"
               />
             </div>
           </div>

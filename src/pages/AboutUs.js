@@ -129,7 +129,7 @@ function AboutUs() {
             <section id="team" className="py-5 bg-light">
                 <div className="container">
                     <h2 className="text-center">Testimonials</h2>
-                    <div className="row mt-4">
+                    <div className="row mt-5">
                       
                         <div className="col-md-6 text-center">
                             <img

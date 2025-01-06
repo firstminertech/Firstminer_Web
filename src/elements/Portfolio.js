@@ -40,7 +40,7 @@ const Portfolio = () => {
       category: 'Web App',
       description: `An interactive learning platform that allows users to earn rewards by engaging with educational content.`,
       image: 'https://storage.googleapis.com/a1aa/image/YrebfyuSSghzuEKBb3VCx5JT969NjtUufrKIZUmcijbyKCAoA.jpg',
-      href:'#',
+      href:'/learnearn-subpage',
     },
     {
       title: 'RealStateBaba',

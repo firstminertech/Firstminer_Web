@@ -48,7 +48,7 @@ const OurTeams = () => {
             name: "Dharmesh Darshan",
             role: "Software Developer",
             description: "A developer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/dharmesh.jpg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -56,18 +56,7 @@ const OurTeams = () => {
                 linkedin: "#",
             },
         },
-        {
-            name: "Sakshi Rathor",
-            role: "Software Developer",
-            description: "A developer",
-            image: "assets/img/logo-final.png",
-            socials: {
-                instagram: "#",
-                facebook: "#",
-                whatsapp: "#",
-                linkedin: "#",
-            },
-        },
+        
         {
             name: "Shivam Gupta",
             role: "Software Developer",
@@ -81,8 +70,20 @@ const OurTeams = () => {
             },
         },
         {
-            name: "Pallavi Rathor",
-            role: "Designer",
+            name: "Sakshi Rathore",
+            role: "App Developer",
+            description: "A developer",
+            image: "assets/img/logo-final.png",
+            socials: {
+                instagram: "#",
+                facebook: "#",
+                whatsapp: "#",
+                linkedin: "#",
+            },
+        },
+        {
+            name: "Pallavi Rathore",
+            role: "Tester & UI/UX Developer",
             description: "A developer",
             image: "assets/img/logo-final.png",
             socials: {
@@ -106,7 +107,7 @@ const OurTeams = () => {
         },
         {
             name: "Hritwik",
-            role: "Software Developer",
+            role: "Senior Designer",
             description: "A developer",
             image: "assets/img/logo-final.png",
             socials: {

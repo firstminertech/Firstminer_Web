@@ -44,6 +44,7 @@ function App() {
     <Route exact path="/outreach-web-subpage" element={<OutreachWeb />}/>
     <Route exact path="/learn&earn-subpage" element={<LearnEarn />}/>
     <Route exact path="/realstatebaba-subpage" element={<RealStateBaba />}/>
+    <Route exact path="/learnearn-subpage" element={<LearnEarn />}/>
     
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
