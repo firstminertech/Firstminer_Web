@@ -320,7 +320,7 @@ const [isSuccess, setIsSuccess] = useState(false);
                 </p>
               </div>
               <div className="col-lg-3 cta-btn-container text-center">
-                <a className="cta-btn align-middle" onClick={handleShow}>
+                <a href="#" className="cta-btn align-middle" onClick={handleShow}>
                   Call To Action
                 </a>
               </div>

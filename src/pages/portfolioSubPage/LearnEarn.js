@@ -21,7 +21,7 @@ const LearnEarn = () => {
               <img
                 alt="A placeholder image with dimensions 500x500 pixels"
                 className="card-img-top img-fluid"
-                src="./assets/img/learn1.png"
+                src="./assets/img/wireframen.jpg"
               />
             </div>
           </div>
@@ -52,114 +52,96 @@ const LearnEarn = () => {
           </div>
         </div>
         <div className="row mt-5 ">
-          <div className="col-md-6">
-            <h2>Key Features of Learn and Learn USDT</h2>
-            <ul>
-              <li>
-                <strong>Educational Content</strong>
-                <ul>
-                  <li>
-                    Provides tutorials, articles, and videos on blockchain
-                    technology, cryptocurrency trading, and DeFi concepts.
-                  </li>
-                  <li>
-                    Interactive learning modules and quizzes to help users grasp
-                    the fundamentals of crypto.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Incentives and Rewards</strong>
-                <ul>
-                  <li>
-                    Users can earn <strong>USDT</strong> (Tether), a stablecoin,
-                    as a reward for completing educational tasks, quizzes, and
-                    learning modules.
-                  </li>
-                  <li>
-                    Gamified experiences where users earn tokens as they
-                    progress through courses or tasks.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>User-Friendly Interface</strong>
-                <ul>
-                  <li>
-                    Easy navigation with clear instructions and intuitive design
-                    for users of all experience levels.
-                  </li>
-                  <li>
-                    Mobile-friendly or app-based platforms to ensure
-                    accessibility from any device.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Crypto Wallet Integration</strong>
-                <ul>
-                  <li>
-                    Users can connect their crypto wallets to receive their USDT
-                    rewards directly.
-                  </li>
-                  <li>
-                    Support for popular wallets such as MetaMask, Trust Wallet,
-                    etc.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Blockchain Knowledge</strong>
-                <ul>
-                  <li>
-                    Emphasis on decentralized technologies and smart contracts.
-                  </li>
-                  <li>
-                    Content covering topics like trading strategies, crypto
-                    security, and how stablecoins like USDT work.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Security</strong>
-                <ul>
-                  <li>
-                    Strong security measures, including encryption, to protect
-                    user data and wallet integrations.
-                  </li>
-                  <li>
-                    Transparency regarding the use and storage of rewards.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Real-World Application</strong>
-                <ul>
-                  <li>
-                    Opportunities to apply learned knowledge in real-world
-                    crypto trading or investing scenarios.
-                  </li>
-                  <li>
-                    Links to external platforms where users can practice or
-                    apply their skills in the crypto market.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        <div className="col-md-6">
+  <h2>Key Features of Learn and Learn USDT</h2>
+  <ul>
+    <li>
+      <strong>Educational Content</strong>
+      <ul>
+        <li>
+          Provides comprehensive tutorials, articles, and videos on blockchain technology, cryptocurrency trading, and DeFi concepts, catering to both beginners and advanced users.
+        </li>
+        <li>
+          Interactive learning modules and quizzes to help users grasp the fundamentals of crypto with progress tracking and feedback.
+        </li>
+        <li>
+          Content is regularly updated to reflect the latest trends and advancements in the cryptocurrency space.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Incentives and Rewards</strong>
+      <ul>
+        <li>
+          Users can earn <strong>USDT</strong> (Tether), a stablecoin, as a reward for completing educational tasks, quizzes, and learning modules, promoting a learn-and-earn model.
+        </li>
+        <li>
+          Gamified experiences where users earn tokens as they progress through courses or tasks, with leaderboards and badges to foster engagement.
+        </li>
+        <li>
+          Reward bonuses for referring friends or participating in special events or challenges.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>User-Friendly Interface</strong>
+      <ul>
+        <li>
+          Easy navigation with clear instructions and an intuitive design for users of all experience levels, ensuring a smooth learning journey.
+        </li>
+        <li>
+          Mobile-friendly or app-based platforms to ensure accessibility from any device, offering seamless syncing across devices.
+        </li>
+        <li>
+          Customizable user dashboards to track learning progress, rewards, and completed tasks.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Crypto Wallet Integration</strong>
+      <ul>
+        <li>
+          Users can connect their crypto wallets to receive their USDT rewards directly, ensuring a hassle-free reward claim process.
+        </li>
+        <li>
+          Support for popular wallets such as MetaMask, Trust Wallet, Coinbase Wallet, and more, with step-by-step guides for first-time users.
+        </li>
+        <li>
+          Integration with decentralized finance (DeFi) platforms to allow staking or using earned rewards for further crypto activities.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Blockchain Knowledge</strong>
+      <ul>
+        <li>
+          Emphasis on decentralized technologies and smart contracts, enabling users to understand the core principles of blockchain.
+        </li>
+        <li>
+          Content covering topics like trading strategies, crypto security, stablecoins, NFTs, and the future of decentralized finance.
+        </li>
+        <li>
+          Real-world case studies and examples to demonstrate the practical applications of blockchain technology.
+        </li>
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+
           <div className="col-md-6 border8">
             <div className="card shadow-sm hover-shadow-lg border-0 rounded-lg overflow-hidden">
               <img
                 alt="A placeholder image with dimensions 500x500 pixels"
                 className="card-img-top img-fluid"
-                src="./assets/img/learn2.png"
+                src="./assets/img/wireframe1.jpg"
               />
             </div>
             <div className="card shadow-sm hover-shadow-lg border-0 rounded-lg overflow-hidden mt-5">
               <img
                 alt="A placeholder image with dimensions 500x500 pixels"
                 className="card-img-top img-fluid"
-                src="./assets/img/learn1.png"
+                src="./assets/img/wireframe .jpg"
               />
             </div>
           </div>
@@ -177,7 +159,7 @@ const LearnEarn = () => {
                     alt="A placeholder image with dimensions 800x400 pixels"
                     className="d-block w-100"
                     height="250"
-                    src="./assets/img/learn1.png"
+                    src="./assets/img/wireframer.jpg"
                     width="800"
                   />
                 </div>

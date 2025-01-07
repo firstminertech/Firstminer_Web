@@ -24,7 +24,7 @@ function CareerPage() {
             {/* Job Listings Section */}
             <section id="job-listings" className="job-listings-section">
                 <div className="container">
-                    <h2 className="job-listings-title">Current Openings</h2>
+                    <h2 className="job-listings-title d-flex justify-content-center">Current Openings</h2>
                     <div className="job-cards">
                         {/* Job 1 */}
                         <div className="job-card">

@@ -18,7 +18,7 @@ const LearnEarn = () => {
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6 border8">
-            <div className="card shadow-sm hover-shadow-lg border-0 rounded-lg overflow-hidden">
+            <div className="card shadow-sm hover-shadow-lg border-0 rounded-lg overflow-hidden w-75">
               <img
                 alt="A placeholder image with dimensions 500x500 pixels"
                 className="card-img-top img-fluid"
@@ -58,16 +58,7 @@ const LearnEarn = () => {
             transaction breakdowns, and execute payments effortlessly, while the
             integration of **Web3** opens up opportunities for decentralized
             trading, ensuring that all transactions are secure, transparent, and
-            traceable on the blockchain. With support for global accessibility,
-            the Outreach App bridges the gap between traditional and
-            decentralized finance, offering a unified platform where users can
-            trade stablecoins with confidence and ease. By combining the best of
-            blockchain technology, scalable backend infrastructure, and a
-            user-friendly interface, the Outreach App stands out as a leader in
-            the crypto trading space, providing users with a fast, secure, and
-            highly functional trading solution tailored to meet the needs of the
-            modern digital economy. Whether you are a professional crypto trader
-            or a first-time user
+            traceable on the blockchain. 
             </p>
           </div>
         </div>
@@ -163,8 +154,8 @@ const LearnEarn = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 border8">
-            <div className="card shadow-sm hover-shadow-lg border-0 rounded-lg overflow-hidden">
+          <div className="col-md-6 border8 d-flex justify-content-center">
+            <div className="card shadow-sm hover-shadow-lg border-0 rounded-lg overflow-hidden w-75">
               <img
                 alt="A placeholder image with dimensions 500x500 pixels"
                 className="card-img-top img-fluid"
