@@ -792,9 +792,9 @@ const HomePage = observer(() => {
                     </Form.Control.Feedback>
                   </Form.Group>
                   <div className="text-center">
-                    <Button type="submit" variant="primary" disabled={loading} className="submit-button">
+                    <button type="submit" variant="primary" disabled={loading} className="submit-button submit10">
                       {loading ? "Sending..." : "Send Message"}
-                    </Button>
+                    </button>
                   </div>
                 </Form>
               )}

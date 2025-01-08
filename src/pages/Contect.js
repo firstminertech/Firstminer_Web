@@ -63,9 +63,9 @@ const ContactPage = () => {
                             <div className="contact-phone">
                                 <i className="ion-ios-telephone-outline display-4 mb-2" />
                                 <h3>Phone Number</h3>
-                                <p><a href="tel:+155895548855">+918085583055 <br/>
+                                <p><a href="tel:+918085583055">+918085583055 <br/>
                                     </a></p>
-                                    <p><a href="tel:+155895548855">+917752358727</a></p>
+                                    <p><a href="tel:+917752358727">+917752358727</a></p>
                             </div>
                         </div>
                         <div className="col-md-4 mb-3">
