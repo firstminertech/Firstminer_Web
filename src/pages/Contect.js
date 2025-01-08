@@ -9,8 +9,8 @@ const ContactPage = () => {
     const [isSuccess, setIsSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
 
-     // Function to handle form submission using mailto
-     const handleSubmit = (values, { resetForm }) => {
+    // Function to handle form submission using mailto
+    const handleSubmit = (values, { resetForm }) => {
         setLoading(true);
         setIsSuccess(false); // Reset success state before submitting
 
@@ -32,12 +32,22 @@ const ContactPage = () => {
     return (
         <div>
             <Header />
-            <section id="contact" className="wow fadeInUp py-5">
+            <section id="contact" className="wow fadeInUp py-5 mt-5">
                 <div className="container">
-                    <div className="section-header text-center mb-4">
-                        <h2>Contact Us</h2>
-                        <p>Reach out to us for inquiries or assistance. We're here to help!</p>
-                    </div>
+                    <>
+                        <style>
+                            {`
+                   #header a {color:black !important}
+                   #header 
+                      {position-relative !important}
+                      `}
+                        </style>
+                        <div className="section-header text-center mb-4">
+                            <h2>Contact Us</h2>
+                            <p>Reach out to us for inquiries or assistance. We're here to help!</p>
+                        </div>
+                    </>
+
                     <div className="row contact-info mb-5">
                         {/* Contact Info Section */}
                         <div className="col-md-4 mb-3">
@@ -53,7 +63,7 @@ const ContactPage = () => {
                             <div className="contact-phone">
                                 <i className="ion-ios-telephone-outline display-4 mb-2" />
                                 <h3>Phone Number</h3>
-                                <p><a href="tel:+155895548855">+918085583055 <br/>
+                                <p><a href="tel:+155895548855">+918085583055 <br />
                                     +917752358727</a></p>
                             </div>
                         </div>
@@ -75,7 +85,7 @@ const ContactPage = () => {
                                         Your message has been sent. Thank you!
                                     </Alert>
                                 )}
-                                 <Formik
+                                <Formik
                                     initialValues={{
                                         name: "",
                                         email: "",
