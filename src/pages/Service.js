@@ -20,9 +20,9 @@ function Service() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="services-section">
+      <section id="services" className="services-section mt-2">
         <div className="container">
-          <h2 className="section-title">Our Services</h2>
+          {/* <h2 className="section-title">Our Services</h2> */}
           <div className="service-cards">
             {/* Service 1 */}
             <div className="service-card">

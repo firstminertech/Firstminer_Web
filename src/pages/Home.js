@@ -19,27 +19,27 @@ const HomePage = observer(() => {
   useEffect(() => {
     websiteStore?.getTeams();
   }, []);
-const [isSuccess, setIsSuccess] = useState(false);
-    const [loading, setLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-     // Function to handle form submission using mailto
-     const handleSubmit = (values, { resetForm }) => {
-        setLoading(true);
-        setIsSuccess(false); // Reset success state before submitting
+  // Function to handle form submission using mailto
+  const handleSubmit = (values, { resetForm }) => {
+    setLoading(true);
+    setIsSuccess(false); // Reset success state before submitting
 
-        // Construct the mailto link with form values
-        const subject = encodeURIComponent(values.subject);
-        const body = encodeURIComponent(`Name: ${values.name}\nEmail: ${values.email}\n\nMessage: ${values.message}`);
-        const mailtoLink = `mailto:firstminertech@gmail.com?subject=${subject}&body=${body}`;
+    // Construct the mailto link with form values
+    const subject = encodeURIComponent(values.subject);
+    const body = encodeURIComponent(`Name: ${values.name}\nEmail: ${values.email}\n\nMessage: ${values.message}`);
+    const mailtoLink = `mailto:firstminertech@gmail.com?subject=${subject}&body=${body}`;
 
-        // Open the default email client with the pre-filled email
-        window.location.href = mailtoLink;
+    // Open the default email client with the pre-filled email
+    window.location.href = mailtoLink;
 
-        // Reset the form and success state
-        resetForm();
-        setIsSuccess(true); // Indicate that the form was "successfully submitted" (even though it relies on the user's email client)
-        setLoading(false);
-    };
+    // Reset the form and success state
+    resetForm();
+    setIsSuccess(true); // Indicate that the form was "successfully submitted" (even though it relies on the user's email client)
+    setLoading(false);
+  };
   const [show, setShow] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -294,16 +294,19 @@ const [isSuccess, setIsSuccess] = useState(false);
         <h2 className="client-title mt-4">Testimonials</h2>
         <p className="client-para">
           At FirstMiner, we believe that our success is built on the trust and
-          satisfaction of our clients. Our portfolio showcases a wide range of
-          successful projects, but nothing speaks louder than the voices of
-          those we have worked with. Here are just a few of the testimonials
+          satisfaction of our clients.Here are just a few of the testimonials
           from our valued clients, who share their experiences with our
           services, expertise, and commitment to excellence. We are proud of the
           lasting relationships we have built and the impact we've made in
           helping our clients achieve their goals.
         </p>
+        <div className="d-flex justify-content-center">
+          <div className="col-10 p-4">
+            <Testimonials />
+          </div>
+        </div>
 
-        <Testimonials />
+
 
         <section id="call-to-action" className="wow fadeInUp">
           <div className="container">
@@ -691,112 +694,112 @@ const [isSuccess, setIsSuccess] = useState(false);
           <Modal.Title>Contact Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <div className="form-container">
-                                <h2 className="form-title">For InQuery</h2>
-                                {isSuccess && (
-                                    <Alert variant="success" className="success-alert">
-                                        Your message has been sent. Thank you!
-                                    </Alert>
-                                )}
-                                 <Formik
-                                    initialValues={{
-                                        name: "",
-                                        email: "",
-                                        subject: "",
-                                        message: "",
-                                    }}
-                                    validationSchema={Yup.object({
-                                        name: Yup.string()
-                                            .min(4, "Name must be at least 4 characters")
-                                            .required("Name is required"),
-                                        email: Yup.string()
-                                            .email("Invalid email address")
-                                            .required("Email is required"),
-                                        subject: Yup.string()
-                                            .min(4, "Subject must be at least 4 characters")
-                                            .required("Subject is required"),
-                                        message: Yup.string().required("Message is required"),
-                                    })}
-                                    onSubmit={handleSubmit}  // Pass the handleSubmit function
-                                >
-                                    {formik => (
-                                        <Form onSubmit={formik.handleSubmit}>
-                                            <Row>
-                                                <Col md={6} className="mt-1">
-                                                    <Form.Group controlId="name">
-                                                        <Form.Control
-                                                            type="text"
-                                                            name="name"
-                                                            value={formik.values.name}
-                                                            onChange={formik.handleChange}
-                                                            onBlur={formik.handleBlur}
-                                                            placeholder="Your Name"
-                                                            className="form-input"
-                                                            isInvalid={formik.touched.name && formik.errors.name}
-                                                        />
-                                                        <Form.Control.Feedback type="invalid">
-                                                            {formik.errors.name}
-                                                        </Form.Control.Feedback>
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col md={6} className="mt-1">
-                                                    <Form.Group controlId="email">
-                                                        <Form.Control
-                                                            type="email"
-                                                            name="email"
-                                                            value={formik.values.email}
-                                                            onChange={formik.handleChange}
-                                                            onBlur={formik.handleBlur}
-                                                            placeholder="Your Email"
-                                                            className="form-input"
-                                                            isInvalid={formik.touched.email && formik.errors.email}
-                                                        />
-                                                        <Form.Control.Feedback type="invalid">
-                                                            {formik.errors.email}
-                                                        </Form.Control.Feedback>
-                                                    </Form.Group>
-                                                </Col>
-                                            </Row>
-                                            <Form.Group controlId="subject" className="mt-1">
-                                                <Form.Control
-                                                    type="text"
-                                                    name="subject"
-                                                    value={formik.values.subject}
-                                                    onChange={formik.handleChange}
-                                                    onBlur={formik.handleBlur}
-                                                    placeholder="Subject"
-                                                    className="form-input"
-                                                    isInvalid={formik.touched.subject && formik.errors.subject}
-                                                />
-                                                <Form.Control.Feedback type="invalid">
-                                                    {formik.errors.subject}
-                                                </Form.Control.Feedback>
-                                            </Form.Group>
-                                            <Form.Group controlId="message" className="mt-1">
-                                                <Form.Control
-                                                    as="textarea"
-                                                    name="message"
-                                                    rows={5}
-                                                    value={formik.values.message}
-                                                    onChange={formik.handleChange}
-                                                    onBlur={formik.handleBlur}
-                                                    placeholder="Message"
-                                                    className="form-input"
-                                                    isInvalid={formik.touched.message && formik.errors.message}
-                                                />
-                                                <Form.Control.Feedback type="invalid">
-                                                    {formik.errors.message}
-                                                </Form.Control.Feedback>
-                                            </Form.Group>
-                                            <div className="text-center">
-                                                <button type="submit" variant="primary" disabled={loading} className="submit-button submit10">
-                                                    {loading ? "Sending..." : "Send Message"}
-                                                </button>
-                                            </div>
-                                        </Form>
-                                    )}
-                                </Formik>
-                            </div>
+          <div className="form-container">
+            <h2 className="form-title">For InQuery</h2>
+            {isSuccess && (
+              <Alert variant="success" className="success-alert">
+                Your message has been sent. Thank you!
+              </Alert>
+            )}
+            <Formik
+              initialValues={{
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+              }}
+              validationSchema={Yup.object({
+                name: Yup.string()
+                  .min(4, "Name must be at least 4 characters")
+                  .required("Name is required"),
+                email: Yup.string()
+                  .email("Invalid email address")
+                  .required("Email is required"),
+                subject: Yup.string()
+                  .min(4, "Subject must be at least 4 characters")
+                  .required("Subject is required"),
+                message: Yup.string().required("Message is required"),
+              })}
+              onSubmit={handleSubmit}  // Pass the handleSubmit function
+            >
+              {formik => (
+                <Form onSubmit={formik.handleSubmit}>
+                  <Row>
+                    <Col md={6} className="mt-1">
+                      <Form.Group controlId="name">
+                        <Form.Control
+                          type="text"
+                          name="name"
+                          value={formik.values.name}
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                          placeholder="Your Name"
+                          className="form-input"
+                          isInvalid={formik.touched.name && formik.errors.name}
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          {formik.errors.name}
+                        </Form.Control.Feedback>
+                      </Form.Group>
+                    </Col>
+                    <Col md={6} className="mt-1">
+                      <Form.Group controlId="email">
+                        <Form.Control
+                          type="email"
+                          name="email"
+                          value={formik.values.email}
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                          placeholder="Your Email"
+                          className="form-input"
+                          isInvalid={formik.touched.email && formik.errors.email}
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          {formik.errors.email}
+                        </Form.Control.Feedback>
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                  <Form.Group controlId="subject" className="mt-1">
+                    <Form.Control
+                      type="text"
+                      name="subject"
+                      value={formik.values.subject}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      placeholder="Subject"
+                      className="form-input"
+                      isInvalid={formik.touched.subject && formik.errors.subject}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {formik.errors.subject}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+                  <Form.Group controlId="message" className="mt-1">
+                    <Form.Control
+                      as="textarea"
+                      name="message"
+                      rows={5}
+                      value={formik.values.message}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      placeholder="Message"
+                      className="form-input"
+                      isInvalid={formik.touched.message && formik.errors.message}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {formik.errors.message}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+                  <div className="text-center">
+                    <Button type="submit" variant="primary" disabled={loading} className="submit-button">
+                      {loading ? "Sending..." : "Send Message"}
+                    </Button>
+                  </div>
+                </Form>
+              )}
+            </Formik>
+          </div>
         </Modal.Body>
         {/* <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

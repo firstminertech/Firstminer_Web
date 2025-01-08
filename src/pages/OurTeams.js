@@ -18,6 +18,7 @@ const OurTeams = () => {
         setSelectedMember(null);
     };
 
+     
     // Sample team members (you can replace these with actual data or state)
     const teamMembers = [
         {
@@ -122,6 +123,7 @@ const OurTeams = () => {
     return (
         <div>
             <Header />
+            
             <section className="team-section">
                 <div className="container">
                     <div className="section-header">
