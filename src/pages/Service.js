@@ -151,7 +151,10 @@ function Service() {
           <h2 className="contact-title">Contact Us</h2>
           <p className="contact-info">
             Have questions? Reach out to us at{" "}
-            <strong className="e-mail10">firstminertech@gmail.com</strong>.
+            <a href="mailto:firstminertech@gmail.com" className="e-mail10">
+  firstminertech@gmail.com
+</a>
+
           </p>
         </div>
       </section>
@@ -185,24 +188,24 @@ function Service() {
                 the way businesses speak, listen and share online.
               </p>
             </div>
-          </div>
-
-          <div className="benefits-cards d-flex justify-content-center align-items-center">
-            <div className="benefit-card text-center mt-4">
+            <div className="benefit-card">
               <i className="bi bi-heart-fill benefit-icon"></i>
               <h5 className="benefit-title">Our Care</h5>
               <p className="benefit-description">
-                Our digital marketing, Mobile Application Development, Website
-                Development work speaks for itself. We deliver an outstanding
-                service custom-tailored to each and every one of our clients.
+              Our digital marketing, Mobile Application
+                  Development, Website Development work speaks for itself.
+                  We deliver an outstanding service custom-tailored to each and every one of our clients.
+                
               </p>
             </div>
+            
           </div>
+
+          
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer />
+
     </div>
   );
 }

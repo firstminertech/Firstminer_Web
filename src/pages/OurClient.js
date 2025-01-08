@@ -30,8 +30,7 @@ const OurClient = () => {
       {/* Contact Section */}
 
 
-      {/* Footer */}
-      <Footer />
+      
     </div>
   );
 };

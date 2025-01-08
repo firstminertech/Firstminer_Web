@@ -23,11 +23,13 @@ import OutreachWeb from './pages/portfolioSubPage/OutreachWeb ';
 import LearnEarn from './pages/portfolioSubPage/LearnEarn';
 import RealStateBaba from './pages/portfolioSubPage/RealStateBaba';
 import Railway from './pages/portfolioSubPage/Railway';
+import Footer from './component/Footer';
 
 
 
 function App() {
   return (
+    <div>
  <Router>
    <Routes>
     <Route exact path="/" element={<HomePage/>}/>
@@ -59,6 +61,9 @@ function App() {
     <Route exact path="/admin/add-client" element={<AddClient/>}/>
    </Routes>
    </Router>
+
+   <Footer />
+   </div>
   );
 }
 

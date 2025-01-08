@@ -1711,7 +1711,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .benefit-card {
@@ -2649,7 +2649,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .e-mail10 {
-  color: #379dbf;
+  color: #379dbf !important;
 }
 
 .card {
@@ -2745,3 +2745,54 @@ body.mobile-nav-active #mobile-nav-toggle {
 {
   color: #1c3c92 !important;
 }
+
+.footer-top {
+  background-color:  #0d2735;
+}
+
+.footer-links ul li i {
+  margin-right: 10px;
+}
+
+.footer-links a:hover {
+  color: #f39c12;
+}
+
+.footer-contact address strong {
+  color: #f39c12;
+}
+
+.social-links a i {
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+
+.head10 {
+  color: #a2cce3;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.head10:hover {
+  color: #a2cce3; /* New color on hover */
+  transform: scale(1.1); /* Slightly enlarges the element */
+  cursor: pointer; /* Changes the cursor to a pointer */
+}
+.link10
+{
+  color: white;
+  border: 1px solid #68A4C4;
+  border-radius: 6px;
+  background-color: #607b89;
+}
+
+.useful-link1 li {
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.useful-link1 li:hover {
+  transform: scale(1.05); /* Slightly enlarges the element */
+  cursor: pointer; /* Changes the cursor to a pointer */
+ 
+}
+

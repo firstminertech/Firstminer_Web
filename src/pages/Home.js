@@ -684,7 +684,7 @@ const [isSuccess, setIsSuccess] = useState(false);
 
         {/* #team */}
       </main>
-      <Footer />
+
       {/* Modal */}
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>

@@ -110,7 +110,7 @@ function CareerPage() {
                 </div>
             </section>
 
-            <Footer />
+           
         </div>
     );
 }

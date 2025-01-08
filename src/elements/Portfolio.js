@@ -32,7 +32,7 @@ const Portfolio = () => {
       title: 'Outreach.money App',
       category: 'Mobile App',
       description: `A secure and innovative mobile application built on blockchain technology, offering users a seamless experience for managing digital assets.`,
-      image: './assets/img/Dashboard.jpg',
+      image: './assets/img/out.jpg',
       href:'/outreach-app-subpage',
     },
     {
