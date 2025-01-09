@@ -504,17 +504,18 @@ const HomePage = observer(() => {
                       />
                     </div>
                     <div className="member-details">
-                      <h4>Sakshi Rathore</h4>
-                      <span>App Developer</span>
+                      <h4>Shivam Gupta</h4>
+                      <span>Software Developer</span>
                       <p>
-                        Sakshi is an enthusiastic app developer who specializes
-                        in creating mobile applications that deliver seamless
-                        user experiences. With a passion for both Android and
-                        iOS development, she focuses on crafting intuitive and
-                        high-performing apps that cater to diverse user needs.
-                        Sakshi’s attention to detail and commitment to improving
-                        app functionality make her a reliable contributor in the
-                        tech world.
+                        Shivam is a dedicated software developer with a strong
+                        foundation in building efficient and scalable
+                        applications. With a passion for coding and
+                        problem-solving, he is driven by the challenge of
+                        developing innovative solutions that meet both user
+                        needs and business objectives. Shivam consistently seeks
+                        to expand his knowledge and refine his skills, embracing
+                        new technologies to stay ahead in the fast-evolving tech
+                        landscape.
                       </p>
                       <div className="social-links">
                         <a href="" target="_blank" rel="noopener noreferrer">
@@ -543,18 +544,17 @@ const HomePage = observer(() => {
                       />
                     </div>
                     <div className="member-details">
-                      <h4>Shivam Gupta</h4>
-                      <span>Software Developer</span>
+                      <h4>Sakshi Rathore</h4>
+                      <span>App Developer</span>
                       <p>
-                        Shivam is a dedicated software developer with a strong
-                        foundation in building efficient and scalable
-                        applications. With a passion for coding and
-                        problem-solving, he is driven by the challenge of
-                        developing innovative solutions that meet both user
-                        needs and business objectives. Shivam consistently seeks
-                        to expand his knowledge and refine his skills, embracing
-                        new technologies to stay ahead in the fast-evolving tech
-                        landscape.
+                        Sakshi is an enthusiastic app developer who specializes
+                        in creating mobile applications that deliver seamless
+                        user experiences. With a passion for both Android and
+                        iOS development, she focuses on crafting intuitive and
+                        high-performing apps that cater to diverse user needs.
+                        Sakshi’s attention to detail and commitment to improving
+                        app functionality make her a reliable contributor in the
+                        tech world.
                       </p>
                       <div className="social-links">
                         <a href="" target="_blank" rel="noopener noreferrer">

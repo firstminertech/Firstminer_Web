@@ -35,7 +35,7 @@ const OurTeams = () => {
         },
         {
             name: "Sudhanshu Kanwar",
-            role: "Software Developer",
+            role: "Software Developer (Team Leader)",
             description: "A developer",
             image: "assets/img/logo-final.png",
             socials: {
