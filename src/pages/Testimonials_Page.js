@@ -18,7 +18,7 @@ const TestimonialPage = () => {
             </section>
             <div className="testimonial-box">
                 <section id="services" className="services-section py-4">
-                    <div className="container">
+                    <div className="">
                         <div className="row">
                             {/* Left Section */}
                             <div className="col-md-3 text-center d-flex flex-column align-items-center justify-content-center">

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="wow fadeInUp" style={{ backgroundColor: "#f9f9f9", padding: "60px 0" }}>
+    <section id="testimonials" className="wow fadeInUp" >
 
       {/* <div className='row'> */}
       {/* <div className=' col-3'>
