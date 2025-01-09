@@ -1773,7 +1773,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .apply-description {
   font-size: 1.25rem;
   margin-top: 20px;
-  color: #50d8af; /* Light Green */
+  color: #0c2e8a; /* Light Green */
 }
 
 .btn-cta {
@@ -2811,7 +2811,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Transparent Header */
 #header {
  
-  position: absolute; /* Or fixed if you want it to stay on top while scrolling */
+  position: relative; /* Or fixed if you want it to stay on top while scrolling */
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
@@ -2845,7 +2845,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .nav-menu a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   text-decoration: none;
 }

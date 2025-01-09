@@ -85,7 +85,7 @@ const OurTeams = () => {
         {
             name: "Pallavi Rathore",
             role: "Tester & UI/UX Developer",
-            description: "A developer",
+            description: "Intern",
             image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
@@ -95,9 +95,9 @@ const OurTeams = () => {
             },
         },
         {
-            name: "Sandeep",
+            name: "Sandeep Bhatt",
             role: "Designer",
-            description: "A developer",
+            description: "Graphic Designer",
             image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
@@ -107,9 +107,9 @@ const OurTeams = () => {
             },
         },
         {
-            name: "Hritwik",
+            name: "Hritwik Ujjaini",
             role: "Senior Designer",
-            description: "A developer",
+            description: "Senior Designer",
             image: "assets/img/logo-final.png",
             socials: {
                 instagram: "#",
