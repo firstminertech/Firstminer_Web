@@ -1,4 +1,4 @@
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination,Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Testimonials = () => {
@@ -14,30 +14,33 @@ const Testimonials = () => {
 
           {/* Swiper Component */}
           <Swiper
-            modules={[Pagination, Autoplay]}
-            spaceBetween={30}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{ clickable: true }}
-            slidesPerView={3}
-            speed={800}
-            style={{ paddingBottom: "40px" }}
-            breakpoints={{
-              1024: {
-                slidesPerView: 3,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              20: {
-                slidesPerView: 1,
-              },
-            }}
-
-          >
+        modules={[Pagination, Autoplay, Navigation]}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        navigation={{
+          prevEl: '#swiper-prev',
+          nextEl: '#swiper-next',
+        }}
+        slidesPerView={3}
+        speed={800}
+        style={{ paddingBottom: '40px' }}
+        breakpoints={{
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          20: {
+            slidesPerView: 1,
+          },
+        }}
+      >
 
 
             {/* First Slide */}

@@ -168,7 +168,7 @@ h6 {
   --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
 }
@@ -2635,6 +2635,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #0c2e8a;
   color: #fff;
 }
+.navigation1 i {
+  font-size: 2em;
+  color: #100f0f;
+  margin: 0 10px;
+  padding: 10px;
+  border: 2px solid #1e1c1c;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navigation1 i:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 .team-home {
   background: linear-gradient(to right, #0044cc, #50d8af);
@@ -2643,7 +2656,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 600px;
 }
 
 .team-member a :hover {
