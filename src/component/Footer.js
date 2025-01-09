@@ -34,7 +34,7 @@ const Footer = () => {
                   href="/our-teams"
                   className="text-decoration-none text-light"
                 >
-                 Our Team
+                  Our Team
                 </a>
               </li>
               <li className="d-flex align-items-center mb-2">
@@ -64,7 +64,7 @@ const Footer = () => {
                   Careers
                 </a>
               </li>
-             
+
             </ul>
           </div>
           {/* Our Services */}
@@ -89,8 +89,8 @@ const Footer = () => {
                   App / Web Development
                 </a>
               </li>
-             
-             
+
+
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a
@@ -158,6 +158,9 @@ const Footer = () => {
               </a>
               <a href="#" className="linkedin">
                 <i className="bx bxl-linkedin link10 fs-3"></i>
+              </a>
+              <a href="#" className="twitter me-3">
+                <i class="fa-brands fa-twitter link10 fs-3"></i>
               </a>
             </div>
           </div>
