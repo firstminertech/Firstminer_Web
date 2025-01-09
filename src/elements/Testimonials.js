@@ -43,7 +43,14 @@ const Testimonials = () => {
             {/* First Slide */}
             <SwiperSlide>
 
-              <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
+              <div className="testimonial-item text-center mb-4" style={{
+                borderRadius: "15px",
+                padding: "30px",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                backgroundColor: "#fff",
+                height: "450px",
+
+              }}>
 
                 <img
                   src="assets/img/testimonial-1.jpg"
@@ -56,13 +63,36 @@ const Testimonials = () => {
                 <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Yugal Kishor</h3>
                 <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>CEO & Founder</h4>
 
-                <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
-                  {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                  Yugal Kishor is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation.
-                  His dedication to excellence has driven the company’s growth and success.
-                  With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.
-                  {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
-                </p>
+                <div
+                  className="scrollable-text-container"
+                  style={{
+                    maxHeight: "150px",
+                    overflow: "auto",
+                    scrollbarWidth: "none", // For Firefox
+                    msOverflowStyle: "none" // For IE and Edge
+                  }}
+                >
+                  <style>
+                    {`
+      .scrollable-text-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for Webkit browsers */
+      }
+    `}
+                  </style>
+
+                  <p style={{
+                    fontStyle: "italic",
+                    color: "#555",
+                    fontSize: "1.1rem",
+                    margin: 0 // Remove extra margins for better fit
+                  }}>
+                    {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
+                    Yugal Kishor is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation.
+                    His dedication to excellence has driven the company’s growth and success.
+                    With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.
+                    {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
+                  </p>
+                </div>
 
 
               </div>
@@ -70,34 +100,83 @@ const Testimonials = () => {
 
             {/* Second Slide */}
             <SwiperSlide>
-              <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
+              <div
+                className="testimonial-item text-center mb-4"
+                style={{
+                  borderRadius: "15px",
+                  padding: "30px",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                  backgroundColor: "#fff",
+                  height: "450px",
+
+                }}
+              >
+                <style>
+                  {`
+      .testimonial-item::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for Webkit browsers */
+      }
+    `}
+                </style>
 
                 <img
                   src="assets/img/testimonial-2.jpg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
-                  style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
+                  style={{
+                    border: "4px solid #fff",
+                    boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+                    transition: "transform 0.3s ease"
+                  }}
                   onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                 />
                 <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Harish Giri</h3>
                 <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>CEO & Founder</h4>
 
-                <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
-                  {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
+                <div
+                  className="scrollable-text-container"
+                  style={{
+                    maxHeight: "150px",
+                    overflow: "auto",
+                    scrollbarWidth: "none", // For Firefox
+                    msOverflowStyle: "none" // For IE and Edge
+                  }}
+                >
+                  <style>
+                    {`
+      .scrollable-text-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for Webkit browsers */
+      }
+    `}
+                  </style>
 
-                  Harish Giri is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation.
-                  His dedication to excellence has driven the company’s growth and success.
-                  With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.
-                  {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
-                </p>
-
+                  <p style={{
+                    fontStyle: "italic",
+                    color: "#555",
+                    fontSize: "1.1rem",
+                    margin: 0 // Remove extra margins for better fit
+                  }}>
+                    Harish Giri is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation.
+                    His dedication to excellence has driven the company’s growth and success.
+                    With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.
+                  </p>
+                </div>
 
               </div>
+
+
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
+              <div className="testimonial-item text-center mb-4" style={{
+                borderRadius: "15px",
+                padding: "30px",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                backgroundColor: "#fff",
+                height: "450px",
+
+              }}>
 
                 <img
                   src="assets/img/logo-final.png"
@@ -113,13 +192,37 @@ const Testimonials = () => {
                 {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
                 <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4>
 
-                <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
-                  Anik Ranjan is a skilled Software Developer known for his expertise in problem-solving.
-                  With a passion for technology and innovation, he continuously strives to create efficient
-                  and user-friendly software solutions.
-                  Anik's dedication to his craft has made him a valuable contributor to the development industry.
+                <div
+                  className="scrollable-text-container"
+                  style={{
+                    maxHeight: "150px",
+                    overflow: "auto",
+                    scrollbarWidth: "none", // For Firefox
+                    msOverflowStyle: "none" // For IE and Edge
+                  }}
+                >
+                  <style>
+                    {`
+      .scrollable-text-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for Webkit browsers */
+      }
+    `}
+                  </style>
 
-                </p>
+                  <p style={{
+                    fontStyle: "italic",
+                    color: "#555",
+                    fontSize: "1.1rem",
+                    margin: 0 // Remove extra margins for better fit
+                  }}>
+                    Anik Ranjan is a skilled Software Developer known for his expertise in problem-solving.
+                    With a passion for technology and innovation, he continuously strives to create efficient
+                    and user-friendly software solutions.
+                    Anik's dedication to his craft has made him a valuable contributor to the development industry.
+
+                  </p>
+                </div>
+
 
 
               </div>
@@ -127,7 +230,17 @@ const Testimonials = () => {
 
 
             <SwiperSlide>
-              <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
+              <div
+                className="testimonial-item text-center mb-4"
+                style={{
+                  borderRadius: "15px",
+                  padding: "30px",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                  backgroundColor: "#fff",
+                  height: "450px",
+
+                }}
+              >
                 <img
                   src="assets/img/logo-final.png"
                   className="testimonial-img rounded-circle mb-3"
@@ -139,19 +252,53 @@ const Testimonials = () => {
                 <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Sudhanshu Kanwar</h3>
                 <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4>
 
-                <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
-                  {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                  Sudhanshu Kanwar is a talented Developer with a passion for coding and technology.
-                  He specializes in creating innovative solutions and optimizing systems for improved functionality.
-                  Known for his problem-solving skills , Sudhanshu consistently contributes to the development of  software projects.
-                  {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
-                </p>
+                <div
+                  className="scrollable-text-container"
+                  style={{
+                    maxHeight: "150px",
+                    overflow: "auto",
+                    scrollbarWidth: "none", // For Firefox
+                    msOverflowStyle: "none" // For IE and Edge
+                  }}
+                >
+                  <style>
+                    {`
+      .scrollable-text-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for Webkit browsers */
+      }
+    `}
+                  </style>
+
+                  <p style={{
+                    fontStyle: "italic",
+                    color: "#555",
+                    fontSize: "1.1rem",
+                    margin: 0 // Remove extra margins for better fit
+                  }}>
+                    {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
+                    Sudhanshu Kanwar is a talented Developer with a passion for coding and technology.
+                    He specializes in creating innovative solutions and optimizing systems for improved functionality.
+                    Known for his problem-solving skills , Sudhanshu consistently contributes to the development of  software projects.
+                    {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
+                  </p>
+                </div>
+
 
 
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="testimonial-item text-center mb-4" style={{ borderRadius: "15px", padding: "30px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", backgroundColor: "#fff" }}>
+              <div
+                className="testimonial-item text-center mb-4"
+                style={{
+                  borderRadius: "15px",
+                  padding: "30px",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                  backgroundColor: "#fff",
+                  height: "450px",
+
+                }}
+              >
                 <img
                   src="assets/img/logo-final.png"
                   className="testimonial-img rounded-circle mb-3"
@@ -163,13 +310,36 @@ const Testimonials = () => {
                 <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Dharmesh Darshan</h3>
                 <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4>
 
-                <p style={{ fontStyle: "italic", color: "#555", fontSize: "1.1rem" }}>
-                  {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                  Dharmesh Darshan is a skilledDeveloper with a strong expertise in building innovative and efficient software solutions.
-                  His problem-solving abilities  help create seamless user experiences.
-                  Dharmesh is committed to continuous learning  high-quality work, making him a valuable asset to the tech community.
-                  {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
-                </p>
+                <div
+                  className="scrollable-text-container"
+                  style={{
+                    maxHeight: "150px",
+                    overflow: "auto",
+                    scrollbarWidth: "none", // For Firefox
+                    msOverflowStyle: "none" // For IE and Edge
+                  }}
+                >
+                  <style>
+                    {`
+      .scrollable-text-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for Webkit browsers */
+      }
+    `}
+                  </style>
+
+                  <p style={{
+                    fontStyle: "italic",
+                    color: "#555",
+                    fontSize: "1.1rem",
+                    margin: 0 // Remove extra margins for better fit
+                  }}>
+                    {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
+                    Dharmesh Darshan is a skilledDeveloper with a strong expertise in building innovative and efficient software solutions.
+                    His problem-solving abilities  help create seamless user experiences.
+                    Dharmesh is committed to continuous learning  high-quality work, making him a valuable asset to the tech community.
+                    {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
+                  </p>
+                </div>
 
 
               </div>

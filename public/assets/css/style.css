@@ -2632,7 +2632,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: background-color 0.3s, color 0.3s;
 }
 .navigation i:hover {
-  background-color: #000;
+  background-color: #0c2e8a;
   color: #fff;
 }
 
