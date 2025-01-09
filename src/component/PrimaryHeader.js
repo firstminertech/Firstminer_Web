@@ -5,11 +5,11 @@ const PrimaryHeader = () => {
     <div>
       <section id="topbar" className="d-none d-lg-block">
         <div className="container">
-          <div className="row">
+          <div className="row headertop">
             {/* Contact Info */}
             <div className="col-6">
               {/* Address */}
-              <div className="d-flex align-items-center flex-wrap mb-2">
+              <div className="d-flex align-items-center flex-wrap">
                 <a
                   href="https://maps.app.goo.gl/tR8Nc4B1fDdpc6519"
                   target="_blank"
@@ -19,7 +19,7 @@ const PrimaryHeader = () => {
                   <img
                     src="assets/img/locationfirstminer.png"
                     alt="Team Member"
-                    style={{ width: "20px", height: "20px" }}
+                    style={{ height: "20px" }}
                   />
                 </a>
                 <span className="text-truncate">
@@ -28,9 +28,9 @@ const PrimaryHeader = () => {
               </div>
             </div>
             {/* <div className="col-1"></div> */}
-            <div className="d-flex col-6 justify-content-end">
+            <div className="d-flex col-6 justify-content-end headertop">
               {/* Email */}
-              <div className="col-4 mt-1 ">
+              <div className="col-4 ">
                 <div className="d-flex align-items-center ">
                   <i className="fas fa-envelope envelop-icon me-2"></i>
                   <a href="mailto:firstminertech@gmail.com" className="text-truncate email-text text-decoration-none">
@@ -40,8 +40,8 @@ const PrimaryHeader = () => {
               </div>
 
               {/* Phone */}
-              <div className="col-3">
-                <div className="d-flex align-items-center mb-2 phone-section">
+              <div className="col-3 headertop">
+                <div className="d-flex align-items-center phone-section">
                   <i className="fa-solid fa-phone phone-icon"></i>
                   <span className="phone-text">+91 7000262816</span>
                 </div>
