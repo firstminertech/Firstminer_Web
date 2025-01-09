@@ -308,28 +308,25 @@ const HomePage = observer(() => {
 
 
 
-        <section id="call-to-action" className="wow fadeInUp">
+        <section id="call-to-action" className="call-to-action-section">
           <div className="container">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-lg-9 text-center text-lg-left">
-                <h3 className="cta-title">Call To Action</h3>
+                <h3 className="cta-title">Want to build your digital Product?</h3>
                 <p className="cta-text">
-                  {" "}
-                  The Call to Action (CTA) encourages users to take the next
-                  step by providing a clear, compelling action such as signing
-                  up, learning more, or making a purchase. It is designed to be
-                  visually prominent and easily accessible, driving user
-                  engagement and conversions.
+                  Ready to take your business to the next level? Collaborate with us to achieve your goals and drive success.
+                  Our expert solutions are tailored to your needs, ensuring measurable growth and innovation. Let's build a brighter future together.
                 </p>
               </div>
               <div className="col-lg-3 cta-btn-container text-center">
-                <a href="#" className="cta-btn align-middle" onClick={handleShow}>
-                  Call To Action
+                <a href="#contact" className="cta-btn align-middle" onClick={handleShow}>
+                  Work with Us
                 </a>
               </div>
             </div>
           </div>
         </section>
+
 
         <section id="team" className="wow fadeInUp">
           <div className="container">
