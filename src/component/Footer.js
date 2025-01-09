@@ -74,7 +74,6 @@ const Footer = () => {
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a
-                  href="digital_marketing.html"
                   className="text-decoration-none text-light"
                 >
                   Digital Marketing
@@ -83,7 +82,6 @@ const Footer = () => {
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a
-                  href="app_development.html"
                   className="text-decoration-none text-light"
                 >
                   App / Web Development
@@ -94,7 +92,6 @@ const Footer = () => {
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a
-                  href="govt_tender.html"
                   className="text-decoration-none text-light"
                 >
                   Govt. Tender
@@ -103,7 +100,6 @@ const Footer = () => {
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a
-                  href="commercial_video.html"
                   className="text-decoration-none text-light"
                 >
                   Commercial Video Creation
@@ -112,7 +108,6 @@ const Footer = () => {
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a
-                  href="block_chain.html"
                   className="text-decoration-none text-light"
                 >
                   Block Chain Consultant
