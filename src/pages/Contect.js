@@ -32,19 +32,13 @@ const ContactPage = () => {
     return (
         <div>
             <Header />
-            <section id="contact" className="wow fadeInUp py-5 mt-5">
+            <section id="contact" className="wow fadeInUp py-5 ">
                 <div className="container">
                     <>
-                        <style>
-                            {`
-                   #header a {color:black !important}
-                   #header 
-                      {position-relative !important}
-                      `}
-                        </style>
+                        
                         <div className="section-header text-center mb-4">
                             <h2>Contact Us</h2>
-                            <p>Reach out to us for inquiries or assistance. We're here to help!</p>
+                            <p className="d-flex justify-content-center">Reach out to us for inquiries or assistance. We're here to help!</p>
                         </div>
                     </>
 

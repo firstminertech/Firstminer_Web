@@ -9,7 +9,7 @@ import Slider from "react-slick";
 import Testimonials from "../elements/Testimonials";
 import { useSpring, animated, useTransition } from "@react-spring/web";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { Form, Button, Alert, Row, Col, Modal } from "react-bootstrap";
 import { Formik } from "formik";
@@ -69,7 +69,22 @@ const HomePage = observer(() => {
   return (
     <div>
       <Header />
+<style>
+  {
+    `
+    .header-relative{
+    position:absolute !important;
+    }
+    .header-relative .nav-menu a {
+    color: white !important;
+    }
 
+    #header.fixed .nav-menu a{
+    color: black !important;
+    }
+    `
+  }
+</style>
       <section id="intro">
         {/* Background Video */}
         <video autoPlay muted loop id="intro-video">
@@ -116,7 +131,7 @@ const HomePage = observer(() => {
                           <i className="ion-android-checkmark-circle" /> Our
                           team develops effective content strategies for forward
                           thinking companies. We have a proven track record in
-                          increasing search engine rankings.
+                          increasing searnch engine rankings.
                         </li>
                         <li>
                           <i className="ion-android-checkmark-circle" />
@@ -337,111 +352,113 @@ const HomePage = observer(() => {
               <h2>Our Team</h2>
             </div>
             <div className="d-flex justify-content-between align-items-center gap-5">
-              <div className="col-lg-6 team-home">
-                <div className="title-z">
-                  ALL
-                  <br />
-                  TEAMS
-                </div>
-                <div class="button-z">
-                  <Link to={"/our-teams"}>Browse All</Link>
-                </div>
-                <div class="navigation">
-                  <i class="fas fa-arrow-left"></i>
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
+            <div className="col-lg-6 team-home">
+  <div className="title-z">
+    ALL
+    <br />
+    TEAMS
+  </div>
+  <div className="button-z">
+    <Link to={"/our-teams"}>Browse All</Link>
+  </div>
+  <div className="navigation">
+    {/* Add IDs or classes for linking navigation */}
+    <i id="swiper-prev" className="fas fa-arrow-left " ></i>
+    <i id="swiper-next" className="fas fa-arrow-right" ></i>
+  </div>
+</div>
 
-              <Swiper
-                modules={[Pagination, Autoplay]}
-                spaceBetween={10}
-                loop={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                slidesPerView={1}
-                speed={800}
-                style={{ paddingBottom: "40px" }}
-              >
-                <SwiperSlide>
-                  <div className="team-member">
-                    <div className="member-image">
-                      <img
-                        src="assets/img/logo-final.png"
-                        alt="Team Member"
-                        style={{ width: "200px" }}
-                      />
-                    </div>
-                    <div className="member-details">
-                      <h4>Anik Ranjan</h4>
-                      <span>Software Developer</span>
-                      <p>
-                        Anik is a skilled software developer with expertise in
-                        building innovative and scalable web applications. With
-                        a passion for clean, efficient code, he thrives in
-                        collaborative environments where technology meets
-                        creativity. Always eager to learn and grow, Anik
-                        contributes to developing cutting-edge solutions and
-                        improving user experiences.
-                      </p>
-                      <div className="social-links">
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-whatsapp"></i>
-                        </a>{" "}
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-linkedin"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="team-member">
-                    <div className="member-image">
-                      <img
-                        src="assets/img/logo-final.png"
-                        alt="Team Member"
-                        style={{ width: "200px" }}
-                      />
-                    </div>
-                    <div className="member-details">
-                      <h4>Sudhanshu Kanwar</h4>
-                      <span>Software Developer</span>
-                      <p>
-                        Sudhanshu is a dedicated software developer with a
-                        passion for creating innovative software solutions.
-                        Focused on clean, maintainable code, he has a keen
-                        interest in developing robust applications that provide
-                        excellent user experiences. With a constant drive for
-                        learning and improving, Sudhanshu is always exploring
-                        new technologies and methodologies to solve complex
-                        problems.
-                      </p>
-                      <div className="social-links">
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-whatsapp"></i>
-                        </a>{" "}
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                          <i className="fa-brands fa-linkedin"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+<Swiper
+  modules={[Pagination, Autoplay, Navigation]}
+  spaceBetween={10}
+  loop={true}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  pagination={{ clickable: true }}
+  navigation={{
+    nextEl: "#swiper-next",
+    prevEl: "#swiper-prev",
+  }}
+  slidesPerView={1}
+  speed={800}
+  style={{ paddingBottom: "40px" }}
+>
+  <SwiperSlide>
+    <div className="team-member">
+      <div className="member-image">
+        <img
+          src="assets/img/logo-final.png"
+          alt="Team Member"
+          style={{ width: "200px" }}
+        />
+      </div>
+      <div className="member-details">
+        <h4>Anik Ranjan</h4>
+        <span>Software Developer</span>
+        <p>
+          Anik is a skilled software developer with expertise in building
+          innovative and scalable web applications. With a passion for clean,
+          efficient code, he thrives in collaborative environments where
+          technology meets creativity. Always eager to learn and grow, Anik
+          contributes to developing cutting-edge solutions and improving user
+          experiences.
+        </p>
+        <div className="social-links">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
+  <SwiperSlide>
+    <div className="team-member">
+      <div className="member-image">
+        <img
+          src="assets/img/logo-final.png"
+          alt="Team Member"
+          style={{ width: "200px" }}
+        />
+      </div>
+      <div className="member-details">
+        <h4>Sudhanshu Kanwar</h4>
+        <span>Software Developer</span>
+        <p>
+          Sudhanshu is a dedicated software developer with a passion for
+          creating innovative software solutions. Focused on clean, maintainable
+          code, he has a keen interest in developing robust applications that
+          provide excellent user experiences. With a constant drive for learning
+          and improving, Sudhanshu is always exploring new technologies and
+          methodologies to solve complex problems.
+        </p>
+        <div className="social-links">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
                 <SwiperSlide>
                   <div className="team-member">
                     <div className="member-image">

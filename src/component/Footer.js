@@ -162,7 +162,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyright text-white d-flex justify-content-center">
-            © Copyright <strong>FirstMiner Technology</strong>. All Rights
+            © Copyright <strong className="ms-2">FirstMiner Technology</strong>. All Rights
             Reserved
             <a className="ms-2 head10 text-decoration-none " href="https://firstminer.in/">Firstminer.in</a>
           </div>
