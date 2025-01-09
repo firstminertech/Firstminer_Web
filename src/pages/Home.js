@@ -349,7 +349,7 @@ const HomePage = observer(() => {
               <h2>Our Team</h2>
             </div>
             <div className="d-flex justify-content-between align-items-center gap-5">
-            <div className="col-lg-6 team-home">
+            <div className="col-lg-6 team-home mb-5">
   <div className="title-z">
     ALL
     <br />
