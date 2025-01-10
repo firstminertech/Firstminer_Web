@@ -3234,6 +3234,140 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-items: center;
 }
 
+.card:hover {
+  transition: none;
+  box-shadow: initial;
+}
+/* CSS for "Why Choose Us" Component */
+
+/* General Styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Image Styling */
+
+/* Feature Cards */
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h5 {
+  font-size: 1.25rem;
+  color: #0991ba;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Contact Info */
+.contact-info {
+  font-size: 1.1rem;
+  color: #0991ba;
+  font-weight: bold;
+}
+
+.img-fluid {
+  height: 50vh;
+}
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feature-card img {
+  width: 30px;
+  height: auto;
+}
+
+.card:hover {
+  transition: none;
+  box-shadow: initial;
+}
+/* CSS for "Why Choose Us" Component */
+
+/* General Styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Image Styling */
+
+/* Feature Cards */
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h5 {
+  font-size: 1.25rem;
+  color: #0991ba;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Contact Info */
+.contact-info {
+  font-size: 1.1rem;
+  color: #0991ba;
+  font-weight: bold;
+}
+
+.img-fluid {
+  height: 50vh;
+}
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feature-card img {
+  width: 30px;
+  height: auto;
+}
+
 .blur-background{
   filter: blur(8px);
   position: absolute;
