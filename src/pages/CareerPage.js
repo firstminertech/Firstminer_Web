@@ -21,8 +21,40 @@ function CareerPage() {
                 </div>
             </section>
 
-            {/* Job Listings Section */}
-            <section id="job-listings" className="job-listings-section">
+            
+
+            {/* Benefits Section */}
+            <section id="benefits" className="benefits-section">
+                <div className="container text-center">
+                    <h2 className="benefits-title">Why Work With Us?</h2>
+                    <div className="benefits-cards">
+                        <div className="benefit-card">
+                            <i className="bi bi-people-fill benefit-icon"></i>
+                            <h5 className="benefit-title">Collaborative Culture</h5>
+                            <p className="benefit-description">
+                                Work in a team-oriented environment where innovation thrives.
+                            </p>
+                        </div>
+                        <div className="benefit-card">
+                            <i className="bi bi-bar-chart-line benefit-icon"></i>
+                            <h5 className="benefit-title">Growth Opportunities</h5>
+                            <p className="benefit-description">
+                                Enhance your career with training and development programs.
+                            </p>
+                        </div>
+                        <div className="benefit-card">
+                            <i className="bi bi-heart-fill benefit-icon"></i>
+                            <h5 className="benefit-title">Work-Life Balance</h5>
+                            <p className="benefit-description">
+                                Enjoy flexible working hours and employee wellness programs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             {/* Job Listings Section */}
+             <section id="job-listings" className="job-listings-section">
                 <div className="container">
                     <h2 className="job-listings-title d-flex justify-content-center">Current Openings</h2>
                     <div className="job-cards">
@@ -68,36 +100,7 @@ function CareerPage() {
                     </div>
                 </div>
             </section>
-
-            {/* Benefits Section */}
-            <section id="benefits" className="benefits-section">
-                <div className="container text-center">
-                    <h2 className="benefits-title">Why Work With Us?</h2>
-                    <div className="benefits-cards">
-                        <div className="benefit-card">
-                            <i className="bi bi-people-fill benefit-icon"></i>
-                            <h5 className="benefit-title">Collaborative Culture</h5>
-                            <p className="benefit-description">
-                                Work in a team-oriented environment where innovation thrives.
-                            </p>
-                        </div>
-                        <div className="benefit-card">
-                            <i className="bi bi-bar-chart-line benefit-icon"></i>
-                            <h5 className="benefit-title">Growth Opportunities</h5>
-                            <p className="benefit-description">
-                                Enhance your career with training and development programs.
-                            </p>
-                        </div>
-                        <div className="benefit-card">
-                            <i className="bi bi-heart-fill benefit-icon"></i>
-                            <h5 className="benefit-title">Work-Life Balance</h5>
-                            <p className="benefit-description">
-                                Enjoy flexible working hours and employee wellness programs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
 
             {/* Call to Action Section */}
             <section id="apply" className="apply-section">

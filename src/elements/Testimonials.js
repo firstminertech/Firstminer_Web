@@ -56,15 +56,15 @@ const Testimonials = () => {
               }}>
 
                 <img
-                  src="assets/img/testimonial-1.jpg"
+                  src="assets/img/tm1.jpeg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
                   onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                 />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Yugal Kishor</h3>
-                <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>CEO & Founder</h4>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Aarav</h3>
+                {/* <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>CEO & Founder</h4> */}
 
                 <div
                   className="scrollable-text-container"
@@ -90,9 +90,7 @@ const Testimonials = () => {
                     margin: 0 // Remove extra margins for better fit
                   }}>
                     {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                    Yugal Kishor is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation.
-                    His dedication to excellence has driven the company’s growth and success.
-                    With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.
+                    Aarav, one of our esteemed clients, approached us at Firstminer Tech for app and website development. Our team collaborated closely to understand their unique requirements and deliver a tailored solution that exceeded expectations. Yugal's project showcases our commitment to quality, innovation, and customer satisfaction in every detail."
                     {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
                   </p>
                 </div>
@@ -123,7 +121,7 @@ const Testimonials = () => {
                 </style>
 
                 <img
-                  src="assets/img/testimonial-2.jpg"
+                  src="assets/img/tm2.jpeg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{
@@ -134,8 +132,8 @@ const Testimonials = () => {
                   onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                 />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Harish Giri</h3>
-                <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>CEO & Founder</h4>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Vivaan</h3>
+                {/* <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>CEO & Founder</h4> */}
 
                 <div
                   className="scrollable-text-container"
@@ -160,9 +158,7 @@ const Testimonials = () => {
                     fontSize: "1.1rem",
                     margin: 0 // Remove extra margins for better fit
                   }}>
-                    Harish Giri is the CEO and Founder, a dynamic leader known for his strategic vision and commitment to innovation.
-                    His dedication to excellence has driven the company’s growth and success.
-                    With a focus on quality and leadership, Yugal has earned recognition and respect in the business community.
+                    Vivaan, a valued client of Firstminer Tech, entrusted us with the development of his app and website. By understanding his vision and incorporating innovative solutions, we delivered a project that reflects both functionality and design excellence. Harish's collaboration highlights our ability to bring ideas to life with precision and dedication."
                   </p>
                 </div>
 
@@ -182,7 +178,7 @@ const Testimonials = () => {
               }}>
 
                 <img
-                  src="assets/img/logo-final.png"
+                  src="assets/img/tm3.jpeg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
@@ -191,9 +187,9 @@ const Testimonials = () => {
                 />
 
                 {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Anik Ranjan</h3>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Riyaan</h3>
                 {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
-                <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4>
+                {/* <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4> */}
 
                 <div
                   className="scrollable-text-container"
@@ -218,10 +214,7 @@ const Testimonials = () => {
                     fontSize: "1.1rem",
                     margin: 0 // Remove extra margins for better fit
                   }}>
-                    Anik Ranjan is a skilled Software Developer known for his expertise in problem-solving.
-                    With a passion for technology and innovation, he continuously strives to create efficient
-                    and user-friendly software solutions.
-                    Anik's dedication to his craft has made him a valuable contributor to the development industry.
+                    "Riyaan partnered with Firstminer Tech for app and website development to bring his innovative ideas to reality. Through our detailed approach and expert execution, we delivered a solution tailored to his specific needs. Working with Anik was a rewarding experience, showcasing our dedication to quality and client satisfaction."
 
                   </p>
                 </div>
@@ -245,15 +238,15 @@ const Testimonials = () => {
                 }}
               >
                 <img
-                  src="assets/img/logo-final.png"
+                  src="assets/img/tm4.jpeg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
                   onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                 />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Sudhanshu Kanwar</h3>
-                <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Kavya</h3>
+                {/* <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4> */}
 
                 <div
                   className="scrollable-text-container"
@@ -279,9 +272,7 @@ const Testimonials = () => {
                     margin: 0 // Remove extra margins for better fit
                   }}>
                     {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                    Sudhanshu Kanwar is a talented Developer with a passion for coding and technology.
-                    He specializes in creating innovative solutions and optimizing systems for improved functionality.
-                    Known for his problem-solving skills , Sudhanshu consistently contributes to the development of  software projects.
+                    "Kavya collaborated with Firstminer Tech to develop a cutting-edge app and website that perfectly matched his vision. Our team focused on delivering a seamless user experience and a modern design, ensuring the final product met all expectations. Partnering with Sudhanshu was a pleasure, highlighting our commitment to innovation and excellence."
                     {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
                   </p>
                 </div>
@@ -303,15 +294,15 @@ const Testimonials = () => {
                 }}
               >
                 <img
-                  src="assets/img/logo-final.png"
+                  src="assets/img/tm5.jpeg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
                   onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                   onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                 />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Dharmesh Darshan</h3>
-                <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '600', color: "#333" }}>Divya</h3>
+                {/* <h4 style={{ fontSize: '1.1rem', color: '#777', fontWeight: '500' }}>Software Developer</h4> */}
 
                 <div
                   className="scrollable-text-container"
@@ -337,9 +328,7 @@ const Testimonials = () => {
                     margin: 0 // Remove extra margins for better fit
                   }}>
                     {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                    Dharmesh Darshan is a skilledDeveloper with a strong expertise in building innovative and efficient software solutions.
-                    His problem-solving abilities  help create seamless user experiences.
-                    Dharmesh is committed to continuous learning  high-quality work, making him a valuable asset to the tech community.
+                    "Divya chose Firstminer Tech for app and website development to transform his ideas into reality. Our team worked closely with him to create a solution that combined innovation, functionality, and a user-centric design. Collaborating with Dharmesh was an inspiring journey that underscores our dedication to delivering exceptional results."
                     {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
                   </p>
                 </div>

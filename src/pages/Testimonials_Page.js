@@ -22,11 +22,11 @@ const TestimonialPage = () => {
               {/* Left Section */}
               <div className="col-md-3 text-center d-flex flex-column align-items-center justify-content-center">
                 <h1 className="testimonial-title">Testimonial</h1>
-                {/* <img
+                <img
                                     src="assets/img/testimonial.png"
                                     alt="Team Member"
                                     className="testimonial-img"
-                                /> */}
+                                />
                 {/* Swiper Navigation Arrows */}
                 <div className="arrow-container mt-4">
                   <div className="navigation1">

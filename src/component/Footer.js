@@ -129,7 +129,8 @@ const Footer = () => {
               <br />
               <strong>Phone:</strong> +918085583055, +917752358727
               <br />
-              <strong>Email:</strong> firstminertech@gmail.com
+              <a className="email-text1" href="mailto:firstminertech@gmail.com"><strong>Email:</strong> firstminertech@gmail.com</a>
+
               <br />
             </address>
           </div>
