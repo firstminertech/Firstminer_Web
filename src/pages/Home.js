@@ -116,16 +116,16 @@ const HomePage = observer(() => {
                 {transitions((style, item) =>
                   item ? (
                     <>
-                    <h2 className="Firstminer-title">
+                      <h2 className="Firstminer-title">
                         Firstminer Technology Solutions Pvt. Ltd .
-                        </h2>
-                     <h6>
+                      </h2>
+                      <h6>
                         Our team of specialists consistently delivers
                         outstanding results combining creative ideas with our
                         vast experience. We can help you build a sustainable,
                         meaningful relationship with your clients by engaging
                         them with your brand using social media.
-                        </h6>
+                      </h6>
                       <ul>
                         <li>
                           <i className="ion-android-checkmark-circle" /> Our
@@ -316,91 +316,183 @@ const HomePage = observer(() => {
             and efficient solutions. Our technology stack is carefully chosen to meet the diverse needs of modern
             businesses and ensure robust performance. Here’s what powers our innovation:
           </p>
-          </div>
-          <div className="d-flex justify-content-around flex-wrap mt-4">
-            <div className="card-container d-flex justify-content-center">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/mern.jpg"
-                  alt="Card Image"
-                  className="card-image"
-                />
+        </div>
+        <div className="d-flex justify-content-around flex-wrap mt-4">
+          <div className="card-container d-flex justify-content-center">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/mern.jpg"
+                alt="Card Image"
+                className="card-image"
+              />
 
-              </div>
-            </div>
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/react.jpg"
-                  alt="Card Image"
-                  className="card-image"
-                />
-
-              </div>
-            </div>
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/flutter.png"
-                  alt="Card Image"
-                  className="card-image"
-                />
-
-              </div>
-            </div>
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/laravel.png"
-                  alt="Card Image"
-                  className="card-image"
-                />
-
-              </div>
             </div>
           </div>
-          <div className="d-flex justify-content-around flex-wrap mt-4">
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/code.png"
-                  alt="Card Image"
-                  className="card-image"
-                />
+          <div className="card-container">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/django.png"
+                alt="Card Image"
+                className="card-image"
+              />
 
-              </div>
             </div>
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/ios.png"
-                  alt="Card Image"
-                  className="card-image"
-                />
-
-              </div>
-            </div>
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/java.png"
-                  alt="Card Image"
-                  className="card-image"
-                />
-
-              </div>
-            </div>
-            <div className="card-container">
-              <div className="card-technology shadow">
-                <img
-                  src="assets/img/net.png"
-                  alt="Card Image"
-                  className="card-image"
-                />
-
-              </div>
-           
           </div>
+          <div className="card-container">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/react.jpg"
+                alt="Card Image"
+                className="card-image"
+              />
+
+            </div>
+          </div>
+          <div className="card-container">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/flutter.png"
+                alt="Card Image"
+                className="card-image"
+              />
+
+            </div>
+          </div>
+          <div className="card-container">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/laravel.png"
+                alt="Card Image"
+                className="card-image"
+              />
+
+            </div>
+          </div>
+        </div>
+        <div className="d-flex justify-content-around flex-wrap mt-4">
+          <div className="card-container">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/code.png"
+                alt="Card Image"
+                className="card-image"
+              />
+
+            </div>
+          </div>
+          <div className="card-container bg-white">
+            <div className="card-technology shadow bg-white py-5 rounded d-flex justify-content-center">
+              <img
+                src="assets/img/ios.png"
+                alt="Card Image"
+                className="card-image w-50"
+
+              />
+
+            </div>
+          </div>
+          <div className="card-container">
+
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/java.png"
+                alt="Card Image"
+                className="card-image"
+              />
+
+            </div>
+          </div>
+          <div className="card-container">
+            <div className="card-technology shadow">
+              <img
+                src="assets/img/net.png"
+                alt="Card Image"
+                className="card-image"
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <h3 className="client-title mt-4">Testimonials</h3>
+        <p className="client-para">
+          At FirstMiner, we believe that our success is built on the trust and
+          satisfaction of our clients.Here are just a few of the testimonials
+          from our valued clients, who share their experiences with our
+          services, expertise, and commitment to excellence. We are proud of the
+          lasting relationships we have built and the impact we've made in
+          helping our clients achieve their goals.
+        </p>
+        <div className="d-flex justify-content-center">
+          <div className="col-10 p-4">
+            <Testimonials />
+          </div>
+        </div>
+        <div className="container py-5">
+          <div className="row justify-content-center text-center">
+            <div className="col-12">
+              <h2 className="client-title mt-4">Why to Choose US</h2>
+              <p className="text-muted">
+                As your Marketing Agency Partner, we bring unmatched expertise and tools to ensure your success.
+              </p>
+            </div>
+          </div>
+
+          <div className="row align-items-center">
+            {/* Side Image */}
+            <div className="col-12 col-md-4 text-center mb-4 mb-md-0">
+              <img
+                src="assets/img/whychooseus.jpg"
+                alt="Professional"
+                className="img-fluid  border-custom"
+              />
+            </div>
+
+            {/* Features Section */}
+            <div className="col-12 col-md-8">
+              <div className="row">
+                <div className="col-12 col-md-6 mb-4">
+                  <div className="feature-card" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <img
+                      src="assets/img/checkbox.png"
+                      alt="Descriptive text for the image"
+                      style={{ width: "50px", height: "auto" }} // Optional: Inline styling
+                    />
+                    <div>
+                      <h5>Targeted Expertise</h5>
+                      <p>Focused solutions tailored to your business goals.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-12 col-md-6 mb-4">
+                  <div className="feature-card">
+                    <h5>Proven Success</h5>
+                    <p>Years of experience delivering measurable results.</p>
+                  </div>
+                </div>
+
+                <div className="col-12 col-md-6 mb-4">
+                  <div className="feature-card">
+                    <h5>Cutting-Edge Tools</h5>
+                    <p>Utilizing the latest technology to drive growth.</p>
+                  </div>
+                </div>
+
+                <div className="col-12 col-md-6 mb-4">
+                  <div className="feature-card">
+                    <h5>Dedicated Collaboration</h5>
+                    <p>Working closely with you to achieve your vision.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Information */}
 
         </div>
         <section id="call-to-action" className="call-to-action-section">
@@ -421,21 +513,6 @@ const HomePage = observer(() => {
             </div>
           </div>
         </section>
-
-        <h3 className="client-title mt-4">Testimonials</h3>
-        <p className="client-para">
-          At FirstMiner, we believe that our success is built on the trust and
-          satisfaction of our clients.Here are just a few of the testimonials
-          from our valued clients, who share their experiences with our
-          services, expertise, and commitment to excellence. We are proud of the
-          lasting relationships we have built and the impact we've made in
-          helping our clients achieve their goals.
-        </p>
-        <div className="d-flex justify-content-center">
-          <div className="col-10 p-4">
-            <Testimonials />
-          </div>
-        </div>
         <section id="team" className="wow fadeInUp">
           <div className="container">
             <div className="section-header">

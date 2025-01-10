@@ -9,7 +9,7 @@ const ClientPage = observer(() => {
    <section id="clients" className="wow fadeInUp py-5 bg-light">
   <div className="container">
     <div className="row justify-content-center">
-      <div className="col-md-4 my-3 d-flex client-card11">
+      <div className="col-md-4 my-2 d-flex client-card11">
       <Link to="/outreach-web-subpage" className="w-100 text-decoration-none">
         <div className="text-center p-4 shadow-sm bg-white w-100 client-box1">
           <h6 className="fs-4 mb-3 font-weight-bold client-name10">Outreach</h6>
