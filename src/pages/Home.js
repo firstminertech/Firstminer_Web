@@ -69,9 +69,9 @@ const HomePage = observer(() => {
   return (
     <div>
       <Header />
-<style>
-  {
-    `
+      <style>
+        {
+          `
     .header-relative{
     position:absolute !important;
     }
@@ -83,8 +83,8 @@ const HomePage = observer(() => {
     color: black !important;
     }
     `
-  }
-</style>
+        }
+      </style>
       <section id="intro">
         {/* Background Video */}
         <video autoPlay muted loop id="intro-video">
@@ -116,16 +116,16 @@ const HomePage = observer(() => {
                 {transitions((style, item) =>
                   item ? (
                     <>
-                      <animated.h2 style={style}>
+                    <h2 className="Firstminer-title">
                         Firstminer Technology Solutions Pvt. Ltd .
-                      </animated.h2>
-                      <animated.h3 style={style}>
+                        </h2>
+                     <h6>
                         Our team of specialists consistently delivers
                         outstanding results combining creative ideas with our
                         vast experience. We can help you build a sustainable,
                         meaningful relationship with your clients by engaging
                         them with your brand using social media.
-                      </animated.h3>
+                        </h6>
                       <ul>
                         <li>
                           <i className="ion-android-checkmark-circle" /> Our
@@ -155,7 +155,7 @@ const HomePage = observer(() => {
             <div className="section-header">
               <h2>Services</h2>
 
-              <p>
+              <p className="servies-para">
                 Firstminer Tech specializes in creating custom websites and
                 mobile apps, offering end-to-end development solutions. We focus
                 on delivering high-quality, user-friendly products tailored to
@@ -297,32 +297,112 @@ const HomePage = observer(() => {
         </section>
 
         {/* #services */}
-        <h2 className="client-title">Clients</h2>
+        <h2 className="client-title"> Our Happy Clients</h2>
         <p className="client-para">
           At FirstMiner, we are proud to collaborate with a diverse range of
-          clients across industries like [list industries]. Our tailored
+          clients across industries like. Our tailored
           solutions help them achieve success and exceed their goals. We value
           long-lasting partnerships and work closely with each client to deliver
           impactful results.
         </p>
         <ClientPage />
-        <h2 className="client-title mt-4">Testimonials</h2>
-        <p className="client-para">
-          At FirstMiner, we believe that our success is built on the trust and
-          satisfaction of our clients.Here are just a few of the testimonials
-          from our valued clients, who share their experiences with our
-          services, expertise, and commitment to excellence. We are proud of the
-          lasting relationships we have built and the impact we've made in
-          helping our clients achieve their goals.
-        </p>
-        <div className="d-flex justify-content-center">
-          <div className="col-10 p-4">
-            <Testimonials />
+
+
+
+        <div>
+          <h2 className="client-title mt-4">Technologies</h2>
+          <p className="client-para">
+            At FirstMinerTech, we leverage cutting-edge technologies to deliver high-quality, scalable,
+            and efficient solutions. Our technology stack is carefully chosen to meet the diverse needs of modern
+            businesses and ensure robust performance. Here’s what powers our innovation:
+          </p>
           </div>
+          <div className="d-flex justify-content-around flex-wrap mt-4">
+            <div className="card-container d-flex justify-content-center">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/mern.jpg"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/react.jpg"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/flutter.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/laravel.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+          </div>
+          <div className="d-flex justify-content-around flex-wrap mt-4">
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/code.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/ios.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/java.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/net.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+           
+          </div>
+
         </div>
-
-
-
         <section id="call-to-action" className="call-to-action-section">
           <div className="container">
             <div className="row align-items-center">
@@ -342,120 +422,133 @@ const HomePage = observer(() => {
           </div>
         </section>
 
-
+        <h3 className="client-title mt-4">Testimonials</h3>
+        <p className="client-para">
+          At FirstMiner, we believe that our success is built on the trust and
+          satisfaction of our clients.Here are just a few of the testimonials
+          from our valued clients, who share their experiences with our
+          services, expertise, and commitment to excellence. We are proud of the
+          lasting relationships we have built and the impact we've made in
+          helping our clients achieve their goals.
+        </p>
+        <div className="d-flex justify-content-center">
+          <div className="col-10 p-4">
+            <Testimonials />
+          </div>
+        </div>
         <section id="team" className="wow fadeInUp">
           <div className="container">
             <div className="section-header">
               <h2>Our Team</h2>
             </div>
             <div className="d-flex justify-content-between align-items-center gap-5">
-            <div className="col-lg-6 team-home mb-5">
-  <div className="title-z">
-    ALL
-    <br />
-    TEAMS
-  </div>
-  <div className="button-z">
-    <Link to={"/our-teams"}>Browse All</Link>
-  </div>
-  <div className="navigation">
-    {/* Add IDs or classes for linking navigation */}
-    <i id="swiper-prev" className="fas fa-arrow-left " ></i>
-    <i id="swiper-next" className="fas fa-arrow-right" ></i>
-  </div>
-</div>
+              <div className="col-lg-6 team-home mb-5">
+                <div className="title-z">
+                  ALL
+                  <br />
+                  TEAMS
+                </div>
+                <div className="button-z">
+                  <Link to={"/our-teams"}>Browse All</Link>
+                </div>
+                <div className="navigation">
+                  {/* Add IDs or classes for linking navigation */}
+                  <i id="swiper-prev" className="fas fa-arrow-left " ></i>
+                  <i id="swiper-next" className="fas fa-arrow-right" ></i>
+                </div>
+              </div>
 
-<Swiper
-  modules={[Pagination, Autoplay, Navigation]}
-  spaceBetween={10}
-  loop={true}
-  autoplay={{
-    delay: 3000,
-    disableOnInteraction: false,
-  }}
-  pagination={{ clickable: true }}
-  navigation={{
-    nextEl: "#swiper-next",
-    prevEl: "#swiper-prev",
-  }}
-  slidesPerView={1}
-  speed={800}
-  style={{ paddingBottom: "40px" }}
->
-  <SwiperSlide>
-    <div className="team-member">
-      <div className="member-image">
-        <img
-          src="assets/img/logo-final.png"
-          alt="Team Member"
-          style={{ width: "200px" }}
-        />
-      </div>
-      <div className="member-details">
-        <h4>Anik Ranjan</h4>
-        <span>Software Developer</span>
-        <p>
-          Anik is a skilled software developer with expertise in building
-          innovative and scalable web applications. With a passion for clean,
-          efficient code, he thrives in collaborative environments where
-          technology meets creativity. Always eager to learn and grow, Anik
-          contributes to developing cutting-edge solutions and improving user
-          experiences.
-        </p>
-        <div className="social-links">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-facebook"></i>
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-whatsapp"></i>
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </SwiperSlide>
-  <SwiperSlide>
-    <div className="team-member">
-      <div className="member-image">
-        <img
-          src="assets/img/logo-final.png"
-          alt="Team Member"
-          style={{ width: "200px" }}
-        />
-      </div>
-      <div className="member-details">
-        <h4>Sudhanshu Kanwar</h4>
-        <span>Software Developer</span>
-        <p>
-          Sudhanshu is a dedicated software developer with a passion for
-          creating innovative software solutions. Focused on clean, maintainable
-          code, he has a keen interest in developing robust applications that
-          provide excellent user experiences. With a constant drive for learning
-          and improving, Sudhanshu is always exploring new technologies and
-          methodologies to solve complex problems.
-        </p>
-        <div className="social-links">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-facebook"></i>
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-whatsapp"></i>
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </SwiperSlide>
+              <Swiper
+                modules={[Pagination, Autoplay, Navigation]}
+                spaceBetween={10}
+                loop={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true }}
+                navigation={{
+                  nextEl: "#swiper-next",
+                  prevEl: "#swiper-prev",
+                }}
+                slidesPerView={1}
+                speed={800}
+                style={{ paddingBottom: "40px" }}
+              >
+                <SwiperSlide>
+                  <div className="team-member">
+                    <div className="member-image">
+                      <img
+                        src="assets/img/logo-final.png"
+                        alt="Team Member"
+                        style={{ width: "200px" }}
+                      />
+                    </div>
+                    <div className="member-details">
+                      <h4>Anik Ranjan</h4>
+                      <span>Software Developer</span>
+                      <p>
+                        Anik is a skilled software developer with expertise in building
+                        innovative and scalable web applications. With a passion for clean,
+                        efficient code, he thrives in collaborative environments where
+                        technology meets creativity. Always eager to learn and grow, Anik
+                        contributes to developing cutting-edge solutions and improving user
+                        experiences.
+                      </p>
+                      <div className="social-links">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="team-member">
+                    <div className="member-image">
+                      <img
+                        src="assets/img/logo-final.png"
+                        alt="Team Member"
+                        style={{ width: "200px" }}
+                      />
+                    </div>
+                    <div className="member-details">
+                      <h4>Sudhanshu Kanwar</h4>
+                      <span>Software Developer</span>
+                      <p>
+                        Sudhanshu is a dedicated software developer with a passion for
+                        creating innovative software solutions. Focused on clean, maintainable
+                        code, he has a keen interest in developing robust applications that
+                        provide excellent user experiences. With a constant drive for learning
+                        and improving, Sudhanshu is always exploring new technologies and
+                        methodologies to solve complex problems.
+                      </p>
+                      <div className="social-links">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
                 <SwiperSlide>
                   <div className="team-member">
                     <div className="member-image">

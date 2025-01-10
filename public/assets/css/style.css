@@ -525,9 +525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h2 {
-  font-size: 32px;
   color: #0c2e8a;
-  text-transform: uppercase;
   font-weight: 700;
   position: relative;
   padding-bottom: 20px;
@@ -1497,7 +1495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 1.6;
   max-width: 85%;
   margin: 0 auto;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Carousel and Client Cards */
@@ -2019,13 +2017,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .section-header h2 {
-  font-size: 52px;
+  
   font-weight: 800;
   text-align: center;
   margin-bottom: 10px;
   color: #0c2e8a;
   /* font-family: 'auto'; */
-  text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -2229,6 +2226,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+}
+.servies-para{
+  text-align: center;
 }
 
 /* Contact Section */
@@ -2520,10 +2520,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
   color: #0c2e8a;
   /* font-family: 'auto'; */
-  text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  font-size: 52px;
+ 
 }
 
 .client-para {
@@ -2531,6 +2530,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 16px;
   line-height: 1.6;
   max-width: 80%; 
+  text-align: center;
   margin: 0 auto;
   padding: 20px;
 }
@@ -3121,3 +3121,92 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Center the card vertically and horizontally */
+  background-color: #f4f4f4;
+  width:200px;
+}
+
+.card-technology {
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.card:hover {
+  transform: scale(1.5); /* Scale the card to 1.5x on hover */
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.card-container {
+  margin: 10px; /* Adds spacing between cards */
+}
+
+.card-technology {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-technology:hover {
+  transform: scale(1.1); /* Enlarges the card on hover */
+  background-color: white; /* Highlights the card with a light background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-container {
+  margin: 5px; /* Adjust if you want minimal spacing between cards */
+}
+
+
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+.d-flex {
+  gap: 0; /* Remove additional space between cards */
+}
+
+.d-flex.px-4 {
+  padding-left: 1.5rem; /* Add space to the left */
+  padding-right: 1.5rem; /* Add space to the right */
+}

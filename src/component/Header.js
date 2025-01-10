@@ -36,12 +36,12 @@ const Header = () => {
       <header id="header" className={isFixed ? "fixed bg-light" : "header-relative"}>
         <div className="container d-flex justify-content-between">
           <div id="logo" className="pull-left d-flex gap-2">
-            <img src="assets/img/logo-final.png" width={50} />
-            <h1>
+            <img src="assets/img/firstminerlogo.png" width={220} />
+            {/* <h1>
               <Link to={"/"} className="scrollto">
                 First<span>Miner</span>
               </Link>
-            </h1>
+            </h1> */}
           </div>
 
           <nav id="nav-menu-container" className={isMenuOpen ? "open" : ""}>
