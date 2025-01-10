@@ -705,7 +705,7 @@ const HomePage = observer(() => {
       {/* Modal */}
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Contact Details</Modal.Title>
+          {/* <Modal.Title>Contact Details</Modal.Title> */}
         </Modal.Header>
         <Modal.Body>
           <div className="form-container">

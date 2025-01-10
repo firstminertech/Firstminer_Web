@@ -1685,7 +1685,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   text-decoration: none;
   position: absolute;
-  bottom: 8px;
+  bottom: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -2011,7 +2011,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* OurTeams.css */
 .team-section {
-  padding: 100px 0;
+  padding: 25px 0;
   background: linear-gradient(135deg, #f5f9fd, #e0efff);
   position: relative;
 }

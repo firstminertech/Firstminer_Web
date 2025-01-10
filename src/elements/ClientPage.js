@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
+import { Link } from "react-router-dom";
 
 const ClientPage = observer(() => {
   
@@ -9,6 +10,7 @@ const ClientPage = observer(() => {
   <div className="container">
     <div className="row justify-content-center">
       <div className="col-md-4 my-3 d-flex client-card11">
+      <Link to="/outreach-web-subpage" className="w-100 text-decoration-none">
         <div className="text-center p-4 shadow-sm bg-white w-100 client-box1">
           <h6 className="fs-4 mb-3 font-weight-bold client-name10">Outreach</h6>
           <img
@@ -19,10 +21,12 @@ const ClientPage = observer(() => {
           />
           <p className="text-muted">A leading platform in crypto trading.</p>
         </div>
+        </Link>
       </div>
       <div className="col-md-4 my-3 d-flex client-card11">
+        <Link to="/abvv-subpage" className="w-100 text-decoration-none">
         <div className="text-center p-4 shadow-sm bg-white w-100 client-box1" >
-          <h6 className="fs-4 mb-3 font-weight-bold client-name10">Atal Bihari Bajpayee University</h6>
+          <h6 className="fs-4 mb-3 font-weight-bold client-name10">ABVV, Bilaspur</h6>
           <img
             src="https://abvv.ac.in/image/ABVV-NewLogo.png"
             alt="Abvv Logo"
@@ -31,8 +35,10 @@ const ClientPage = observer(() => {
           />
           <p className="text-muted">Empowering the next generation of leaders.</p>
         </div>
+        </Link>
       </div>
       <div className="col-md-4 my-3 d-flex client-card11">
+      <Link to="/railway-subpage" className="w-100 text-decoration-none">
         <div className="text-center p-4 shadow-sm bg-white w-100 client-box1" >
           <h6 className="fs-4 mb-3 font-weight-bold client-name10">Bilaspur Railway</h6>
           <img
@@ -43,6 +49,7 @@ const ClientPage = observer(() => {
           />
           <p className="text-muted">Connecting people, places, and progress.</p>
         </div>
+        </Link>
       </div>
     </div>
   </div>

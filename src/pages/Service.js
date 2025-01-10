@@ -184,8 +184,10 @@ function Service() {
               <i className="bi bi-heart-fill benefit-icon"></i>
               <h5 className="benefit-title">Our Vision</h5>
               <p className="benefit-description">
-                The most respected Internet marketing agency. We want to change
-                the way businesses speak, listen and share online.
+              We are the most respected Internet marketing agency.
+Our mission is to revolutionize the way businesses connect with their audience online.
+We strive to change how businesses speak
+
               </p>
             </div>
             <div className="benefit-card">

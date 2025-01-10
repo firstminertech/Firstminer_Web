@@ -22,10 +22,22 @@ const OurTeams = () => {
     // Sample team members (you can replace these with actual data or state)
     const teamMembers = [
         {
+            name: "Deepak soni",
+            role: " Senior Software Developer (Manager)",
+            description: "A developer",
+            image: "assets/img/tm9.jpeg",
+            socials: {
+                instagram: "#",
+                facebook: "#",
+                whatsapp: "#",
+                linkedin: "#",
+            },
+        },
+        {
             name: "Anik Ranjan",
             role: "Software Developer",
             description: "A developer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm1.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -37,7 +49,7 @@ const OurTeams = () => {
             name: "Sudhanshu Kanwar",
             role: "Software Developer (Team Leader)",
             description: "A developer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm2.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -49,7 +61,7 @@ const OurTeams = () => {
             name: "Dharmesh Darshan",
             role: "Software Developer",
             description: "A developer",
-            image: "assets/img/dharmesh.jpg",
+            image: "assets/img/tm10.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -62,7 +74,7 @@ const OurTeams = () => {
             name: "Shivam Gupta",
             role: "Software Developer",
             description: "A developer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm3.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -74,7 +86,7 @@ const OurTeams = () => {
             name: "Sakshi Rathore",
             role: "App Developer",
             description: "A developer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm4.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -86,7 +98,7 @@ const OurTeams = () => {
             name: "Pallavi Rathore",
             role: "Tester & UI/UX Developer",
             description: "Intern",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm5.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -98,7 +110,7 @@ const OurTeams = () => {
             name: "Sandeep Bhatt",
             role: "Designer",
             description: "Graphic Designer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm1.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",
@@ -110,7 +122,7 @@ const OurTeams = () => {
             name: "Hritwik Ujjaini",
             role: "Senior Designer",
             description: "Senior Designer",
-            image: "assets/img/logo-final.png",
+            image: "assets/img/tm2.jpeg",
             socials: {
                 instagram: "#",
                 facebook: "#",

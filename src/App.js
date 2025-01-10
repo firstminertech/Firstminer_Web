@@ -24,6 +24,7 @@ import LearnEarn from './pages/portfolioSubPage/LearnEarn';
 import RealStateBaba from './pages/portfolioSubPage/RealStateBaba';
 import Railway from './pages/portfolioSubPage/Railway';
 import Footer from './component/Footer';
+import ContactForm from './pages/ContactForm';
 
 
 
@@ -50,6 +51,7 @@ function App() {
     <Route exact path="/learnearn-subpage" element={<LearnEarn />}/>
     <Route exact path="/outreach-web-subpage" element={<OutreachWeb />}/>
     <Route exact path="/railway-subpage" element={<Railway />}/>
+    <Route exact path="/contactform" element={<ContactForm />}/>
     
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
