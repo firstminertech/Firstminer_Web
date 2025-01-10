@@ -154,6 +154,11 @@ h6 {
     height: 74px;
   }
 
+  .header-relative .nav-menu a {
+    color: black !important;
+  }
+
+
   #header #logo h1 {
     font-size: 34px;
   }
@@ -1713,7 +1718,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .benefit-card {
@@ -2897,7 +2902,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .nav-menu {
-    display: block;
+    display: flex;
   }
 
   .nav-menu li {
@@ -3227,4 +3232,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 .headertop
 {
   align-items: center;
+}
+
+.blur-background{
+  filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+  background-color: #0000007a;
 }

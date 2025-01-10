@@ -76,7 +76,7 @@ const HomePage = observer(() => {
     position:absolute !important;
     }
     .header-relative .nav-menu a {
-    color: white !important;
+    color: white ;
     }
 
     #header.fixed .nav-menu a{
