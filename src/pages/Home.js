@@ -88,7 +88,7 @@ const HomePage = observer(() => {
       <section id="intro">
         {/* Background Video */}
         <video autoPlay muted loop id="intro-video">
-          <source src="assets/img/header-video2.mp4" type="video/mp4" />
+          <source src="assets/img/header-video.mp4" type="video/mp4" />
         </video>
       </section>
 
