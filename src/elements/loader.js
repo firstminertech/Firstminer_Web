@@ -14,7 +14,7 @@ const Loader = () => {
         }
       </style>
       <div className=" text-primary" role="status">
-        <img src="assets/img/flogo.png" className="loader-image" width={150}
+        <img src="assets/img/flogo.png" className="loader-image" width={100}
         />
       </div>
     </div>
