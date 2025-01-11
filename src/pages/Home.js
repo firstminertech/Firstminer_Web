@@ -317,105 +317,137 @@ const HomePage = observer(() => {
             businesses and ensure robust performance. Here’s what powers our innovation:
           </p>
         </div>
-        <div className="d-flex justify-content-around flex-wrap mt-4">
-          <div className="card-container d-flex justify-content-center">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/mern.jpg"
-                alt="Card Image"
-                className="card-image"
-              />
+        <div className="container">
+          <div className="d-flex justify-content-around flex-wrap mt-4">
+            <div className="card-container d-flex justify-content-center">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/mern.jpg"
+                  alt="Card Image"
+                  className="card-image"
+                />
 
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/django.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/react.jpg"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/flutter.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
             </div>
           </div>
-          <div className="card-container">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/django.png"
-                alt="Card Image"
-                className="card-image"
-              />
+          <div className="d-flex justify-content-around flex-wrap mt-4">
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/code.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/ios.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/Azure.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/net.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+              </div>
 
             </div>
+
           </div>
-          <div className="card-container">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/react.jpg"
-                alt="Card Image"
-                className="card-image"
-              />
+          <div className="d-flex justify-content-around flex-wrap mt-4">
+            <div className="card-container d-flex justify-content-center">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/android.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
 
+              </div>
             </div>
-          </div>
-          <div className="card-container">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/flutter.png"
-                alt="Card Image"
-                className="card-image"
-              />
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/java.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
 
+              </div>
             </div>
-          </div>
-          <div className="card-container">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/laravel.png"
-                alt="Card Image"
-                className="card-image"
-              />
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/next.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
 
+              </div>
             </div>
+            <div className="card-container">
+              <div className="card-technology shadow">
+                <img
+                  src="assets/img/laravel.png"
+                  alt="Card Image"
+                  className="card-image"
+                />
+
+              </div>
+            </div>
+           
           </div>
         </div>
-        <div className="d-flex justify-content-around flex-wrap mt-4">
-          <div className="card-container">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/code.png"
-                alt="Card Image"
-                className="card-image"
-              />
-
-            </div>
-          </div>
-          <div className="card-container bg-white">
-            <div className="card-technology shadow bg-white py-5 rounded d-flex justify-content-center">
-              <img
-                src="assets/img/ios.png"
-                alt="Card Image"
-                className="card-image w-50"
-
-              />
-
-            </div>
-          </div>
-          <div className="card-container">
-
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/java.png"
-                alt="Card Image"
-                className="card-image"
-              />
-
-            </div>
-          </div>
-          <div className="card-container">
-            <div className="card-technology shadow">
-              <img
-                src="assets/img/net.png"
-                alt="Card Image"
-                className="card-image"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
 
         <h3 className="client-title mt-4">Testimonials</h3>
         <p className="client-para">
@@ -469,23 +501,45 @@ const HomePage = observer(() => {
                 </div>
 
                 <div className="col-12 col-md-6 mb-4">
-                  <div className="feature-card">
-                    <h5>Proven Success</h5>
-                    <p>Years of experience delivering measurable results.</p>
+                  <div className="feature-card" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <img
+                      src="assets/img/checkbox.png"
+                      alt="Descriptive text for the image"
+                      style={{ width: "50px", height: "auto" }} // Optional: Inline styling
+                    />
+                    <div>
+                      <h5>Proven Success</h5>
+                      <p>Years of experience delivering measurable results.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div className="col-12 col-md-6 mb-4">
-                  <div className="feature-card">
-                    <h5>Cutting-Edge Tools</h5>
-                    <p>Utilizing the latest technology to drive growth.</p>
+
+                  <div className="feature-card" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <img
+                      src="assets/img/checkbox.png"
+                      alt="Descriptive text for the image"
+                      style={{ width: "50px", height: "auto" }} // Optional: Inline styling
+                    />
+                    <div>
+                      <h5>Cutting-Edge Tools</h5>
+                      <p>Utilizing the latest technology to drive growth.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div className="col-12 col-md-6 mb-4">
-                  <div className="feature-card">
-                    <h5>Dedicated Collaboration</h5>
-                    <p>Working closely with you to achieve your vision.</p>
+                  <div className="feature-card" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <img
+                      src="assets/img/checkbox.png"
+                      alt="Descriptive text for the image"
+                      style={{ width: "50px", height: "auto" }} // Optional: Inline styling
+                    />
+                    <div>
+                      <h5>Dedicated Collaboration</h5>
+                      <p>Working closely with you to achieve your vision.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -513,7 +567,7 @@ const HomePage = observer(() => {
             </div>
           </div>
         </section>
-        <section id="team" className="wow fadeInUp">
+        {/* <section id="team" className="wow fadeInUp">
           <div className="container">
             <div className="section-header">
               <h2>Our Team</h2>
@@ -529,7 +583,7 @@ const HomePage = observer(() => {
                   <Link to={"/our-teams"}>Browse All</Link>
                 </div>
                 <div className="navigation">
-                  {/* Add IDs or classes for linking navigation */}
+                 
                   <i id="swiper-prev" className="fas fa-arrow-left " ></i>
                   <i id="swiper-next" className="fas fa-arrow-right" ></i>
                 </div>
@@ -867,7 +921,7 @@ const HomePage = observer(() => {
               </Swiper>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* #team */}
       </main>
@@ -985,14 +1039,6 @@ const HomePage = observer(() => {
             </Formik>
           </div>
         </Modal.Body>
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={() => alert("Action performed!")}>
-            Perform Action
-          </Button>
-        </Modal.Footer> */}
       </Modal>
     </div>
   );
