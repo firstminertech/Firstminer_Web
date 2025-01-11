@@ -30,11 +30,11 @@ const PrimaryHeader = () => {
             {/* <div className="col-1"></div> */}
             <div className="d-flex col-6 justify-content-end headertop">
               {/* Email */}
-              <div className="col-4 ">
+              <div className="col-3 ">
                 <div className="d-flex align-items-center ">
                   <i className="fas fa-envelope envelop-icon me-2"></i>
                   <a href="mailto:firstminertech@gmail.com" className="text-truncate email-text text-decoration-none">
-                    firstminertech@gmail.com
+                  Info@firstminer.in
                   </a>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const PrimaryHeader = () => {
               <div className="col-3 headertop">
                 <div className="d-flex align-items-center phone-section">
                   <i className="fa-solid fa-phone phone-icon"></i>
-                  <span className="phone-text">+91 7000262816</span>
+                  <span className="phone-text">+91 7752358727</span>
                 </div>
               </div>
             </div>

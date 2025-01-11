@@ -152,7 +152,7 @@ function Service() {
           <p className="contact-info">
             Have questions? Reach out to us at{" "}
             <a href="mailto:firstminertech@gmail.com" className="e-mail10">
-  firstminertech@gmail.com
+            Info@firstminer.in
 </a>
 
           </p>
@@ -192,11 +192,9 @@ We strive to change how businesses speak
             </div>
             <div className="benefit-card">
               <i className="bi bi-heart-fill benefit-icon"></i>
-              <h5 className="benefit-title">Our Care</h5>
+              <h5 className="benefit-title">We Care</h5>
               <p className="benefit-description">
-              Our digital marketing, Mobile Application
-                  Development, Website Development work speaks for itself.
-                  We deliver an outstanding service custom-tailored to each and every one of our clients.
+              At Firstminer Tech, we prioritize your privacy and data security above everything else. We are committed to ensuring that your personal information remains confidential and protected. 
                 
               </p>
             </div>
