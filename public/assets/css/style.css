@@ -3371,7 +3371,7 @@ p {
   transition: all 0.3s ease; /* Smooth transition for all properties */
   background-color: rgb(55 107 177) !important;
   color: white !important;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease !important;
 }
 
 .formbutton:hover {
