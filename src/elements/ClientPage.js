@@ -16,7 +16,7 @@ const ClientPage = observer(() => {
     <div className="row justify-content-center">
       <div className="col-md-3 my-3 d-flex client-card11">
       <Link to="/outreach-web-subpage" className="w-100 text-decoration-none">
-        <div className="text-center p-4 shadow-sm bg-white w-100 client-box1">
+        <div className="text-center p-4 shadow bg-white w-100 client-box1">
           {/* <h6 className="fs-4 mb-3 font-weight-bold client-name10">Outreach</h6> */}
           <img
             src="./assets/img/out.jpg"
@@ -30,7 +30,7 @@ const ClientPage = observer(() => {
       </div>
       <div className="col-md-3 my-3 d-flex client-card11">
         <Link to="/abvv-subpage" className="w-100 text-decoration-none">
-        <div className="text-center p-4 shadow-sm bg-white w-100 client-box1" >
+        <div className="text-center p-4 shadow bg-white w-100 client-box1" >
           {/* <h6 className="fs-4 mb-3 font-weight-bold client-name10">ABVV, Bilaspur</h6> */}
           <img
             src="https://abvv.ac.in/image/ABVV-NewLogo.png"
@@ -44,7 +44,7 @@ const ClientPage = observer(() => {
       </div>
       <div className="col-md-3 my-3 d-flex client-card11">
       <Link to="/railway-subpage" className="w-100 text-decoration-none">
-        <div className="text-center p-4 shadow-sm bg-white w-100 client-box1" >
+        <div className="text-center p-4 shadow bg-white w-100 client-box1" >
           {/* <h6 className="fs-4 mb-3 font-weight-bold client-name10">Bilaspur Railway</h6> */}
           <img
             src="https://logos-download.com/wp-content/uploads/2019/11/Indian_Railway_Logo_2.png"
@@ -58,7 +58,7 @@ const ClientPage = observer(() => {
       </div>
       <div className="col-md-3 my-3 d-flex client-card11">
       <Link to="/railway-subpage" className="w-100 text-decoration-none">
-        <div className="text-center p-4 shadow-sm bg-white w-100 client-box1" >
+        <div className="text-center p-4 shadow bg-white w-100 client-box1" >
           {/* <h6 className="fs-4 mb-3 font-weight-bold client-name10">Real state Baba</h6> */}
           <img
             src="./assets/img/reals.jpg"
