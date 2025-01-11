@@ -12,7 +12,7 @@ function CareerPage() {
             <section className="hero-section">
                 <div className="container">
                     <h1 className="hero-title">Join Firstminer Team</h1>
-                    <p className="hero-description">
+                    <p className="hero-description paratext">
                         Be part of a global company where your skills and passion matter.
                     </p>
                     <a href="#job-listings" className="btn-cta">
@@ -61,7 +61,7 @@ function CareerPage() {
                         {/* Job 1 */}
                         <div className="job-card">
                             <div className="job-card-body">
-                                <h5 className="job-card-title">Autosar - Embedded Software Developer</h5>
+                                <h5 className="job-card-title">Software Developer</h5>
                                 <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
                                 <p className="job-card-description">
                                     Develop infotainment products for the automotive domain.
@@ -106,7 +106,7 @@ function CareerPage() {
             <section id="apply" className="apply-section">
                 <div className="container">
                     <h2 className="apply-title">Ready to Join?</h2>
-                    <p className="apply-description">Take the next step in your career with us.</p>
+                    <p className="apply-description paratext">Take the next step in your career with us.</p>
                     <a href="#" className="btn-cta">
                         Apply Now
                     </a>

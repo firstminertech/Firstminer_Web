@@ -1716,7 +1716,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .benefit-card {
@@ -2342,6 +2342,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+.portfolio-description p{
+  color: white !important;
+}
+
 .portfolio-item:hover .portfolio-description {
   opacity: 1;
 }
@@ -2674,7 +2678,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .card:hover {
@@ -3269,7 +3273,7 @@ p {
 .contact-info {
   font-size: 1.1rem;
   color: #0991ba;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .img-fluid {
@@ -3336,7 +3340,7 @@ p {
 .contact-info {
   font-size: 1.1rem;
   color: #0991ba;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .img-fluid {
@@ -3449,4 +3453,9 @@ p {
   50% {
     transform: translateY(-20px);
   }
+}
+
+.paratext
+{
+  color: white !important;
 }
