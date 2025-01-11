@@ -2,7 +2,6 @@ body {
   background: #fff;
   color: pink;
   font-family: "Open Sans", sans-serif;
-  
 }
 
 a {
@@ -101,7 +100,6 @@ h6 {
   display: inline-block;
   line-height: 1px;
   border-left: 1px solid #e9e9e9;
-
 }
 
 #topbar .social-links a:hover {
@@ -116,7 +114,7 @@ h6 {
   # Header
   --------------------------------------------------------------*/
 #header {
-  padding: 20px 0;
+  padding: 14px 0;
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
@@ -153,6 +151,11 @@ h6 {
     padding: 20px 0;
     height: 74px;
   }
+
+  .header-relative .nav-menu a {
+    color: black !important;
+  }
+
 
   #header #logo h1 {
     font-size: 34px;
@@ -361,7 +364,7 @@ h6 {
   padding: 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color:#0c2e8a;
+  color: #0c2e8a;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -583,9 +586,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content h3 {
   color: #555;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
-  font-style: italic;
+  /* font-style: italic; */
+  font-family: "Open Sans", sans-serif;
 }
 
 #about .content p {
@@ -614,7 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
   --------------------------------*/
 #services {
-  padding: 30px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 #services .box {
@@ -697,7 +701,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #clients img {
   max-width: 100%;
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 /* #clients img:hover {
@@ -1159,7 +1163,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact #google-map {
-  height: 290px;
+  height: 100%;
   margin-bottom: 20px;
 }
 
@@ -1559,30 +1563,29 @@ body.mobile-nav-active #mobile-nav-toggle {
     url("../img/bg-sub.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
   animation: fadeInUp 1s ease-out;
 }
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #379dbf; /* Light Blue for the text */
+  /* color: #379dbf;  */
   animation: slideUp 1s ease-out;
 
   /* Adding multiple light color effects */
-  text-shadow: 0 0 8px rgba(255, 182, 193, 0.7),
-    /* Light Pink */ 0 0 20px rgba(173, 216, 230, 0.6),
-    /* Light Blue */ 0 0 30px rgba(255, 255, 224, 0.5),
-    /* Light Yellow */ 0 0 40px rgba(255, 228, 225, 0.4); /* Light Peach */
+  /* text-shadow: 0 0 8px rgba(255, 182, 193, 0.7),
+   0 0 20px rgba(173, 216, 230, 0.6),
+     0 0 30px rgba(255, 255, 224, 0.5),
+     0 0 40px rgba(255, 228, 225, 0.4); */
 }
 
 .hero-description {
   font-size: 1.3rem;
   margin-top: 20px;
-  color: #50d8af; /* Light Green */
   animation: fadeIn 1.2s ease-out;
 }
 
@@ -1759,7 +1762,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #379dbf; /* Light Blue */
   color: white;
   text-align: center;
-  padding: 100px 0;
+  padding: 60px 0;
   animation: fadeIn 2s ease-out;
 }
 
@@ -1773,7 +1776,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .apply-description {
   font-size: 1.25rem;
   margin-top: 20px;
-  color: #0c2e8a; /* Light Green */
 }
 
 .btn-cta {
@@ -2013,11 +2015,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: linear-gradient(135deg, #f5f9fd, #e0efff);
   position: relative;
 }
-.flex-container{
+.flex-container {
   display: flex;
   justify-content: left;
 }
-
 
 .section-header h2 {
   
@@ -2341,6 +2342,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+.portfolio-description p{
+  color: white !important;
+}
+
 .portfolio-item:hover .portfolio-description {
   opacity: 1;
 }
@@ -2356,7 +2361,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   cursor: pointer;
   margin-top: 30px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .online-button:hover {
@@ -2672,7 +2678,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .card:hover {
@@ -2688,3 +2694,768 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-decoration: none;
 }
 
+.contact-para10 {
+  text-align: justify;
+}
+
+.client-name10 {
+  color: #0c2e8a;
+  font-weight: 800;
+}
+
+.client-box1 {
+  border-radius: 40px;
+}
+
+.client-card11 {
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.client-card11:hover {
+  transform: scale(1.03); /* Slightly enlarge the card */
+}
+
+.menu-active {
+  color: #ff5733; /* Example active color */
+  font-weight: bold; /* Optional for emphasis */
+  border-bottom: 2px solid#50d9b0; /* Optional underline */
+}
+/* .flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+
+.testimonials-border {
+  border-radius: 10px;
+  padding: 0%;
+}
+/* 
+.testimonial-leftside{
+  justify-content: left;
+  display: flex;
+} */
+.testimonial-box {
+  width: 100%;
+}
+/* Phone Section Styles */
+.phone-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns items to the left */
+  padding: 5px 0; /* Adds padding to the section */
+}
+
+.phone-icon {
+  font-size: 18px; /* Sets the font size for the icon */
+  color: #007bff; /* Blue color for the phone icon */
+  margin-right: 8px; /* Adds spacing between the icon and the text */
+}
+
+.phone-text {
+  font-size: 14px; /* Adjusts the font size for the phone number */
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Makes the text a bit bolder for emphasis */
+}
+
+.phone-text:hover {
+  color: #007bff; /* Hover effect to change text color on mouseover */
+}
+
+@media (max-width: 992px) {
+  /* Adjusts phone number display for smaller screens */
+  .phone-text {
+    font-size: 12px; /* Smaller font size for smaller devices */
+  }
+
+  .phone-icon {
+    font-size: 16px; /* Smaller icon size for smaller screens */
+  }
+}
+/* Phone Section Styles */
+.phone-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns items to the left */
+  padding: 5px 0; /* Adds padding to the section */
+}
+
+.phone-icon {
+  font-size: 16px; /* Sets the font size for the icon */
+  color: #50d9b0; /* Blue color for the phone icon */
+  margin-right: 8px; /* Adds spacing between the icon and the text */
+}
+
+.phone-text {
+  font-size: 14px; /* Adjusts the font size for the phone number */
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Makes the text a bit bolder for emphasis */
+}
+
+.phone-text:hover {
+  color: #50d9b0; /* Hover effect to change text color on mouseover */
+}
+
+@media (max-width: 992px) {
+  /* Adjusts phone number display for smaller screens */
+  .phone-text {
+    font-size: 12px; /* Smaller font size for smaller devices */
+  }
+
+  .phone-icon {
+    font-size: 16px; /* Smaller icon size for smaller screens */
+  }
+}
+.envelop-icon {
+  font-size: 20px; /* Sets the font size for the icon */
+  color: #50d9b0; /* Blue color for the phone icon */
+  margin-right: 0px;
+}
+.email-text {
+  font-size: 14px; /* Adjusts the font size for the phone number */
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Makes the text a bit bolder for emphasis */
+}
+
+/* Transparent Header */
+#header {
+  position: relative; /* Or fixed if you want it to stay on top while scrolling */
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#header.fixed {
+  background-color: rgba(0, 0, 0, 0.7); 
+  color:#000;/* Semi-transparent dark background when fixed */
+  box-shadow: 1px 1px 2px;
+}
+#header.fixed a {
+  color: #000;
+}
+
+.header-relative {
+  background-color: transparent !important;
+}
+#logo h1 a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu .menu-active {
+  color: #ff4e00; /* Add hover color or active state color */
+}
+
+/* For the mobile menu toggle button */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+
+/* When the screen size is small, hide the menu and show the toggle button */
+@media (max-width: 767px) {
+  #nav-menu-container {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for mobile menu */
+    padding: 10px 0;
+  }
+
+  #nav-menu-container.open {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #nav-menu-container {
+    display: block !important;
+  }
+}
+
+.slider-center10 {
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+  display: flex;
+}
+
+/* .carousel-control-next, .carousel-control-prev{
+  color: #000 !important;
+  background-color: #000 !important;
+  width: 50px !important;
+  height: 50px !important;
+  justify-content: center !important;
+  display: flex !important;
+} */
+
+/* Change color of the previous control icon */
+.carousel-control-prev-icon {
+  background-color: black; /* Set your desired color */
+}
+
+/* Change color of the next control icon */
+.carousel-control-next-icon {
+  background-color: black; /* Set your desired color */
+}
+
+.submit10 {
+  background-color: #37b4a4;
+  color: white; /* Ensures text is visible */
+  border: none; /* Clean button styling */
+  padding: 10px 20px; /* Adds some spacing */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.submit10:hover {
+  background-color: #37b4a4; /* Deeper green shade on hover */
+  color: #f8f9fa; /* Lighten text color for contrast */
+  transform: scale(1.05); /* Slightly enlarges the button */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.para100 {
+  color: #1c3c92 !important;
+}
+
+.footer-top {
+  background-color: #0d2735;
+}
+
+.footer-links ul li i {
+  margin-right: 10px;
+}
+
+.footer-links a:hover {
+  color: #f39c12;
+}
+
+.footer-contact address strong {
+  color: #f39c12;
+}
+
+.social-links a i {
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.head10 {
+  color: #a2cce3;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.head10:hover {
+  color: #a2cce3; /* New color on hover */
+  transform: scale(0.9); /* Slightly enlarges the element */
+  cursor: pointer; /* Changes the cursor to a pointer */
+}
+.link10 {
+  color: white;
+  border: 1px solid #68a4c4;
+  border-radius: 6px;
+  background-color: #607b89;
+}
+
+.useful-link1 li {
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.useful-link1 li:hover {
+  transform: scale(1.05); /* Slightly enlarges the element */
+  cursor: pointer; /* Changes the cursor to a pointer */
+}
+/* General Styles */
+.main-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Left Section Styles */
+.testimonial-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.testimonial-img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.arrow-container {
+  display: flex;
+  gap: 20px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Right Section Styles */
+.testimonials-border {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+/* Call-to-Action Section */
+.call-to-action-section {
+  background: linear-gradient(135deg, #0062cc, #0056b3);
+  padding: 60px 0;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.call-to-action-section .cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.call-to-action-section .cta-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.call-to-action-section .cta-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action-section .cta-btn {
+  background: #081e5b;
+  color: #000;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action-section .cta-btn:hover {
+  background: #e0a800;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Center the card vertically and horizontally */
+  background-color: #f4f4f4;
+  width:200px;
+}
+
+.card-technology {
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.card-container {
+  margin: 10px; /* Adds spacing between cards */
+}
+
+.card-technology {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-technology:hover {
+  transform: scale(1.1); /* Enlarges the card on hover */
+  background-color: white; /* Highlights the card with a light background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-container {
+  margin: 5px; /* Adjust if you want minimal spacing between cards */
+}
+
+
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+.d-flex {
+  gap: 0; /* Remove additional space between cards */
+}
+
+.d-flex.px-4 {
+  padding-left: 1.5rem; /* Add space to the left */
+  padding-right: 1.5rem; /* Add space to the right */
+}
+.email-text1 {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.email-text1:hover {
+  transform: scale(1.5); /* Slightly increases size on hover */
+  color: #a2cce3; /* Optional color change */
+}
+
+.headertop {
+  align-items: center;
+}
+
+.card:hover {
+  transition: none;
+  box-shadow: initial;
+}
+/* CSS for "Why Choose Us" Component */
+
+/* General Styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Image Styling */
+
+/* Feature Cards */
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h5 {
+  font-size: 1.25rem;
+  color: #0991ba;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Contact Info */
+.contact-info {
+  font-size: 1.1rem;
+  color: #0991ba;
+  /* font-weight: bold; */
+}
+
+.img-fluid {
+  height: 50vh;
+}
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feature-card img {
+  width: 30px;
+  height: auto;
+}
+
+.card:hover {
+  transition: none;
+  box-shadow: initial;
+}
+/* CSS for "Why Choose Us" Component */
+
+/* General Styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Image Styling */
+
+/* Feature Cards */
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h5 {
+  font-size: 1.25rem;
+  color: #0991ba;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Contact Info */
+.contact-info {
+  font-size: 1.1rem;
+  color: #0991ba;
+  /* font-weight: bold; */
+}
+
+.img-fluid {
+  height: 50vh;
+}
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feature-card img {
+  width: 30px;
+  height: auto;
+}
+
+.blur-background{
+  filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+  background-color: #0000007a;
+}
+.formbackground {
+  background-color: rgb(55 107 177) !important;
+}
+
+.formbutton {
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  background-color: rgb(55 107 177) !important;
+  color: white !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.formbutton:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.clientpadding {
+  padding: 74px 0 !important;
+}
+
+.portfolio-button3 {
+  background-color: #4273a8 !important;
+  color: white !important;
+
+  transition: background-color 0.6s ease, transform 0.6s ease,
+    box-shadow 0.6s ease; /* Slower transition */
+}
+
+.portfolio-button3:hover {
+  background-color: #2e5a87 !important; /* Slightly darker shade */
+  color: #ffffff !important; /* Ensure text stays white */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.color-glass-button {
+  background: rgb(12, 46, 138);
+  border: 1px solid rgb(12, 46, 138);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 7px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgb(12, 46, 138);
+ 
+}
+
+.color-glass-button i {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.color-glass-button:hover {
+  background: rgb(3, 28, 97);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none; /* This removes the underline */
+}
+
+.color-glass-button:hover i {
+  transform: rotate(360deg);
+}
+
+.portfolio-anchor a{
+  text-decoration: none !important;
+}
+
+.form-experience
+{
+  height: 20px !important;
+}
+.loader-image{
+  animation:bounce 1s infinite;
+  transition: all 0.3s ease;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.paratext
+{
+  color: white !important;
+}
