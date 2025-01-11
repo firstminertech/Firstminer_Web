@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Link } from "react-router-dom";
+import Loader from "./loader";
 
 const ClientPage = observer(() => {
-  
+   const [loader, setLoader] = useState(true);
+      setTimeout(() => {
+        setLoader(false);
+      }, 1000)
   return (
     <div>
+     {loader && <Loader/>}
    <section id="clients" className="wow fadeInUp py-5 bg-white">
   <div className="container">
     <div className="row justify-content-center">
