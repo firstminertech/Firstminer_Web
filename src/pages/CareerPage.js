@@ -11,7 +11,8 @@ function CareerPage() {
     }, 500)
     return (
         <div>
-            {loader ? <Loader /> : <div>  <Header />
+            {loader ? <Loader /> : 
+            <div>  <Header />
 
             {/* Hero Section */}
             <section className="hero-section">
@@ -119,6 +120,7 @@ function CareerPage() {
             </section>
 
 
+        </div>}
         </div>
     );
 }
