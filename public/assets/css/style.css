@@ -116,7 +116,7 @@ h6 {
   # Header
   --------------------------------------------------------------*/
 #header {
-  padding: 20px 0;
+  padding: 14px 0;
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
@@ -2830,7 +2830,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Transparent Header */
 #header {
- 
   position: relative; /* Or fixed if you want it to stay on top while scrolling */
   width: 100%;
   z-index: 1000;
@@ -2840,6 +2839,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #header.fixed {
   background-color: rgba(0, 0, 0, 0.7); 
   color:#000;/* Semi-transparent dark background when fixed */
+  box-shadow: 1px 1px 2px;
 }
 #header.fixed a {
    color:#000;
