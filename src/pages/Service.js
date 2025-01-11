@@ -1,10 +1,18 @@
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
+import Loader from "../elements/loader";
 
 function Service() {
+  const [loader, setLoader] = useState(true);
+  setTimeout(() => {
+    setLoader(false);
+  }, 1000)
+
   return (
     <div>
+     {loader && <Loader/>}
       {/* Header Section */}
       <Header />
 
@@ -152,8 +160,8 @@ function Service() {
           <p className="contact-info">
             Have questions? Reach out to us at{" "}
             <a href="mailto:firstminertech@gmail.com" className="e-mail10">
-  firstminertech@gmail.com
-</a>
+              firstminertech@gmail.com
+            </a>
 
           </p>
         </div>
@@ -184,9 +192,9 @@ function Service() {
               <i className="bi bi-heart-fill benefit-icon"></i>
               <h5 className="benefit-title">Our Vision</h5>
               <p className="benefit-description">
-              We are the most respected Internet marketing agency.
-Our mission is to revolutionize the way businesses connect with their audience online.
-We strive to change how businesses speak
+                We are the most respected Internet marketing agency.
+                Our mission is to revolutionize the way businesses connect with their audience online.
+                We strive to change how businesses speak
 
               </p>
             </div>
@@ -194,16 +202,16 @@ We strive to change how businesses speak
               <i className="bi bi-heart-fill benefit-icon"></i>
               <h5 className="benefit-title">Our Care</h5>
               <p className="benefit-description">
-              Our digital marketing, Mobile Application
-                  Development, Website Development work speaks for itself.
-                  We deliver an outstanding service custom-tailored to each and every one of our clients.
-                
+                Our digital marketing, Mobile Application
+                Development, Website Development work speaks for itself.
+                We deliver an outstanding service custom-tailored to each and every one of our clients.
+
               </p>
             </div>
-            
+
           </div>
 
-          
+
         </div>
       </section>
 

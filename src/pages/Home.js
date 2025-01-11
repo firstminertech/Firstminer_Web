@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import { Form, Button, Alert, Row, Col, Modal } from "react-bootstrap";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import Loader from "../elements/loader";
 
 const HomePage = observer(() => {
   useEffect(() => {
@@ -21,7 +22,10 @@ const HomePage = observer(() => {
   }, []);
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  const[loader, setLoader] = useState(true);
+  setTimeout(() => {
+    setLoader(false);
+},2000)
   // Function to handle form submission using mailto
   const handleSubmit = (values, { resetForm }) => {
     setLoading(true);
@@ -68,6 +72,7 @@ const HomePage = observer(() => {
   });
   return (
     <div>
+   {loader && <Loader/>}
       <Header />
       <style>
         {
@@ -445,24 +450,11 @@ const HomePage = observer(() => {
 
               </div>
             </div>
-           
+
           </div>
         </div>
 
-        <h3 className="client-title mt-4">Testimonials</h3>
-        <p className="client-para">
-          At FirstMiner, we believe that our success is built on the trust and
-          satisfaction of our clients.Here are just a few of the testimonials
-          from our valued clients, who share their experiences with our
-          services, expertise, and commitment to excellence. We are proud of the
-          lasting relationships we have built and the impact we've made in
-          helping our clients achieve their goals.
-        </p>
-        <div className="d-flex justify-content-center">
-          <div className="col-10 p-4">
-            <Testimonials />
-          </div>
-        </div>
+
         <div className="container py-5">
           <div className="row justify-content-center text-center">
             <div className="col-12">
@@ -567,6 +559,22 @@ const HomePage = observer(() => {
             </div>
           </div>
         </section>
+       <div>
+        <h3 className="client-title mt-4">Testimonials</h3>
+        <p className="client-para">
+          At FirstMiner, we believe that our success is built on the trust and
+          satisfaction of our clients.Here are just a few of the testimonials
+          from our valued clients, who share their experiences with our
+          services, expertise, and commitment to excellence. We are proud of the
+          lasting relationships we have built and the impact we've made in
+          helping our clients achieve their goals.
+        </p>
+        <div className="d-flex justify-content-center">
+          <div className="col-10 p-4">
+            <Testimonials />
+          </div>
+          </div>
+        </div>
         {/* <section id="team" className="wow fadeInUp">
           <div className="container">
             <div className="section-header">

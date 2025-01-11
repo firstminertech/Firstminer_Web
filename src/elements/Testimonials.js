@@ -1,4 +1,4 @@
-import { Autoplay, Pagination,Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Testimonials = () => {
@@ -14,33 +14,33 @@ const Testimonials = () => {
 
           {/* Swiper Component */}
           <Swiper
-        modules={[Pagination, Autoplay, Navigation]}
-        spaceBetween={30}
-        loop={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        navigation={{
-          prevEl: '#swiper-prev',
-          nextEl: '#swiper-next',
-        }}
-        slidesPerView={3}
-        speed={800}
-        style={{ paddingBottom: '40px' }}
-        breakpoints={{
-          1024: {
-            slidesPerView: 3,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          20: {
-            slidesPerView: 1,
-          },
-        }}
-      >
+            modules={[Pagination, Autoplay, Navigation]}
+            spaceBetween={30}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            navigation={{
+              prevEl: '#swiper-prev',
+              nextEl: '#swiper-next',
+            }}
+            slidesPerView={3}
+            speed={800}
+            style={{ paddingBottom: '40px' }}
+            breakpoints={{
+              1024: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              20: {
+                slidesPerView: 1,
+              },
+            }}
+          >
 
 
             {/* First Slide */}
@@ -90,7 +90,7 @@ const Testimonials = () => {
                     margin: 0 // Remove extra margins for better fit
                   }}>
                     {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                    Aarav, one of our esteemed clients, approached us at Firstminer Tech for app and website development. Our team collaborated closely to understand their unique requirements and deliver a tailored solution that exceeded expectations. Yugal's project showcases our commitment to quality, innovation, and customer satisfaction in every detail."
+                    "Partnering with FirstMinerTech was the best decision for our business. Their tailored approach and attention to detail made all the difference. We felt supported throughout the entire process, and the results speak for themselves."
                     {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
                   </p>
                 </div>
@@ -214,7 +214,7 @@ const Testimonials = () => {
                     fontSize: "1.1rem",
                     margin: 0 // Remove extra margins for better fit
                   }}>
-                    "Riyaan partnered with Firstminer Tech for app and website development to bring his innovative ideas to reality. Through our detailed approach and expert execution, we delivered a solution tailored to his specific needs. Working with Anik was a rewarding experience, showcasing our dedication to quality and client satisfaction."
+                    partnered with Firstminer Tech for app and website development to bring his innovative ideas to reality. Through our detailed approach and expert execution, we delivered a solution tailored to his specific needs. Working with Anik was a rewarding experience, showcasing our dedication to quality and client satisfaction."
 
                   </p>
                 </div>
@@ -271,9 +271,7 @@ const Testimonials = () => {
                     fontSize: "1.1rem",
                     margin: 0 // Remove extra margins for better fit
                   }}>
-                    {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                    "Kavya collaborated with Firstminer Tech to develop a cutting-edge app and website that perfectly matched his vision. Our team focused on delivering a seamless user experience and a modern design, ensuring the final product met all expectations. Partnering with Sudhanshu was a pleasure, highlighting our commitment to innovation and excellence."
-                    {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
+                    "The FirstMinerTech team truly understands the tech industry. Their solutions were cutting-edge, and their customer service was outstanding. We are excited to work with them again on future projects."
                   </p>
                 </div>
 
@@ -327,9 +325,7 @@ const Testimonials = () => {
                     fontSize: "1.1rem",
                     margin: 0 // Remove extra margins for better fit
                   }}>
-                    {/* <img src="assets/img/quote-sign-left.png" className="quote-sign-left" alt="" /> */}
-                    "Divya chose Firstminer Tech for app and website development to transform his ideas into reality. Our team worked closely with him to create a solution that combined innovation, functionality, and a user-centric design. Collaborating with Dharmesh was an inspiring journey that underscores our dedication to delivering exceptional results."
-                    {/* <img src="assets/img/quote-sign-right.png" className="quote-sign-right" alt="" /> */}
+                    "FirstMinerTech turned our vision into reality. Their team was responsive, innovative, and delivered on every promise. We’re grateful for their partnership and expertise in bringing our project to life."
                   </p>
                 </div>
 
