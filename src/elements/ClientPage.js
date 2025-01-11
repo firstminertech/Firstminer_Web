@@ -7,7 +7,7 @@ const ClientPage = observer(() => {
    const [loader, setLoader] = useState(true);
       setTimeout(() => {
         setLoader(false);
-      }, 1000)
+      }, 500)
   return (
     <div>
      {loader && <Loader/>}
