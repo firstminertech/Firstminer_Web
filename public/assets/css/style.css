@@ -1568,7 +1568,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   animation: fadeInUp 1s ease-out;
 }
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
