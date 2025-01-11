@@ -171,7 +171,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/dm.png" />
                   </div>
                   <h4 className="title">
-                    <a href="">Content Marketing strategy</a>
+                    <a>Content Marketing strategy</a>
                   </h4>
                   <p className="description">
                     Content Marketing is an effective way to encourage
@@ -187,7 +187,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/appdevelopment.webp"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">App Development</a>
+                    <a>App Development</a>
                   </h4>
                   <p className="description">
                     your unique ideas transforming into incredible apps for your
@@ -203,7 +203,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/web.jpg"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">Web Development</a>
+                    <a>Web Development</a>
                   </h4>
 
                   <p className="description">
@@ -221,7 +221,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/project.webp"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">Project Explaination & Vedio Creation</a>
+                    <a>Project Explaination & Vedio Creation</a>
                   </h4>
                   <p className="description">
                     High-quality video ads can easily generate traffic of
@@ -237,7 +237,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/govt.webp"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">Govt. Tender and (Material Supply)</a>
+                    <a>Govt. Tender and (Material Supply)</a>
                   </h4>
                   <p className="description">
                     we supply the material for structured procedure and
@@ -252,7 +252,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/v.jpg"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">Commercial Video Creation</a>
+                    <a>Commercial Video Creation</a>
                   </h4>
                   <p className="description">
                     Understand how your video are performing, and the kind of
@@ -267,7 +267,7 @@ const HomePage = observer(() => {
                     <img src="assets/img/blockchain.webp"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">Blockchain Consultant</a>
+                    <a>Blockchain Consultant</a>
                   </h4>
                   <p className="description">
                     Blockchain Lab we believe that Distributed Ledger
@@ -283,12 +283,12 @@ const HomePage = observer(() => {
                     <img src="assets/img/rupee.jpg"></img>
                   </div>
                   <h4 className="title">
-                    <a href="">Pay Per Click (PPC) Management</a>
+                    <a>Digital Marketing</a>
                   </h4>
                   <p className="description">
-                    Pay Per Click has an instant impact and gives your brand a
-                    much larger reach and exposure as a result of first page
-                    exposure on major search engines.
+                  Digital Marketing is an effective way to encourage conversions and its main objective is to build a strategy to meets the needs of your target audience.
+
+
                   </p>
                 </div>
               </div>
@@ -709,110 +709,184 @@ const HomePage = observer(() => {
         </Modal.Header>
         <Modal.Body>
           <div className="form-container">
-            <h2 className="form-title">For InQuery</h2>
+            <h2 className="form-title">For Inquery</h2>
             {isSuccess && (
               <Alert variant="success" className="success-alert">
                 Your message has been sent. Thank you!
               </Alert>
             )}
-            <Formik
-              initialValues={{
-                name: "",
-                email: "",
-                subject: "",
-                message: "",
-              }}
-              validationSchema={Yup.object({
-                name: Yup.string()
-                  .min(4, "Name must be at least 4 characters")
-                  .required("Name is required"),
-                email: Yup.string()
-                  .email("Invalid email address")
-                  .required("Email is required"),
-                subject: Yup.string()
-                  .min(4, "Subject must be at least 4 characters")
-                  .required("Subject is required"),
-                message: Yup.string().required("Message is required"),
-              })}
-              onSubmit={handleSubmit}  // Pass the handleSubmit function
-            >
-              {formik => (
-                <Form onSubmit={formik.handleSubmit}>
-                  <Row>
-                    <Col md={6} className="mt-1">
-                      <Form.Group controlId="name">
-                        <Form.Control
-                          type="text"
-                          name="name"
-                          value={formik.values.name}
-                          onChange={formik.handleChange}
-                          onBlur={formik.handleBlur}
-                          placeholder="Your Name"
-                          className="form-input"
-                          isInvalid={formik.touched.name && formik.errors.name}
-                        />
-                        <Form.Control.Feedback type="invalid">
-                          {formik.errors.name}
-                        </Form.Control.Feedback>
-                      </Form.Group>
-                    </Col>
-                    <Col md={6} className="mt-1">
-                      <Form.Group controlId="email">
-                        <Form.Control
-                          type="email"
-                          name="email"
-                          value={formik.values.email}
-                          onChange={formik.handleChange}
-                          onBlur={formik.handleBlur}
-                          placeholder="Your Email"
-                          className="form-input"
-                          isInvalid={formik.touched.email && formik.errors.email}
-                        />
-                        <Form.Control.Feedback type="invalid">
-                          {formik.errors.email}
-                        </Form.Control.Feedback>
-                      </Form.Group>
-                    </Col>
-                  </Row>
-                  <Form.Group controlId="subject" className="mt-1">
+             <Formik
+                             initialValues={{
+                                name: "",
+                                email: "",
+                                subject: "",
+                                message: "",
+                                phone: "", // Add phone field
+                                address: "", // Add address field
+                              }}
+                              
+                              validationSchema={Yup.object({
+                                name: Yup.string()
+                                  .min(4, "Name must be at least 4 characters")
+                                  .required("Name is required"),
+                                email: Yup.string()
+                                  .email("Invalid email address")
+                                  .required("Email is required"),
+                                subject: Yup.string()
+                                  .min(4, "Subject must be at least 4 characters")
+                                  .required("Subject is required"),
+                                message: Yup.string().required("Message is required"),
+                                phone: Yup.string()
+                                  .matches(/^\d{10}$/, "Phone number must be exactly 10 digits")
+                                  .required("Phone number is required"),
+                                address: Yup.string().required("Address is required"),
+                              })}
+                              
+                              onSubmit={handleSubmit} // Pass the handleSubmit function
+                            >
+                              {(formik) => (
+                                <Form onSubmit={formik.handleSubmit}>
+                                  <Row>
+                                    <Col md={6} className="mt-1">
+                                      <Form.Group controlId="name">
+                                        <Form.Control
+                                          type="text"
+                                          name="name"
+                                          value={formik.values.name}
+                                          onChange={formik.handleChange}
+                                          onBlur={formik.handleBlur}
+                                          placeholder="Your Name"
+                                          className="form-input"
+                                          isInvalid={
+                                            formik.touched.name && formik.errors.name
+                                          }
+                                        />
+                                        <Form.Control.Feedback type="invalid">
+                                          {formik.errors.name}
+                                        </Form.Control.Feedback>
+                                      </Form.Group>
+                                    </Col>
+                                    <Col md={6} className="mt-1">
+                                      <Form.Group controlId="email">
+                                        <Form.Control
+                                          type="email"
+                                          name="email"
+                                          value={formik.values.email}
+                                          onChange={formik.handleChange}
+                                          onBlur={formik.handleBlur}
+                                          placeholder="Your Email"
+                                          className="form-input"
+                                          isInvalid={
+                                            formik.touched.email && formik.errors.email
+                                          }
+                                        />
+                                        <Form.Control.Feedback type="invalid">
+                                          {formik.errors.email}
+                                        </Form.Control.Feedback>
+                                      </Form.Group>
+                                    </Col>
+                                    <Col md={6} className="mt-1">
+                                      <Form.Group controlId="phoneNumber">
+                                        <Form.Control
+                                          type="text"
+                                          name="phone"
+                                          value={formik.values.phone}
+                                          onChange={(e) => {
+                                            const value = e.target.value;
+                                            // Allow only numeric values and limit to 10 digits
+                                            if (/^\d{0,10}$/.test(value)) {
+                                              formik.setFieldValue("phone", value);
+                                            }
+                                          }}
+                                          onBlur={formik.handleBlur}
+                                          placeholder="Phone number"
+                                          className="form-input"
+                                          isInvalid={
+                                            formik.touched.phone && formik.errors.phone
+                                          }
+                                        />
+                                        <Form.Control.Feedback type="invalid">
+                                          {formik.errors.phone}
+                                        </Form.Control.Feedback>
+                                      </Form.Group>
+                                    </Col>
+            
+                                    <Col md={6} className="mt-1">
+                <Form.Group controlId="address">
                     <Form.Control
-                      type="text"
-                      name="subject"
-                      value={formik.values.subject}
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      placeholder="Subject"
-                      className="form-input"
-                      isInvalid={formik.touched.subject && formik.errors.subject}
+                        type="text" // Address doesn't need to be of type email
+                        name="address"
+                        value={formik.values.address}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        placeholder="Address"
+                        className="form-input"
+                        isInvalid={formik.touched.address && formik.errors.address}
                     />
                     <Form.Control.Feedback type="invalid">
-                      {formik.errors.subject}
+                        {formik.errors.address}
                     </Form.Control.Feedback>
-                  </Form.Group>
-                  <Form.Group controlId="message" className="mt-1">
-                    <Form.Control
-                      as="textarea"
-                      name="message"
-                      rows={5}
-                      value={formik.values.message}
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      placeholder="Message"
-                      className="form-input"
-                      isInvalid={formik.touched.message && formik.errors.message}
-                    />
-                    <Form.Control.Feedback type="invalid">
-                      {formik.errors.message}
-                    </Form.Control.Feedback>
-                  </Form.Group>
-                  <div className="text-center">
-                    <button type="submit" variant="primary" disabled={loading} className="submit-button submit10">
-                      {loading ? "Sending..." : "Send Message"}
-                    </button>
-                  </div>
-                </Form>
-              )}
-            </Formik>
+                </Form.Group>
+            </Col>
+            
+                                  </Row>
+                                  <Form.Group controlId="subject" className="mt-1">
+                                    <Form.Control
+                                      type="text"
+                                      name="subject"
+                                      value={formik.values.subject}
+                                      onChange={formik.handleChange}
+                                      onBlur={formik.handleBlur}
+                                      placeholder="Subject"
+                                      className="form-input"
+                                      isInvalid={
+                                        formik.touched.subject && formik.errors.subject
+                                      }
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                      {formik.errors.subject}
+                                    </Form.Control.Feedback>
+                                  </Form.Group>
+                                  <Form.Group controlId="message" className="mt-1">
+                                    <Form.Control
+                                      as="textarea"
+                                      name="message"
+                                      rows={5}
+                                      value={formik.values.message}
+                                      onChange={(e) => {
+                                        const value = e.target.value;
+                                        // Allow up to 250 characters
+                                        if (value.length <= 250) {
+                                          formik.setFieldValue("message", value); // Update Formik value
+                                        }
+                                      }}
+                                      onBlur={formik.handleBlur}
+                                      placeholder="Message"
+                                      className="form-input"
+                                      isInvalid={formik.touched.message && formik.errors.message}
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                      {formik.errors.message}
+                                    </Form.Control.Feedback>
+                                  
+                                    {/* Display the character count */}
+                                    <div className="char-count">
+                                      Characters entered: {formik.values.message.length} / 250
+                                    </div>
+                                  </Form.Group>
+                                  <div className="text-center">
+                                    <button
+                                      type="submit"
+                                      variant="primary"
+                                      disabled={loading}
+                                      className="submit-button submit10"
+                                    >
+                                      {loading ? "Sending..." : "Send Message"}
+                                    </button>
+                                  </div>
+                                </Form>
+                              )}
+                            </Formik>
           </div>
         </Modal.Body>
         {/* <Modal.Footer>

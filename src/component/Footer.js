@@ -39,10 +39,7 @@ const Footer = () => {
               </li>
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  href="/clients"
-                  className="text-decoration-none text-light"
-                >
+                <a href="/clients" className="text-decoration-none text-light">
                   Client
                 </a>
               </li>
@@ -57,14 +54,10 @@ const Footer = () => {
               </li>
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  href="/careers"
-                  className="text-decoration-none text-light"
-                >
+                <a href="/careers" className="text-decoration-none text-light">
                   Careers
                 </a>
               </li>
-
             </ul>
           </div>
           {/* Our Services */}
@@ -73,43 +66,30 @@ const Footer = () => {
             <ul className="list-unstyled useful-link1 ">
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  className="text-decoration-none text-light"
-                >
+                <a className="text-decoration-none text-light">
                   Digital Marketing
                 </a>
               </li>
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  className="text-decoration-none text-light"
-                >
+                <a className="text-decoration-none text-light">
                   App / Web Development
                 </a>
               </li>
 
-
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  className="text-decoration-none text-light"
-                >
-                  Govt. Tender
-                </a>
+                <a className="text-decoration-none text-light">Govt. Tender</a>
               </li>
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  className="text-decoration-none text-light"
-                >
+                <a className="text-decoration-none text-light">
                   Commercial Video Creation
                 </a>
               </li>
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
-                <a
-                  className="text-decoration-none text-light"
-                >
+                <a className="text-decoration-none text-light">
                   Block Chain Consultant
                 </a>
               </li>
@@ -127,10 +107,11 @@ const Footer = () => {
               Seepat Road, Bilaspur 495001 (CG)
               <br />
               <br />
-              <strong>Phone:</strong> +918085583055, +917752358727
+              <strong>Phone:</strong> +917752358727
               <br />
-              <a className="email-text1" href="mailto:firstminertech@gmail.com"><strong>Email:</strong> firstminertech@gmail.com</a>
-
+              <a className="email-text1" href="mailto:firstminertech@gmail.com">
+                <strong>Email:</strong> Info@firstminer.in
+              </a>
               <br />
             </address>
           </div>
@@ -138,7 +119,7 @@ const Footer = () => {
           {/* About Section */}
           <div className="col-lg-3 col-md-6 footer-info">
             <h4 className="text-uppercase head10 mb-4 ">
-              About Firstminertech
+              About Us
             </h4>
             <p className="text-light">
               We pursue relationships based on transparency, persistence, mutual
@@ -161,9 +142,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyright text-white d-flex justify-content-center">
-            © Copyright <strong className="ms-2">FirstMiner Technology</strong>. All Rights
-            Reserved
-            <a className="ms-2 head10 text-decoration-none " href="https://firstminer.in/">Firstminer.in</a>
+          2025 © Copyright{" "}
+            <a  className="head10  text-decoration-none" href="/">
+              <strong className="ms-2">FirstMiner Technology</strong>
+            </a>
+            . All Rights Reserved
           </div>
         </div>
       </div>

@@ -62,11 +62,11 @@ function CareerPage() {
                         <div className="job-card">
                             <div className="job-card-body">
                                 <h5 className="job-card-title">Autosar - Embedded Software Developer</h5>
-                                <p className="job-card-location">Bilaspur | Posted: 31 Dec 2024</p>
+                                <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
                                 <p className="job-card-description">
                                     Develop infotainment products for the automotive domain.
                                 </p>
-                                <a href="#apply" className="btn-apply">
+                                <a href="/contactform" className="btn-apply">
                                     Apply Now
                                 </a>
                             </div>
@@ -75,11 +75,11 @@ function CareerPage() {
                         <div className="job-card">
                             <div className="job-card-body">
                                 <h5 className="job-card-title">Full-Stack Web Developer</h5>
-                                <p className="job-card-location">Bilaspur | Posted: 31 Dec 2024</p>
+                                <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
                                 <p className="job-card-description">
                                     Work on web platforms and deliver seamless user experiences.
                                 </p>
-                                <a href="#apply" className="btn-apply">
+                                <a href="/contactform" className="btn-apply">
                                     Apply Now
                                 </a>
                             </div>
@@ -88,11 +88,11 @@ function CareerPage() {
                         <div className="job-card">
                             <div className="job-card-body">
                                 <h5 className="job-card-title">UI/UX Designer</h5>
-                                <p className="job-card-location">Bilaspur | Posted: 31 Dec 2024</p>
+                                <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
                                 <p className="job-card-description">
                                     Design user-friendly and visually appealing interfaces.
                                 </p>
-                                <a href="#apply" className="btn-apply">
+                                <a href="/contactform" className="btn-apply">
                                     Apply Now
                                 </a>
                             </div>

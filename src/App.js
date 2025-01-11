@@ -25,6 +25,7 @@ import RealStateBaba from './pages/portfolioSubPage/RealStateBaba';
 import Railway from './pages/portfolioSubPage/Railway';
 import Footer from './component/Footer';
 import ContactForm from './pages/ContactForm';
+import PortfolioData from './pages/portfolioData';
 
 
 
@@ -52,6 +53,7 @@ function App() {
     <Route exact path="/outreach-web-subpage" element={<OutreachWeb />}/>
     <Route exact path="/railway-subpage" element={<Railway />}/>
     <Route exact path="/contactform" element={<ContactForm />}/>
+    <Route exact path="/portfoliodata" element={<PortfolioData />}/>
     
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
