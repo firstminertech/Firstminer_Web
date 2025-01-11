@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Testimonials from "../elements/Testimonials";
 import Header from "../component/Header";
 import ClientPage from "../elements/ClientPage";
 import Footer from "../component/Footer";
+import Loader from "../elements/loader";
 
 const PortfolioData = () => {
+    const [loader, setLoader] = useState(true);
+    setTimeout(() => {
+      setLoader(false);
+    }, 1000)
 
   return (
     <div>
-      {/* Header Section */}
-      <Header />
-
-      <div className="container mt-3 portfolio-anchor">
+     {loader ?<Loader/>: <div>
+       {/* Header Section */}
+       <Header />
+       <div className="container mt-3 portfolio-anchor">
         {/* Web App Section */}
         <div className="card mb-4">
           <div className="row g-0 align-items-center ">
@@ -211,6 +216,10 @@ const PortfolioData = () => {
           </div>
         </div>
       </div>
+     </div>}
+     
+
+      
     </div>
   );
 };
