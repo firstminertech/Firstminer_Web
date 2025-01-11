@@ -2731,8 +2731,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 30px;
 } */
 
-.social-links {
-}
 .testimonials-border {
   border-radius: 10px;
   padding: 0%;
@@ -3138,9 +3136,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: transform 0.3s ease; /* Smooth scaling transition */
 }
 
-.card:hover {
-  transform: scale(1.5); /* Scale the card to 1.5x on hover */
-}
 
 .card-image {
   width: 100%;
