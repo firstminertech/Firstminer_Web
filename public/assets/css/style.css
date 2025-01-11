@@ -3443,3 +3443,15 @@ p {
 {
   height: 20px !important;
 }
+.loader-image{
+  animation:bounce 1s infinite;
+  transition: all 0.3s ease;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

@@ -1,10 +1,18 @@
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
+import Loader from "../elements/loader";
 
 function Service() {
+  const [loader, setLoader] = useState(true);
+  setTimeout(() => {
+    setLoader(false);
+  }, 1000)
+
   return (
     <div>
+     {loader && <Loader/>}
       {/* Header Section */}
       <Header />
 
@@ -184,9 +192,9 @@ function Service() {
               <i className="bi bi-heart-fill benefit-icon"></i>
               <h5 className="benefit-title">Our Vision</h5>
               <p className="benefit-description">
-              We are the most respected Internet marketing agency.
-Our mission is to revolutionize the way businesses connect with their audience online.
-We strive to change how businesses speak
+                We are the most respected Internet marketing agency.
+                Our mission is to revolutionize the way businesses connect with their audience online.
+                We strive to change how businesses speak
 
               </p>
             </div>
@@ -198,10 +206,10 @@ We strive to change how businesses speak
                 
               </p>
             </div>
-            
+
           </div>
 
-          
+
         </div>
       </section>
 

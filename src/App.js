@@ -26,6 +26,7 @@ import Railway from './pages/portfolioSubPage/Railway';
 import Footer from './component/Footer';
 import ContactForm from './pages/ContactForm';
 import PortfolioData from './pages/portfolioData';
+import Loader from './elements/loader';
 
 
 
@@ -54,7 +55,7 @@ function App() {
     <Route exact path="/railway-subpage" element={<Railway />}/>
     <Route exact path="/contactform" element={<ContactForm />}/>
     <Route exact path="/portfoliodata" element={<PortfolioData />}/>
-    
+    <Route exact path="/loader" element={<Loader/>}/>
 
     <Route exact path="/admin/dashboard" element={<AdminDashboard/>}/>
     <Route exact path="/admin/add-team" element={<CreateTeam/>}/>
