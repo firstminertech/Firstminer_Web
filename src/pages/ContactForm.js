@@ -309,7 +309,7 @@ const ContactForm = observer(() => {
                   />
                 </div>
 
-                <div>
+                <div className="text-secondary">
                 Kindly note: You may attach your resume and send it to <span className="text-primary">info@firstminer.in</span> for consideration.
                 </div>
 
