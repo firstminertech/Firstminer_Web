@@ -13,18 +13,18 @@ function CareerPage() {
         <div>
             {loader ? <Loader /> : <div>  <Header />
 
-                {/* Hero Section */}
-                <section className="hero-section">
-                    <div className="container">
-                        <h1 className="hero-title">Join Firstminer Team</h1>
-                        <p className="hero-description">
-                            Be part of a global company where your skills and passion matter.
-                        </p>
-                        <a href="#job-listings" className="btn-cta">
-                            Explore Jobs
-                        </a>
-                    </div>
-                </section>
+            {/* Hero Section */}
+            <section className="hero-section">
+                <div className="container">
+                    <h1 className="hero-title">Join Firstminer Team</h1>
+                    <p className="hero-description paratext">
+                        Be part of a global company where your skills and passion matter.
+                    </p>
+                    <a href="#job-listings" className="btn-cta">
+                        Explore Jobs
+                    </a>
+                </div>
+            </section>
 
 
 
@@ -58,66 +58,65 @@ function CareerPage() {
                     </div>
                 </section>
 
-                {/* Job Listings Section */}
-                <section id="job-listings" className="job-listings-section">
-                    <div className="container">
-                        <h2 className="job-listings-title d-flex justify-content-center">Current Openings</h2>
-                        <div className="job-cards">
-                            {/* Job 1 */}
-                            <div className="job-card">
-                                <div className="job-card-body">
-                                    <h5 className="job-card-title">Autosar - Embedded Software Developer</h5>
-                                    <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
-                                    <p className="job-card-description">
-                                        Develop infotainment products for the automotive domain.
-                                    </p>
-                                    <a href="/contactform" className="btn-apply">
-                                        Apply Now
-                                    </a>
-                                </div>
+             {/* Job Listings Section */}
+             <section id="job-listings" className="job-listings-section">
+                <div className="container">
+                    <h2 className="job-listings-title d-flex justify-content-center">Current Openings</h2>
+                    <div className="job-cards">
+                        {/* Job 1 */}
+                        <div className="job-card">
+                            <div className="job-card-body">
+                                <h5 className="job-card-title">Software Developer</h5>
+                                <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
+                                <p className="job-card-description">
+                                    Develop infotainment products for the automotive domain.
+                                </p>
+                                <a href="/contactform" className="btn-apply">
+                                    Apply Now
+                                </a>
                             </div>
-                            {/* Job 2 */}
-                            <div className="job-card">
-                                <div className="job-card-body">
-                                    <h5 className="job-card-title">Full-Stack Web Developer</h5>
-                                    <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
-                                    <p className="job-card-description">
-                                        Work on web platforms and deliver seamless user experiences.
-                                    </p>
-                                    <a href="/contactform" className="btn-apply">
-                                        Apply Now
-                                    </a>
-                                </div>
+                        </div>
+                        {/* Job 2 */}
+                        <div className="job-card">
+                            <div className="job-card-body">
+                                <h5 className="job-card-title">Full-Stack Web Developer</h5>
+                                <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
+                                <p className="job-card-description">
+                                    Work on web platforms and deliver seamless user experiences.
+                                </p>
+                                <a href="/contactform" className="btn-apply">
+                                    Apply Now
+                                </a>
                             </div>
-                            {/* Job 3 */}
-                            <div className="job-card">
-                                <div className="job-card-body">
-                                    <h5 className="job-card-title">UI/UX Designer</h5>
-                                    <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
-                                    <p className="job-card-description">
-                                        Design user-friendly and visually appealing interfaces.
-                                    </p>
-                                    <a href="/contactform" className="btn-apply">
-                                        Apply Now
-                                    </a>
-                                </div>
+                        </div>
+                        {/* Job 3 */}
+                        <div className="job-card">
+                            <div className="job-card-body">
+                                <h5 className="job-card-title">UI/UX Designer</h5>
+                                <p className="job-card-location">Bilaspur | Open Till: 27 Feb 2025</p>
+                                <p className="job-card-description">
+                                    Design user-friendly and visually appealing interfaces.
+                                </p>
+                                <a href="/contactform" className="btn-apply">
+                                    Apply Now
+                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+           
 
-
-                {/* Call to Action Section */}
-                <section id="apply" className="apply-section">
-                    <div className="container">
-                        <h2 className="apply-title">Ready to Join?</h2>
-                        <p className="apply-description">Take the next step in your career with us.</p>
-                        <a href="#" className="btn-cta">
-                            Apply Now
-                        </a>
-                    </div>
-                </section></div>}
-
+            {/* Call to Action Section */}
+            <section id="apply" className="apply-section">
+                <div className="container">
+                    <h2 className="apply-title">Ready to Join?</h2>
+                    <p className="apply-description paratext">Take the next step in your career with us.</p>
+                    <a href="#" className="btn-cta">
+                        Apply Now
+                    </a>
+                </div>
+            </section>
 
 
         </div>

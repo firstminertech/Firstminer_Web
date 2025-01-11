@@ -103,7 +103,7 @@ const ContactForm = observer(() => {
         <div className="shadow-lg border-0 rounded">
           <div className="card-header text-white text-center py-4 formbackground">
             <h3>Thank you for considering my application.</h3>
-            <p>" We will reach out to you soon to discuss the next steps."</p>
+            <p className="paratext">" We will reach out to you soon to discuss the next steps."</p>
           </div>
           <Formik
             initialValues={initialValues}
