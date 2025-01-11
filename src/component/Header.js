@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import PrimaryHeader from "./PrimaryHeader";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
 
+  const location = useLocation();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -33,10 +34,18 @@ const Header = () => {
   return (
     <div>
       <PrimaryHeader />
+
       <header id="header" className={isFixed ? "fixed bg-light" : "header-relative"}>
         <div className="container d-flex justify-content-between">
           <div id="logo" className="pull-left d-flex gap-2">
-            <img src="assets/img/firstminerlogo.png" width={220} />
+            <img
+              src={
+                location.pathname === "/"
+                  ? (isFixed ? "assets/img/firstminerlogo.png" : "assets/img/l-white.png")
+                  : "assets/img/firstminerlogo.png"
+              }
+              width={220}
+            />
             {/* <h1>
               <Link to={"/"} className="scrollto">
                 First<span>Miner</span>
@@ -44,7 +53,7 @@ const Header = () => {
             </h1> */}
           </div>
 
-          <nav id="nav-menu-container" className={isMenuOpen ? "open" : ""}>
+          <nav id="nav-menu-container" className={isMenuOpen ? "open bg-light" : ""}>
             <ul className="nav-menu">
               <li>
                 <NavLink
@@ -64,7 +73,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/portfolio"
+                  to="/portfoliodata"
                   className={({ isActive }) => (isActive ? "menu-active" : "menu-inactive")}
                 >
                   Portfolio
@@ -94,7 +103,7 @@ const Header = () => {
             onClick={toggleMenu}
             aria-label="Toggle navigation"
           >
-            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+            <i className={`fas ${location.pathname=="/"?(isFixed?"text-dark":"text-light"):("text-dark")} ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
           </button>
         </div>
       </header>

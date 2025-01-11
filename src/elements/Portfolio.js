@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../component/Header';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
 
   const [filter, setFilter] = useState('all');
 
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const data = params.get('data');
+    if (data) {
+      setFilter(data);
+    }
+  }, [location]);
   const portfolioItems = [
     {
       title: 'Atal Bihari Bajpayee University Website',
@@ -49,6 +58,28 @@ const Portfolio = () => {
       image: 'https://storage.googleapis.com/a1aa/image/jLBDyT9eTA2Abq5wIT3j0aPvcx7oixMp1fS08oTpopPdFBAUA.jpg',
       href:'#',
     },
+    {
+      title: 'Video Creation',
+      category: 'Video Creation',
+      description: `
+"Crafting engaging and high-quality videos tailored to your needs, from concept to completion. Elevate your brand with captivating visuals and storytelling."`,
+      image: './assets/img/video c.jpg',
+      href:'#',
+    },
+    {
+      title: 'Graphic Design',
+      category: 'Graphic Design',
+      description: `Create stunning visuals that bring your brand's vision to life with professional graphic design.`,
+      image: './assets/img/graphic10.jpg',
+      href:'#',
+    },
+    {
+      title: 'Digital Marketing',
+      category: 'Digital Marketing',
+      description: `Accelerate your brand's growth with data-driven digital marketing strategies for maximum online impact.`,
+      image: './assets/img/digital1.jpg',
+      href:'#',
+    },
   ];
 
   const navigate = useNavigate();
@@ -63,20 +94,14 @@ const Portfolio = () => {
       <section id="home" className="intro-section">
         <div className="container">
           <h1 className="heading">Welcome to Our Portfolio</h1>
-          <p className="subheading">
+          <p className="subheading paratext">
             We offer a wide range of professional services tailored to your
             needs. Explore what we can do for you!
           </p>
         </div>
       </section>
       <div className="portfolio-container mt-3">
-        <div className="buttons">
-          <button onClick={() => setFilter('all')} className="portfolio-btn">Show All</button>
-          <button onClick={() => setFilter('UI/UX Design')} className="portfolio-btn">UI/UX Design</button>
-          <button onClick={() => setFilter('Web App')} className="portfolio-btn">Web App</button>
-          <button onClick={() => setFilter('Mobile App')} className="portfolio-btn">Mobile App</button>
-          <button onClick={() => setFilter('Govt. Projects')} className="portfolio-btn">Govt. Projects</button>
-        </div>
+        
 
         <div className="portfolio">
           {/* <div className="portfolio-item">
