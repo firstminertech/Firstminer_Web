@@ -96,7 +96,7 @@ const OurTeams = () => {
         },
         {
             name: "Pallavi Rathore",
-            role: "Tester & UI/UX Developer",
+            role: "Tester & Frontend Developer",
             description: "Intern",
             image: "assets/img/tm5.jpeg",
             socials: {
