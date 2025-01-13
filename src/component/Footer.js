@@ -107,7 +107,7 @@ const Footer = () => {
               Seepat Road, Bilaspur 495001 (CG)
               <br />
               <br />
-              <strong>Phone:</strong> +917752358727
+              <strong>Phone:</strong> 07752358727
               <br />
               <a className="email-text1" href="mailto:firstminertech@gmail.com">
                 <strong>Email:</strong> Info@firstminer.in

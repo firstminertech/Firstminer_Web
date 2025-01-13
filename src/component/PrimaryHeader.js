@@ -43,7 +43,7 @@ const PrimaryHeader = () => {
               <div className="col-3 headertop">
                 <div className="d-flex align-items-center phone-section">
                   <i className="fa-solid fa-phone phone-icon"></i>
-                  <span className="phone-text">+91 7752358727</span>
+                  <span className="phone-text">07752358727</span>
                 </div>
               </div>
             </div>
