@@ -18,7 +18,7 @@ function Service() {
         {/* Introduction Section */}
         <section id="home" className="intro-section">
           <div className="container">
-            <h1 className="heading">Welcome to Our Services</h1>
+            <h1 className="heading">Our Services</h1>
             <p className="subheading paratext">
               We offer a wide range of professional services tailored to your
               needs. Explore what we can do for you!
@@ -51,11 +51,9 @@ function Service() {
               </div>
               {/* Service 3 */}
               <div className="service-card">
-                <h5 className="service-title">Digital Marketing</h5>
+                <h5 className="service-title">Search Engine Optimization</h5>
                 <p className="service-description">
-                  Digital Marketing is an effective way to encourage conversions
-                  and its main objective is to build a strategy to meets the needs
-                  of your target audience.
+                SEO enhances a website's visibility and ranking on SERPs through keyword optimization, content creation, backlinking, and technical tweaks to drive organic traffic.
                 </p>
               </div>
             </div>
@@ -113,9 +111,7 @@ function Service() {
               <div className="service-card">
                 <h5 className="service-title">Digital Consultancy</h5>
                 <p className="service-description">
-                  We’ve developed an approach to shaping digital strategies for
-                  our clients that result in defining prioritized, cost-effective
-                  solutions that deliver a measurable Return on Investment (ROI).
+                We deliver cost-effective and innovative digital solutions with measurable ROI, effectively meeting audience needs, driving impactful conversions, and aligning strategies with your business goals.
                 </p>
               </div>
             </div>

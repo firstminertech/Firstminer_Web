@@ -133,13 +133,15 @@ const HomePage = observer(() => {
                         <h2 className="Firstminer-title">
                           Firstminer Technology Solutions Pvt. Ltd .
                         </h2>
-                        <h6>
+                        <ul>
+                        <li className="mt-5">
                           Our team of specialists consistently delivers
                           outstanding results combining creative ideas with our
                           vast experience. We can help you build a sustainable,
                           meaningful relationship with your clients by engaging
                           them with your brand using social media.
-                        </h6>
+                        </li>
+                        </ul>
                         <ul>
                           <li>
                             <i className="ion-android-checkmark-circle" /> Our
@@ -269,8 +271,7 @@ const HomePage = observer(() => {
                       <a>Commercial Video Creation</a>
                     </h4>
                     <p className="description">
-                      Understand how your video are performing, and the kind of
-                      target audience viewing and engaging with them.
+                    Understand how your videos are performing, gain valuable insights into their reach, and analyze the kind of target audience viewing, engaging, and interacting with them.
                     </p>
                   </div>
                 </div>
@@ -294,7 +295,7 @@ const HomePage = observer(() => {
                 <div className="col-lg-6">
                   <div className="box wow fadeInLeft" data-wow-delay="0.2s">
                     <div className="icon">
-                      <img src="assets/img/rupee.jpg"></img>
+                      <img src="assets/img/social1.png" width={50}/>
                     </div>
                     <h4 className="title">
                       <a>Digital Marketing</a>
@@ -469,23 +470,23 @@ const HomePage = observer(() => {
               <div className="col-12">
                 <h2 className="client-title mt-4">Why to Choose US</h2>
                 <p className="text-muted">
-                  As your Marketing Agency Partner, we bring unmatched expertise and tools to ensure your success.
+                As you are a technical solution partner, we bring unmatched expertise and tools to ensure your success.
                 </p>
               </div>
             </div>
 
-            <div className="row align-items-center">
+            <div className="row align-items-center mt-4">
               {/* Side Image */}
-              <div className="col-12 col-md-4 text-center mb-4 mb-md-0">
+              <div className="col-12 col-md-5 text-center mb-4 mb-md-0">
                 <img
-                  src="assets/img/whychooseus.jpg"
+                  src="assets/img/chooseus1.jpg"
                   alt="Professional"
                   className="img-fluid  border-custom"
                 />
               </div>
 
               {/* Features Section */}
-              <div className="col-12 col-md-8">
+              <div className="col-12 col-md-7">
                 <div className="row">
                   <div className="col-12 col-md-6 mb-4">
                     <div className="feature-card" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -562,7 +563,7 @@ const HomePage = observer(() => {
                 </div>
                 <div className="col-lg-3 cta-btn-container text-center">
                   <a href="#contact" className="cta-btn align-middle" onClick={handleShow}>
-                    Work with Us
+                    Reach Us
                   </a>
                 </div>
               </div>

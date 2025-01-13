@@ -40,7 +40,7 @@ const Footer = () => {
               <li className="d-flex align-items-center mb-2">
                 <i className="bx bx-right-arrow-alt head10 me-2"></i>
                 <a href="/clients" className="text-decoration-none text-light">
-                  Client
+                  Clients
                 </a>
               </li>
               <li className="d-flex align-items-center mb-2">
@@ -49,7 +49,7 @@ const Footer = () => {
                   href="/testimonial"
                   className="text-decoration-none text-light"
                 >
-                  Testimonial
+                  Testimonials
                 </a>
               </li>
               <li className="d-flex align-items-center mb-2">

@@ -66,7 +66,7 @@ const ClientPage = observer(() => {
             className="img-fluid mb-3 clientpadding"
             style={{ maxWidth: "190px" }}
           />
-          <p className="text-muted">Connecting people, places, and progress.</p>
+          <p className="text-muted">Realstate Baba is a platform for seamless property transactions.</p>
         </div>
         </Link>
       </div>
