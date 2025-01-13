@@ -19,6 +19,7 @@ const ContactForm = observer(() => {
       .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits")
       .required("Phone number is required"),
     address: Yup.string().required("Address is required"),
+    Role: Yup.string().required("Role is required"),
   });
   const skillOptions = [
     { value: "React", label: "React" },
@@ -86,6 +87,7 @@ const ContactForm = observer(() => {
     email: "",
     phone: "",
     address: "",
+    Role: "",
     experience: "",
     skills: "",
     education: "",
@@ -187,6 +189,24 @@ const ContactForm = observer(() => {
                 </div>
 
                 <div className="form-group mb-3">
+                  <label htmlFor="Role" className="form-label">
+                    Role
+                  </label>
+                  <Field as="select" id="Role" name="Role" className="form-control">
+                    <option value="">Select Role</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Full-Stack Web Developer">Full-Stack Web Developer</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                  </Field>
+                  <ErrorMessage
+                    name="Role"
+                    component="div"
+                    className="text-danger"
+                  />
+                </div>
+
+
+                <div className="form-group mb-3">
                   <label htmlFor="experience" className="form-label ">
                     Experience/year
                   </label>
@@ -237,7 +257,7 @@ const ContactForm = observer(() => {
                     Education
                   </label>
                   <Field
-                  type="text"
+                    type="text"
                     id="education"
                     name="education"
                     className="form-control"
@@ -284,7 +304,7 @@ const ContactForm = observer(() => {
                   </div>
                 </div>
 
-               
+
 
                 <div className="form-group mb-3">
                   <label htmlFor="noticePeriod" className="form-label">
@@ -310,7 +330,7 @@ const ContactForm = observer(() => {
                 </div>
 
                 <div className="text-secondary">
-                Kindly note: You may attach your resume and send it to <span className="text-primary">info@firstminer.in</span> for consideration.
+                  Kindly note: You may attach your resume and send it to <span className="text-primary">info@firstminer.in</span> for consideration.
                 </div>
 
                 <button
