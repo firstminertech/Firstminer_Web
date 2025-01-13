@@ -25,7 +25,7 @@ const HomePage = observer(() => {
   const [loader, setLoader] = useState(true);
   setTimeout(() => {
     setLoader(false);
-  }, 2000)
+  }, 900)
   // Function to handle form submission using mailto
   const handleSubmit = (values, { resetForm }) => {
     setLoading(true);
@@ -357,7 +357,7 @@ const HomePage = observer(() => {
               <div className="card-container">
                 <div className="card-technology shadow">
                   <img
-                    src="assets/img/flutter.png"
+                    src="assets/img/Flutter.jpg"
                     alt="Card Image"
                     className="card-image"
                   />
@@ -443,7 +443,7 @@ const HomePage = observer(() => {
               <div className="card-container">
                 <div className="card-technology shadow">
                   <img
-                    src="assets/img/laravel.png"
+                    src="assets/img/Laravel.png"
                     alt="Card Image"
                     className="card-image"
                   />

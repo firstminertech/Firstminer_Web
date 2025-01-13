@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Loader from "../elements/loader";
+import { Link } from "react-router-dom";
 
 function CareerPage() {
 
@@ -21,9 +22,9 @@ function CareerPage() {
                     <p className="hero-description paratext">
                         Be part of a global company where your skills and passion matter.
                     </p>
-                    <a href="#job-listings" className="btn-cta">
+                    <Link to={"#job-listings"} className="btn-cta">
                         Explore Jobs
-                    </a>
+                    </Link>
                 </div>
             </section>
 
@@ -72,9 +73,9 @@ function CareerPage() {
                                 <p className="job-card-description">
                                     Develop infotainment products for the automotive domain.
                                 </p>
-                                <a href="/contactform" className="btn-apply">
+                                <Link to={"/contactform"} className="btn-apply">
                                     Apply Now
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/* Job 2 */}
@@ -85,9 +86,9 @@ function CareerPage() {
                                 <p className="job-card-description">
                                     Work on web platforms and deliver seamless user experiences.
                                 </p>
-                                <a href="/contactform" className="btn-apply">
+                                <Link to={"/contactform"} className="btn-apply">
                                     Apply Now
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/* Job 3 */}
@@ -98,9 +99,9 @@ function CareerPage() {
                                 <p className="job-card-description">
                                     Design user-friendly and visually appealing interfaces.
                                 </p>
-                                <a href="/contactform" className="btn-apply">
+                                <Link to={"/contactform"} className="btn-apply">
                                     Apply Now
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -113,9 +114,9 @@ function CareerPage() {
                 <div className="container">
                     <h2 className="apply-title">Ready to Join?</h2>
                     <p className="apply-description paratext">Take the next step in your career with us.</p>
-                    <a href="#" className="btn-cta">
+                    <Link to="#" className="btn-cta">
                         Apply Now
-                    </a>
+                    </Link>
                 </div>
             </section>
 

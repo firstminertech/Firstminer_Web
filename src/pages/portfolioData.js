@@ -4,6 +4,7 @@ import Header from "../component/Header";
 import ClientPage from "../elements/ClientPage";
 import Footer from "../component/Footer";
 import Loader from "../elements/loader";
+import { Link } from "react-router-dom";
 
 const PortfolioData = () => {
     const [loader, setLoader] = useState(true);
@@ -29,17 +30,17 @@ const PortfolioData = () => {
                 with the flexibility and accessibility of a website. Here’s a
                 detailed description of what a web app entails:
               </p>
-              <a href="/portfolio?data=Web App">
+              <Link to={"/portfolio?data=Web App"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4 w-50">
               <img
-                src="./assets/img/wireframe1.jpg"
+                src="./assets/img/Wireframen.jpg"
                 alt="Wireframe illustration of a web application layout."
                 className="img-fluid"
               />
@@ -60,13 +61,13 @@ const PortfolioData = () => {
                 often leveraging native features such as the camera, GPS, and
                 sensors. Here's a detailed description:
               </p>
-              <a href="/portfolio?data=Web App">
+              <Link to={"/portfolio?data=Web App"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-3 w-50">
               <img
@@ -90,13 +91,13 @@ const PortfolioData = () => {
                 such as websites, mobile apps, or software, that are easy to use
                 and provide a seamless experience for users.
               </p>
-              <a href="/portfolio?data=Web App">
+              <Link to={"/portfolio?data=Web App"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4 w-50">
               <img
@@ -122,13 +123,13 @@ const PortfolioData = () => {
                 to enhance the social, economic, or technological development of
                 a region or country.
               </p>
-              <a href="/portfolio?data=Web App">
+              <Link to={"/portfolio?data=Web App"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-3 w-50 d-flex justify-content-center">
               <img
@@ -148,13 +149,13 @@ const PortfolioData = () => {
               <p className="mt-3">
               Video creation is the process of producing content that visually communicates a message, story, or concept. It begins with conceptualizing the idea, followed by careful planning in the pre-production phase, which involves organizing elements like locations, scripts, and equipment. During the production stage, the actual footage is captured, typically with actors, presenters, and technical crews. 
               </p>
-              <a href="/portfolio?data=Video Creation">
+              <Link to={"/portfolio?data=Video Creation"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-3 w-50 d-flex justify-content-center">
               <img
@@ -173,13 +174,13 @@ const PortfolioData = () => {
               <p className="mt-3">
               Graphic design is the art of combining text, images, and colors to communicate a message visually. It involves creating designs for various mediums like print, digital, and social media to engage and inform audiences. By using creativity and design software, graphic designers craft logos, brochures, websites, and more, all with the goal of delivering clear, impactful communication.
               </p>
-              <a href="/portfolio?data=Graphic Design">
+              <Link to={"/portfolio?data=Graphic Design"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4 w-50 d-flex justify-content-center">
               <img
@@ -198,13 +199,13 @@ const PortfolioData = () => {
               <p className="mt-3">
               Digital marketing involves promoting products and services through online channels like social media, search engines, and email. It helps businesses reach a broader audience, track performance, and optimize campaigns for better engagement and sales. Through strategies like SEO, content marketing, and paid ads, digital marketing plays a vital role in modern business growth.
               </p>
-              <a href="/portfolio?data=Digital Marketing">
+              <Link to={"/portfolio?data=Digital Marketing"}>
                 <button class="color-glass-button">
                   <i class="fas fa-glass-martini-alt"></i>
                   Our Portfolio
                   
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4 w-50 d-flex justify-content-center">
               <img
