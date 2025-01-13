@@ -70,6 +70,8 @@ const HomePage = observer(() => {
     config: { tension: 180, friction: 12 },
     delay: 300, // Slight delay for image
   });
+
+
   return (
     <div>
       <style>
@@ -92,9 +94,16 @@ const HomePage = observer(() => {
 
         <section id="intro">
           {/* Background Video */}
-          <video autoPlay muted loop id="intro-video">
-            <source src="assets/img/header-video.mp4" type="video/mp4" />
-          </video>
+          <div className="container">
+            <video autoPlay muted loop id="intro-video">
+              <source src={
+                window.matchMedia("(max-width: 560px)").matches
+                  ? "assets/img/headervidmob.mp4"
+                  : "assets/img/header-video.mp4"
+              }
+                type="video/mp4" />
+            </video>
+          </div>
         </section>
 
         {/* #intro */}
