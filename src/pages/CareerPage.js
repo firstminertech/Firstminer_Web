@@ -18,7 +18,7 @@ function CareerPage() {
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="container">
-                    <h1 className="hero-title">Join Firstminer Team</h1>
+                    <h1 className="hero-title">Join Our Team</h1>
                     <p className="hero-description paratext">
                         Be part of a global company where your skills and passion matter.
                     </p>
