@@ -832,8 +832,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
 }
 
-/* Testimonial Item Styles */
-.testimonial-item {
+/* .testimonial-item {
   background-color: #fff;
   border-radius: 15px;
   padding: 40px 30px;
@@ -844,7 +843,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .testimonial-item:hover {
-  transform: translateY(-10px); /* Hover effect for lift */
+  transform: translateY(-10px); 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -882,7 +881,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .testimonial-item .testimonial-img:hover {
-  transform: scale(1.1); /* Hover effect on image */
+  transform: scale(1.1);
 }
 
 .testimonial-item h3 {
@@ -897,7 +896,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #777;
   font-weight: 500;
   margin-top: 5px;
-}
+} */
 
 /* Pagination Style */
 .swiper-pagination {

@@ -133,7 +133,7 @@ const PortfolioData = () => {
             </div>
             <div className="col-md-3 w-50 d-flex justify-content-center">
               <img
-                src="./assets/img/image.png"
+                src="./assets/img/governmentpro.jpg"
                 alt="Illustration representing the interface of a mobile app."
                 className="img-fluid"
               />
@@ -159,7 +159,7 @@ const PortfolioData = () => {
             </div>
             <div className="col-md-3 w-50 d-flex justify-content-center">
               <img
-                src="./assets/img/video c.jpg"
+                src="./assets/img/videocre.jpg"
                 alt="Illustration representing the interface of a mobile app."
                 className="img-fluid"
               />
@@ -184,7 +184,7 @@ const PortfolioData = () => {
             </div>
             <div className="col-md-4 w-50 d-flex justify-content-center">
               <img
-                src="./assets/img/graphic10.jpg"
+                src="./assets/img/graphicdes.jpg"
                 alt="Illustration representing the interface of a mobile app."
                 className="img-fluid"
               />
@@ -209,7 +209,7 @@ const PortfolioData = () => {
             </div>
             <div className="col-md-4 w-50 d-flex justify-content-center">
               <img
-                src="./assets/img/digital1.jpg"
+                src="./assets/img/digital.jpg"
                 alt="Illustration representing the interface of a mobile app."
                 className="img-fluid"
               />
