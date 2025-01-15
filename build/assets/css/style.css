@@ -579,7 +579,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content h2 {
   color: #0c2e8a;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -832,7 +832,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
 }
 
-/* .testimonial-item {
+/* Testimonial Item Styles */
+.testimonial-item {
   background-color: #fff;
   border-radius: 15px;
   padding: 40px 30px;
@@ -843,7 +844,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .testimonial-item:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px); /* Hover effect for lift */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -881,7 +882,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .testimonial-item .testimonial-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Hover effect on image */
 }
 
 .testimonial-item h3 {
@@ -896,7 +897,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #777;
   font-weight: 500;
   margin-top: 5px;
-} */
+}
 
 /* Pagination Style */
 .swiper-pagination {
@@ -2068,7 +2069,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .member-image img {
   width: 100%;
-  height: auto;
+  height: 70%;
   object-fit: cover;
   transition: transform 0.3s ease;
   border-radius: 15px;
@@ -2868,7 +2869,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .nav-menu a:hover,
 .nav-menu .menu-active {
-  color: #ff4e00; /* Add hover color or active state color */
+  color:#50d9b0; /* Add hover color or active state color */
 }
 
 /* For the mobile menu toggle button */
@@ -3457,4 +3458,8 @@ p {
 .paratext
 {
   color: white !important;
+}
+.icon1
+{
+  width: 48px !important;
 }
