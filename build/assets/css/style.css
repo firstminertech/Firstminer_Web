@@ -1714,15 +1714,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 .benefits-cards {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
-  /* flex-wrap: wrap; */
+  /* gap: 30px; */
+  flex-wrap: wrap;
 }
 
 .benefit-card {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 30%;
+  width: 23%;
   padding: 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -3370,7 +3370,7 @@ p {
   transition: all 0.3s ease; /* Smooth transition for all properties */
   background-color: rgb(55 107 177) !important;
   color: white !important;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease !important;
 }
 
 .formbutton:hover {
