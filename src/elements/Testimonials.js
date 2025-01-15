@@ -56,7 +56,7 @@ const Testimonials = () => {
               }}>
 
                 <img
-                  src="assets/img/tm1.jpeg"
+                  src="assets/img/1833.jpg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
@@ -121,7 +121,7 @@ const Testimonials = () => {
                 </style>
 
                 <img
-                  src="assets/img/tm2.jpeg"
+                  src="assets/img/224.jpg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{
@@ -178,7 +178,7 @@ const Testimonials = () => {
               }}>
 
                 <img
-                  src="assets/img/tm3.jpeg"
+                  src="assets/img/1834.jpg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
@@ -238,7 +238,7 @@ const Testimonials = () => {
                 }}
               >
                 <img
-                  src="assets/img/tm4.jpeg"
+                  src="assets/img/1831.jpg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
@@ -292,7 +292,7 @@ const Testimonials = () => {
                 }}
               >
                 <img
-                  src="assets/img/tm5.jpeg"
+                  src="assets/img/1832.jpg"
                   className="testimonial-img rounded-circle mb-3"
                   alt=""
                   style={{ border: "4px solid #fff", boxShadow: "0 4px 10px rgba(0,0,0,0.2)", transition: "transform 0.3s ease" }}
