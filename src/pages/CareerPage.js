@@ -22,9 +22,15 @@ function CareerPage() {
                     <p className="hero-description paratext">
                         Be part of a global company where your skills and passion matter.
                     </p>
-                    <Link to={"#job-listings"} className="btn-cta">
-                        Explore Jobs
-                    </Link>
+                    <Link
+                                to="#"
+                                className="btn-cta"
+                                onClick={() => {
+                                    document.getElementById("job-listings")?.scrollIntoView({ behavior: "smooth" });
+                                }}
+                            >
+                                Explore Jobs
+                            </Link>
                 </div>
             </section>
 
